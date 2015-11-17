@@ -208,13 +208,13 @@ h2{
 }
 
 .home-background{
-    background: url(../images/_MG_5263_ok_nyito.JPG) no-repeat 0px 0px;
+    background: url(../images/_MG_5263_ok_nyito.jpg) no-repeat 0px 0px;
     background-size: cover;
     min-height: 620px;
 }
 
 .home-backgroundsquare{
-    background: url(../images/_MG_5263_ok_nyito.JPG) no-repeat 0px 0px;
+    background: url(../images/_MG_5263_ok_nyito.jpg) no-repeat 0px 0px;
     background-size: cover;
     min-height: 320px;
 }
@@ -237,13 +237,13 @@ h2{
 }
 
 .indservice-background{
-    background: url(../images/_MG_5385_ok_magan.JPG) no-repeat 0px 0px;
+    background: url(../images/_MG_5385_ok_magan.jpg) no-repeat 0px 0px;
     background-size: cover;
     min-height: 520px;
 }
 
 .coachprivate-backgroundsquare{
-    background: url(../images/_MG_5385_ok_magan.JPG) no-repeat 30% 0px;
+    background: url(../images/_MG_5385_ok_magan.jpg) no-repeat 30% 0px;
     background-size: cover;
     min-height: 320px;
 }
@@ -1108,7 +1108,7 @@ padding:2em 0 0.5em 0;
 /*--responsive--*/
 @media (max-width: 1280px){
 .about-left {
-  background: url(../images/_MG_5526_ok_kepzettseg.JPG) no-repeat 0px -77px;
+  background: url(../images/_MG_5526_ok_kepzettseg.jpg) no-repeat 0px -77px;
   min-height: 332px;
   background-size: cover;
 }
@@ -1130,7 +1130,7 @@ padding:2em 0 0.5em 0;
   line-height: inherit;
 }
 .header {
-  background: url(../images/_MG_5263_ok_nyito.JPG) no-repeat 0px 0;
+  background: url(../images/_MG_5263_ok_nyito.jpg) no-repeat 0px 0;
   background-size: cover;
   min-height: 494px;
 }
@@ -1159,7 +1159,7 @@ padding:2em 0 0.5em 0;
   font-size: 1.6em;
 }
 .about-left {
-  background: url(../images/_MG_5526_ok_kepzettseg.JPG) no-repeat 0px -2px;
+  background: url(../images/_MG_5526_ok_kepzettseg.jpg) no-repeat 0px -2px;
   min-height: 364px;
   background-size: cover;
   width: 33.33%;
@@ -1267,7 +1267,7 @@ padding:2em 0 0.5em 0;
 }
 @media (max-width: 768px){
 .header {
-	   background: url(../images/_MG_5263_ok_nyito.JPG) no-repeat 0px 0;
+	   background: url(../images/_MG_5263_ok_nyito.jpg) no-repeat 0px 0;
 	   background-size:cover;
   min-height: 400px;
 }
@@ -1533,7 +1533,7 @@ padding:2em 0 0.5em 0;
   margin-top: 2em;
 }
 .about-left {
-  background: url(../images/_MG_5526_ok_kepzettseg.JPG) no-repeat 0px -33px;
+  background: url(../images/_MG_5526_ok_kepzettseg.jpg) no-repeat 0px -33px;
   min-height: 348px;
   background-size: cover;
   width: 100%;
@@ -1627,7 +1627,7 @@ span.menu {
   background-size: 80px 85px;
 }
 .header {
-  background: url(../images/_MG_5263_ok_nyito.JPG) no-repeat -75px 0px;
+  background: url(../images/_MG_5263_ok_nyito.jpg) no-repeat -75px 0px;
   background-size: cover;
   min-height: 335px;
 }
@@ -1688,7 +1688,7 @@ span.menu {
 }
 @media(max-width:414px){
 .header {
-  background: url(../images/_MG_5263_ok_nyito.JPG) no-repeat -124px 0px;
+  background: url(../images/_MG_5263_ok_nyito.jpg) no-repeat -124px 0px;
   background-size: cover;
 }
 .banner-info {
@@ -1700,7 +1700,7 @@ span.menu {
 }
 @media(max-width:384px){
 .header {
-  background: url(../images/_MG_5263_ok_nyito.JPG) no-repeat -115px 0px;
+  background: url(../images/_MG_5263_ok_nyito.jpg) no-repeat -115px 0px;
   background-size: cover;
   min-height: 335px;
 }
@@ -1754,7 +1754,7 @@ span.menu {
 }
 .about-left {
   min-height: 204px;
-  background: url(../images/_MG_5526_ok_kepzettseg.JPG) no-repeat 0px 0px;
+  background: url(../images/_MG_5526_ok_kepzettseg.jpg) no-repeat 0px 0px;
   background-size:cover;
 }
 .about-right h3, .service h3, .gallery h3, .blog h3, .contact h3 {
