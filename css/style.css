@@ -258,13 +258,18 @@ h2{
     background-size: cover;
 }
 
-.company-logos{
+/*.company-logos{
     background: url(../images/logok1.png) no-repeat 50%;
     background-size: cover;
     min-height: 480px;
     width: 80%;
     margin: auto;
+}*/
+
+.company-logos img{
+    width: 250px;
 }
+
 .education-background{
     background: url(../images/oklevelek.jpg) no-repeat 0px 10px;
     background-size: cover;
@@ -1205,10 +1210,14 @@ padding:2em 0 0.5em 0;
 .top-menu ul li a {
   padding: 0 1em;
 }
-.company-logos{
+/*.company-logos{
     background: url(../images/logok1.png) no-repeat 50% 0px;
     background-size: cover;
     min-height: 420px;
+}*/
+
+.company-logos img{
+    width: 200px;
 }
 
 .icon-pic {
@@ -1495,8 +1504,8 @@ padding:2em 0 0.5em 0;
   padding: 0 0px 0 45px;
 }
 
-.company-logos{
-    width: 100%;
+.company-logos img{
+    width: 40%;
 }
 .banner-info,
 .image-title {
