@@ -1044,6 +1044,10 @@ font-size: 14px;
 margin-top:1.5em;
 }
 */
+.social{
+    display: none;
+}
+
 .social i {
 width: 27px;
 height: 27px;
