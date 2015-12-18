@@ -54,8 +54,16 @@ strong{
 .title-color {
     color:#d06079 !important;
 }
+
+.white{
+    color: white;
+}
 .uppercase {
     text-transform: uppercase;
+}
+
+.center{
+    text-align: center;
 }
 
 #header1,
@@ -145,7 +153,7 @@ span.menu {
 }
 .tile {
     position: relative;
-    width: 50%;
+    width: 33.33%;
     float: left;
     overflow: hidden;
 
@@ -171,8 +179,15 @@ h2{
     width: 100%;
 }
 .image{
-    height: 445px;
+    height: 250px;
     display: inline-block;
+}
+
+.tile a{
+    position: relative;
+    top:225px;
+    margin: 20% 0 0 20%;
+    font-size: 20px;
 }
 .tile:hover .bg-filter{
 /*    background-color: rgba(0, 0, 0, 0.38);*/
@@ -196,8 +211,15 @@ h2{
 	-ms-transition: All 0.5s ease;
     zoom:1;
 }
+.tile h2,
+.tile p{
+    display: none;
+}
 
-
+.tile a:hover{
+    color: black;
+    text-decoration: none;
+}
 .header{
   min-height: 750px;
   font-family: 'Titillium Web', sans-serif;
@@ -214,20 +236,71 @@ h2{
     min-height: 620px;
 }
 
-.home-backgroundsquare{
-    background: url(../images/nyito.jpg) no-repeat 0px 0px;
-    background-size: cover;
-    min-height: 320px;
+.methodology-background{
+    background: url(../images/nyito_modszertan_grey.png) no-repeat 0px 0px;
+    background-size: contain;
+    height: 940px;
+    min-height: 620px;
 }
 
-.method-backgroundsquare{
-    background: url(../images/modszertansquare.png) no-repeat 50% 0px;
+.home-backgroundsquare{
+    background: url(../images/nyito_medium_square.jpg) no-repeat 0px 0px;
     background-size: cover;
-    min-height: 320px;
+    min-height: 230px;
+}
+
+
+
+.greensquare{
+    background-color: rgba(33,188,33,1);
+    background-size: cover;
+    min-height: 150px;
+}
+
+.yellowsquare{
+    background-color: rgba(255,255,0,1);
+    background-size: cover;
+    min-height: 150px;
+}
+
+
+.orangesquare{
+    background-color: rgba(255,127,0,1);
+    background-size: cover;
+    min-height: 150px;
+}
+
+.redsquare{
+    background-color: rgba(255,0,0,1);
+    background-size: cover;
+    min-height: 150px;
+}
+
+.violetsquare{
+    background-color: #d06079;
+    background-size: cover;
+    min-height: 150px;
+}
+
+.indigosquare{
+    background-color: rgba(75,0,130,1);
+    background-size: cover;
+    min-height: 150px;
+}
+
+.bluesquare{
+    background-color: rgba(0,0,255,1);
+    background-size: cover;
+    min-height: 150px;
+}
+.method-backgroundsquare{
+    background: url(../images/nyito_modszertan_square_grey_medium.png) no-repeat 50% 50%;
+    background-size: cover;
+    min-height: 230px;
 }
 
 .coachorg-backgroundsquare{
-    background: url(../images/szervezeteknek.jpg) no-repeat 0px 0px;
+    background: url(../images/szervezeteknek.jpg) no-repeat 30% 90px;
     background-size: cover;
     min-height: 320px;
 }
@@ -244,19 +317,20 @@ h2{
 }
 
 .coachprivate-backgroundsquare{
-    background: url(../images/magan.jpg) no-repeat 30% 0px;
+    background: url(../images/magan.jpg) no-repeat 50% 50%;
     background-size: cover;
     min-height: 320px;
 }
 
 .quotes-backgroundsquare{
-    background: url(../images/rolammondtak.jpg) no-repeat 0px 0px;
+    background: url(../images/rolammondtak.jpg) no-repeat 50% 50%;
     background-size: cover;
     min-height: 320px;
 }
 .education-backgroundsquare{
-    background: url(../images/oklevelek_square.jpg) no-repeat 0px 0px;
+    background: url(../images/oklevelek_square.jpg) no-repeat 50% 50%;
     background-size: cover;
+    min-height: 320px;
 }
 
 /*.company-logos{
@@ -586,7 +660,7 @@ hr{
 .methodology-left{
 	float: left;
     width: 100%;
-    min-height: 275px;
+    min-height: 175px;
 /*    background-color: #F1F1ED;*/
     background: url(../images/modszertan.png) no-repeat 0px 0px;
     background-size: contain;
@@ -1139,11 +1213,12 @@ padding:2em 0 0.5em 0;
   font-size: 2em;
   line-height: inherit;
 }
-.header {
+.header{
+   min-height: 740px;
+}
+.home-background {
   background: url(../images/nyito_compress.jpg) no-repeat 0px 0;
   background-size: cover;
-
-  min-height: 740px;
 }
 }
 @media (max-width: 1024px){
@@ -1279,13 +1354,16 @@ padding:2em 0 0.5em 0;
 }
 @media (max-width: 768px){
 .header {
-  background: url(../images/nyito_medium.jpg) 50% 50% no-repeat;
-  background-size:cover;
   min-height: 400px;
 }
 
+.home-background {
+  background: url(../images/nyito_medium.jpg) 50% 50% no-repeat;
+  background-size:cover;
+}
+
  .tile{
-  width: 100%;
+  width: 50%;
 }
 
 .banner-info h2,
@@ -1629,9 +1707,11 @@ span.menu {
   background-size: 80px 85px;
 }
 .header {
+  min-height: 335px;
+}
+.home-background {
   background: url(../images/nyito_medium.jpg) no-repeat 0px 0px;
   background-size: cover;
-  min-height: 335px;
 }
 
 .banner-info h2,
@@ -1704,7 +1784,7 @@ span.menu {
 }
 }
 @media(max-width:414px){
-.header {
+.home-background {
   background: url(../images/nyito_medium.jpg) no-repeat -124px 0px;
   background-size: cover;
 }
@@ -1717,9 +1797,11 @@ span.menu {
 }
 @media(max-width:384px){
 .header {
+  min-height: 335px;
+}
+.home-background {
   background: url(../images/nyito_medium.jpg) no-repeat -115px 0px;
   background-size: cover;
-  min-height: 335px;
 }
 .banner-info,
 .image-title{
@@ -1734,9 +1816,11 @@ span.menu {
   left: 35%;
 }
 .header {
+  min-height: 276px;
+}
+.home-background {
   background: url(../images/nyito_medium.jpg) no-repeat -95px 0px;
   background-size: cover;
-  min-height: 276px;
 }
 .banner-info,
 .image-title{
