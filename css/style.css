@@ -164,6 +164,13 @@ h2{
     clear:both;
 }
 
+.left{
+    float: left !important;
+}
+
+.italic{
+    font-style: italic;
+}
 .cred{
     clear: both;
 }
@@ -322,7 +329,8 @@ h2{
     min-height: 320px;
 }
 
-.quotes-backgroundsquare{
+.quotes-backgroundsquare,
+.quotes-background{
     background: url(../images/rolammondtak.jpg) no-repeat 50% 50%;
     background-size: cover;
     min-height: 320px;
@@ -618,11 +626,18 @@ label{
     font-size: 20px;
 }
 
+.quotes a{
+    text-decoration: none;
+}
+
 hr{
     border:1px solid #9F9F9F;
 }
 
-
+.quotes-content{
+    max-height: 17em;
+    margin-bottom: 1em;
+}
 
 .methodology-right{
 /*	width:51.8%;*/
@@ -1595,6 +1610,12 @@ padding:2em 0 0.5em 0;
   font-size: 0.85em;
   margin-top: 1em;
 }
+
+/* Show only 4 lines in smaller screens */
+.quotes-content {
+  max-height: 24em; /* (4 * 1.5 = 6) */
+}
+
 .futr-grid {
   width: 100%;
   padding: 0;
