@@ -491,6 +491,18 @@ h2{
     text-align: center;
 }
 
+.corpservice.banner-info{
+    margin-top:10px !important;
+    width: 45% !important;
+
+}
+
+.corpservice img{
+    height:150px;
+    margin-left: 10%;
+}
+
+
 .banner-info h2,
 .image-title h2{
 	color:#fff;
@@ -534,6 +546,7 @@ h2{
 label{
 	 font-weight:normal;
 }
+
 
 
 .bg-filter{
@@ -639,6 +652,9 @@ hr{
     margin-bottom: 1em;
 }
 
+.futr-grid{
+    padding: 0 0 0 10px !important;
+}
 .methodology-right{
 /*	width:51.8%;*/
 	float:left;
@@ -648,7 +664,8 @@ hr{
 }
 .methodology-right h4,
 .methodology-content h4,
-.intro h4{
+.intro h4,
+.corpservice h4{
 	font-size:1.5em;
     text-align: center;
     font-weight: 700;
@@ -791,8 +808,10 @@ hr{
 }
 .icon-info {
   float: left;
+/*
   width: 74%;
   margin-left: 3%;
+*/
 }
 .icon-info h4 a {
   color: #3E3E3E;
@@ -801,9 +820,10 @@ hr{
   display: inline-block;
   font-family: 'Dosis-Medium';
 }
-.icon-info p {
-  font-size: 1em;
-  line-height: 1.8em;
+.icon-info p,
+.icon-info li{
+  font-size: 16px;
+  line-height: 1.6em;
   color: #999;
   margin-top:0.7em;
 }
@@ -1316,16 +1336,12 @@ padding:2em 0 0.5em 0;
 .icon-pic {
   width: 25%;
 }
-.icon-info {
-  width: 72%;
-}
+
 .futr-grid{
-  width: 50%;
+/*  width: 50%;*/
   float: left;
 }
-.icon-info p {
-  font-size: 0.9em;
-}
+
 .glyphicon-phone:before, .glyphicon-thumbs-up:before, .glyphicon-picture:before, .glyphicon-user:before {
   font-size: 27px;
 }
@@ -1561,6 +1577,10 @@ padding:2em 0 0.5em 0;
   background-size: 95px 95px;
 }
 
+.corpservice.banner-info{
+    float: left;
+    text-align: center;
+}
 .content p,
 .content li,
 .content ul,
@@ -1768,7 +1788,6 @@ span.menu {
   margin-left: 4%;
 }
 .icon-info p {
-  font-size: 0.85em;
   margin-top: 0.5em;
 }
 .icon-info h4 a {
