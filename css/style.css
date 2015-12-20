@@ -655,6 +655,10 @@ hr{
 .futr-grid{
     padding: 0 0 0 10px !important;
 }
+
+.icon-info ul{
+    padding-left: 15px;
+}
 .methodology-right{
 /*	width:51.8%;*/
 	float:left;
@@ -825,7 +829,7 @@ hr{
   font-size: 16px;
   line-height: 1.6em;
   color: #999;
-  margin-top:0.7em;
+/*  margin-top:0.7em;*/
 }
 .service-grids{
 	margin-top:3.5em;
