@@ -322,6 +322,18 @@ h2{
     min-height: 520px;
 }
 
+.corpservice-backgroundgreen{
+    background: url(../images/szervezeteknek_large%20green.png) no-repeat 0px 0px;
+    background-size: cover;
+    min-height: 520px;
+}
+
+.corpservice-backgroundgrey{
+    background: url(../images/szervezeteknek_large%20grey.png) no-repeat 0px 0px;
+    background-size: cover;
+    min-height: 520px;
+}
+
 .indservice-background{
     background: url(../images/magan.jpg) no-repeat 0px 0px;
     background-size: cover;
