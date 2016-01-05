@@ -47,6 +47,7 @@ body{
 	margin:0 0;
 /*    font-family: 'Dosis-Regular', sans-serif;*/
     font-family: 'calibry';
+    color: #848484;
 }
 strong{
     color: black;
@@ -717,7 +718,7 @@ hr{
     text-align: left !important;
 }
 .methodology-right p{
-	color:#999;
+	color:#848484;
 	font-size:1em;
 	line-height:1.8em;
 	margin-top:0.5em;
@@ -916,7 +917,7 @@ hr{
 .about p,
 .about-right p{
 /*	color:#999;*/
-    color:#333333;
+    color:#848484;
 	font-size:20px;
 	line-height:24px;
 	margin-top:0.5em;
@@ -1038,7 +1039,7 @@ img.img-responsive.glry-img {
   margin-top:0.7em;
 }
 .blog-grid p{
-	color:#999;
+	color:#848484;
 	line-height:1.8em;
 	font-size:1em;
 	margin-top:1em;
@@ -1084,7 +1085,7 @@ a.blogs:hover{
 .touch-left form  input[type="text"] {
   width: 33%;
   margin: 7px auto;
-  color: #999;
+  color: #848484;
   background: none;
   padding: 10px 10px;
   outline: none;
