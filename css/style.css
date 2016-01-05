@@ -316,20 +316,26 @@ h2{
     background-size: cover;
     min-height: 320px;
 }
-.corpservice-background{
-    background: url(../images/szervezeteknek.jpg) no-repeat 0px 0px;
+.corpservice-background1{
+    background: url(../images/szervezeteknek1.jpg) no-repeat 0px 0px;
     background-size: cover;
     min-height: 520px;
 }
 
-.corpservice-backgroundgreen{
-    background: url(../images/szervezeteknek_large%20green.png) no-repeat 0px 0px;
+.corpservice-background2{
+    background: url(../images/szervezeteknek2.jpg) no-repeat 0px 0px;
     background-size: cover;
     min-height: 520px;
 }
 
-.corpservice-backgroundgrey{
-    background: url(../images/szervezeteknek_large%20grey.png) no-repeat 0px 0px;
+.corpservice-background3{
+    background: url(../images/szervezeteknek3.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    min-height: 520px;
+}
+
+.corpservice-background4{
+    background: url(../images/szervezeteknek4.jpg) no-repeat 0px 0px;
     background-size: cover;
     min-height: 520px;
 }
