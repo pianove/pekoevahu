@@ -606,7 +606,8 @@ label{
     padding:1em;
 }
 
-.methodology-content h3{
+.methodology-content h3,
+.individual-content h3{
     color:#d06079;
 	font-size:1.2em;
     padding: 20px 10px 20px 10px;
@@ -616,6 +617,13 @@ label{
     line-height: 1.2;
 }
 
+.individual-content {
+    font-size: 20px;
+}
+
+.individual-content ul{
+    margin-left: 2em;
+}
 /*
 .intro ul,
 .methodology-content ul{
