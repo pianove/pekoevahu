@@ -21,9 +21,26 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 }
 
 
+
 * {
     font-family:'Calibry', sans-serif;
 /*    font-size:16px;*/
+}
+
+.container.volkhov *{
+    font-family: 'Volkhov', sans-serif;
+}
+
+.container.martel *{
+    font-family: 'Martel', sans-serif;
+}
+
+.container.kanit *{
+    font-family: 'Kanit', sans-serif;
+}
+
+.container.source *{
+    font-family: 'Source Sans Pro',sans-serif;
 }
 
 body a{
