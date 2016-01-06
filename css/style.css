@@ -23,7 +23,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 * {
     font-family:'Calibry', sans-serif;
-/*    font-size:18px;*/
+/*    font-size:16px;*/
 }
 
 body a{
@@ -48,6 +48,7 @@ body{
 /*    font-family: 'Dosis-Regular', sans-serif;*/
     font-family: 'calibry';
     color: #848484;
+    font-size: 16px;
 }
 strong{
     color: black;
@@ -132,6 +133,7 @@ span.menu {
 
 .top-menu{
   position: relative;
+  font-size: 14px;
 }
 
 .top-menu ul li a {
@@ -337,6 +339,12 @@ h2{
 
 .corpservice-background4{
     background: url(../images/szervezeteknek4.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    min-height: 520px;
+}
+
+.corpservice-background5{
+    background: url(../images/szervezeteknek5.jpg) no-repeat 0px 0px;
     background-size: cover;
     min-height: 520px;
 }
