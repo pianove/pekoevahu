@@ -343,6 +343,12 @@ h2{
     min-height: 520px;
 }
 
+.corpservice-background5{
+    background: url(../images/szervezeteknek5.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    min-height: 520px;
+}
+
 .indservice-background{
     background: url(../images/magan.jpg) no-repeat 0px 0px;
     background-size: cover;
