@@ -256,7 +256,7 @@ h2{
     text-decoration: none;
 }
 .header{
-  min-height: 750px;
+/*  min-height: 750px;*/
   font-family: 'Titillium Web', sans-serif;
 }
 
@@ -274,7 +274,6 @@ h2{
 .methodology-background{
     background: url(../images/nyito_modszertan_grey.png) no-repeat 0px 0px;
     background-size: contain;
-    height: 940px;
     min-height: 620px;
 }
 
@@ -1315,9 +1314,11 @@ padding:2em 0 0.5em 0;
   font-size: 2em;
   line-height: inherit;
 }
+/*
 .header{
    min-height: 740px;
 }
+*/
 .home-background {
   background: url(../images/nyito_compress.jpg) no-repeat 0px 0;
   background-size: cover;
@@ -1338,7 +1339,7 @@ padding:2em 0 0.5em 0;
 }
 
 .header {
-  height: 783px;
+/*  height: 783px;*/
   width: 100%;
 }
 .logo {
