@@ -7,6 +7,7 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 
+/*
 @font-face {
    font-family: 'Dosis-Regular';
    src: url(../fonts/Dosis-Regular.ttf) format('truetype');
@@ -20,13 +21,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
    src: url(../fonts/Dosis-Bold.ttf) format('truetype');
 }
 
+*/
 
 
 * {
-    font-family:'Calibry', sans-serif;
+    font-family:'Source Sans Pro', sans-serif;
 /*    font-size:16px;*/
 }
 
+/*
 .container.volkhov *{
     font-family: 'Volkhov', sans-serif;
 }
@@ -42,6 +45,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 .container.source *{
     font-family: 'Source Sans Pro',sans-serif;
 }
+*/
 
 body a{
     transition:0.5s all;
@@ -63,7 +67,7 @@ body{
 	padding:0 0;
 	margin:0 0;
 /*    font-family: 'Dosis-Regular', sans-serif;*/
-    font-family: 'calibry';
+    font-family: 'Source Sans Pro';
     color: #848484;
     font-size: 16px;
 }
@@ -101,7 +105,6 @@ strong{
 .logo h1 a {
   display: inline-block;
   color: #fff;
-  font-family: 'Parisienne',cursive;
   font-size: 80%;
   text-decoration: none;
   background:#d06079;
@@ -159,7 +162,7 @@ span.menu {
   padding: 0 2em;
   text-decoration: none;
   font-weight: 100;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .top-menu ul li a .scroll .right {
@@ -253,7 +256,7 @@ h2{
     text-decoration: none;
 }
 .header{
-  min-height: 750px;
+/*  min-height: 750px;*/
   font-family: 'Titillium Web', sans-serif;
 }
 
@@ -271,7 +274,6 @@ h2{
 .methodology-background{
     background: url(../images/nyito_modszertan_grey.png) no-repeat 0px 0px;
     background-size: contain;
-    height: 940px;
     min-height: 620px;
 }
 
@@ -407,7 +409,7 @@ h2{
     background-size: cover;
     opacity: 0.3;
     transition: opacity 2s ease;
-    min-height: 320px;
+    min-height: 520px;
 }
 
 .education-background:hover,
@@ -498,7 +500,7 @@ h2{
 .about.banner-info h2{
 /*	color: black;*/
     color:#d06079;
-    font-size: 1.5em;
+/*    font-size: 1.5em;*/
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 1px;
@@ -666,10 +668,10 @@ label{
 }
 
 
-.bold{
+/*.bold{
     font-family: 'Dosis-Regular';
     font-weight: 700;
-}
+}*/
 
 .grey{
     color:#595959;
@@ -885,7 +887,6 @@ hr{
   font-size: 1.3em;
   text-decoration: none;
   display: inline-block;
-  font-family: 'Dosis-Medium';
 }
 .icon-info p,
 .icon-info li{
@@ -908,7 +909,7 @@ hr{
 .about-right h3,.service h3,.gallery h3,.blog h3,.contact h3, .intro h3{
 	color:#d06079;
 	font-size:1.5em;
-	font-family: 'Calibry' sans-serif;
+	font-family: 'Source Sans Pro' sans-serif;
 	text-align:center;
     text-transform: uppercase;
     font-weight: 700;
@@ -1068,7 +1069,6 @@ img.img-responsive.glry-img {
   font-size: 1.3em;
   text-decoration: none;
   display: inline-block;
-  font-family: 'Dosis-Medium';
   margin-top:0.7em;
 }
 .blog-grid p{
@@ -1079,7 +1079,6 @@ img.img-responsive.glry-img {
 }
 .blog-grid span {
 	font-size:1em;
-	 font-family: 'Dosis-Bold';
 	 margin-top:6px;
 	   display: block;
 }
@@ -1315,9 +1314,11 @@ padding:2em 0 0.5em 0;
   font-size: 2em;
   line-height: inherit;
 }
+/*
 .header{
    min-height: 740px;
 }
+*/
 .home-background {
   background: url(../images/nyito_compress.jpg) no-repeat 0px 0;
   background-size: cover;
@@ -1338,7 +1339,7 @@ padding:2em 0 0.5em 0;
 }
 
 .header {
-  height: 783px;
+/*  height: 783px;*/
   width: 100%;
 }
 .logo {
