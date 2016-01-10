@@ -409,7 +409,7 @@ h2{
     background-size: cover;
     opacity: 0.3;
     transition: opacity 2s ease;
-    min-height: 320px;
+    min-height: 520px;
 }
 
 .education-background:hover,
@@ -500,7 +500,7 @@ h2{
 .about.banner-info h2{
 /*	color: black;*/
     color:#d06079;
-    font-size: 1.5em;
+/*    font-size: 1.5em;*/
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 1px;
