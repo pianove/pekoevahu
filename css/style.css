@@ -257,6 +257,7 @@ span.menu {
 .top-menu ul li:nth-child(3) {
   margin-right: 13em;
 }
+
 .tile {
     position: relative;
     width: 33.33%;
@@ -340,7 +341,7 @@ h2{
 }
 .header{
 /*  min-height: 750px;*/
-  font-family: 'Titillium Web', sans-serif;
+/*  font-family: 'Titillium Web', sans-serif;*/
 }
 
 .about{
@@ -596,7 +597,7 @@ h2{
     text-align: center;
     letter-spacing: 1px;
     font-weight: 700;
-    font-family: 'Titillium Web', sans-serif;
+/*    font-family: 'Titillium Web', sans-serif;*/
 /*    line-height: 3.34vw;*/
 }
 .about.banner-info p{
@@ -629,7 +630,7 @@ h2{
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 700;
-    font-family: 'Titillium Web', sans-serif;
+/*    font-family: 'Titillium Web', sans-serif;*/
     line-height: normal;
     margin: 10px;
     text-align: center;
@@ -654,7 +655,7 @@ h2{
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
-    font-family: 'Titillium Web', sans-serif;
+/*    font-family: 'Titillium Web', sans-serif;*/
     line-height: normal;
     text-align: center;
 }
