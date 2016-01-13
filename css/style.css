@@ -287,11 +287,11 @@ span.menu {
 }
 
 .rainbow h1{
-      background: url(/images/rainbow_line.gif) bottom center no-repeat;
+      background: url(../images/rainbow_line.gif) bottom center no-repeat;
 }
 
 .grey-line h1{
-    background: url(/images/rainbow_line_grey.gif) bottom center no-repeat;
+    background: url(../images/rainbow_line_grey.gif) bottom center no-repeat;
 
 }
 .header-message{
