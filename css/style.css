@@ -124,7 +124,10 @@ strong{
 
 .logo h1 a:hover,
 .logo h1 a:focus,
-.logo h1 a:active
+.logo h1 a:active,
+#menuIcon:hover,
+#menuIcon:focus,
+#menuIcon:active
 {
  transform: rotate(360deg);
 }
@@ -161,6 +164,18 @@ span.menu {
     width: 24px;
     margin-left: 15px;
     margin-right: 15px;
+}
+
+.menu img{
+    height:44px;
+    width: 44px;
+    border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 4px solid #fff;
+
 }
 
 .menu.right-top-header img{
@@ -220,7 +235,7 @@ span.menu {
 /*.slide-menu ul li a:active,*/
 .right-top-header a:visited
 /*.slide-menu ul li a:visited*/{
-    color:#d06079;
+/*    color:#d06079;*/
 }
 .top-menu ul {
   text-align: justify;
@@ -267,7 +282,7 @@ span.menu {
 }
 
 .header-title h1{
-    background: url(/images/rainbow-line.gif) bottom center no-repeat;
+    background: url(/images/rainbow_line.gif) bottom center no-repeat;
     padding-bottom: 19px;
 }
 
