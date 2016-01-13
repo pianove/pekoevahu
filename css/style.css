@@ -282,15 +282,23 @@ span.menu {
 }
 
 .header-title h1{
-    background: url(images/rainbow_line.gif) bottom center no-repeat;
+
     padding-bottom: 19px;
 }
 
+.rainbow h1{
+      background: url(/images/rainbow_line.gif) bottom center no-repeat;
+}
+
+.grey-line h1{
+    background: url(/images/rainbow_line_grey.gif) bottom center no-repeat;
+
+}
 .header-message{
     width: 100% !important;
     position: relative;
     text-align: center;
-    color: #848484 !important;
+/*    color: #848484 !important;*/
     padding:0px !important;
     margin: 0px 10px 3em 10px !important;
     text-transform: none !important;
