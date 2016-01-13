@@ -1647,6 +1647,7 @@ padding:2em 0 0.5em 0;
 	border: none;
 	text-indent: 100%;
 	background: url("../images/to-top1custom.png") no-repeat 0px 0px;
+    background-size: contain;
 }
 #toTopHover {
 	width: 40px;
