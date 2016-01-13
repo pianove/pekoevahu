@@ -258,11 +258,17 @@ span.menu {
   margin-right: 13em;
 }
 
-.header-title{
+.header-title {
     margin-top: 1em;
     margin-bottom: 3em;
     font-size: 24px;
     text-align: center;
+
+}
+
+.header-title h1{
+    background: url(/images/rainbow-line.gif) bottom center no-repeat;
+    padding-bottom: 19px;
 }
 
 .header-message{
