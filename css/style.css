@@ -235,7 +235,7 @@ span.menu {
 /*.slide-menu ul li a:active,*/
 .right-top-header a:visited
 /*.slide-menu ul li a:visited*/{
-/*    color:#d06079;*/
+    color:#d06079;
 }
 .top-menu ul {
   text-align: justify;
@@ -282,15 +282,23 @@ span.menu {
 }
 
 .header-title h1{
-    background: url(images/rainbow_line.gif) bottom center no-repeat;
+
     padding-bottom: 19px;
 }
 
+.rainbow h1{
+      background: url(/images/rainbow_line.gif) bottom center no-repeat;
+}
+
+.grey-line h1{
+    background: url(/images/rainbow_line_grey.gif) bottom center no-repeat;
+
+}
 .header-message{
     width: 100% !important;
     position: relative;
     text-align: center;
-    color: #848484 !important;
+/*    color: #848484 !important;*/
     padding:0px !important;
     margin: 0px 10px 3em 10px !important;
     text-transform: none !important;
@@ -1639,6 +1647,7 @@ padding:2em 0 0.5em 0;
 	border: none;
 	text-indent: 100%;
 	background: url("../images/to-top1custom.png") no-repeat 0px 0px;
+    background-size: contain;
 }
 #toTopHover {
 	width: 40px;
