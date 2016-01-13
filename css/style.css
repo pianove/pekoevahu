@@ -308,7 +308,8 @@ span.menu {
 }
 .tile {
     position: relative;
-    width: 33.33%;
+/*    width: 33.33%;*/
+    width: 50%;
     float: left;
     overflow: hidden;
 
@@ -333,6 +334,7 @@ h2{
 }
 .cred{
     clear: both;
+
 }
 
 .cred-title h4 {
@@ -341,20 +343,30 @@ h2{
 
 }
 .mosaic {
-    padding:0;
-    margin:0;
-    width: 100%;
+    padding:3em;
+    margin:2em 0;
+/*    width: 100%;*/
+    width: 900px;
+    display: block;
 }
 .image{
-    height: 250px;
+    height: 235px;
+    width: 400px;
+    margin: 1px;
     display: inline-block;
+    background-size: contain;
 }
 
-.tile a{
-    position: relative;
-    top:225px;
-    margin: 20% 0 0 20%;
+.ny-menu-title{
+    position: absolute;
+    top:125px;
+    margin: 0 25%;
     font-size: 20px;
+    text-transform: uppercase;
+    -webkit-transition: All 0.5s ease;
+	-moz-transition: All 0.5s ease;
+	-o-transition: All 0.5s ease;
+	-ms-transition: All 0.5s ease;
 }
 .tile:hover .bg-filter{
 /*    background-color: rgba(0, 0, 0, 0.38);*/
@@ -364,14 +376,15 @@ h2{
 .tile:hover .image-title-filter,
 .tile:focus .image-title-filter{
     opacity:1 !important;
-    bottom:10%;
+    bottom:0%;
 }
 
 .tile .image-title-filter{
     opacity:0;
-	position:absolute;
+/*	position:absolute;*/
 	bottom: 0%;
 	width:100%;
+    height: 100%;
 	-webkit-transition: All 0.5s ease;
 	-moz-transition: All 0.5s ease;
 	-o-transition: All 0.5s ease;
@@ -382,6 +395,15 @@ h2{
 .tile p{
     display: none;
 }
+
+.tile:hover .ny-menu-title,
+.tile:focus .ny-menu-title{
+    transform: translate3d(0,80px,0);
+    z-index: 999;
+    text-transform: capitalize;
+    color:black;
+}
+
 
 .tile a:hover{
     color: black;
@@ -404,7 +426,7 @@ h2{
 }
 
 .methodology-background{
-    background: url(../images/nyito_modszertan_grey.png) no-repeat 0px 0px;
+    background: url(../images/nyito_modszertan_blue.png) no-repeat 0px 0px;
     background-size: contain;
     min-height: 620px;
 }
@@ -412,9 +434,33 @@ h2{
 .home-backgroundsquare{
     background: url(../images/nyito_medium_square.jpg) no-repeat 0px 0px;
     background-size: cover;
-    min-height: 230px;
+    height: 235px;
+    width: 400px;
 }
 
+.cut1{
+    background: url(../images/logocut1.gif) no-repeat 0px 0px;
+}
+
+.cut2{
+    background: url(../images/logocut2.gif) no-repeat 0px 0px;
+}
+
+.cut3{
+    background: url(../images/logocut3.gif) no-repeat 0px 0px;
+}
+
+.cut4{
+    background: url(../images/logocut4.gif) no-repeat 0px 0px;
+}
+
+.cut5{
+    background: url(../images/logocut5.gif) no-repeat 0px 0px;
+}
+
+.cut6{
+    background: url(../images/logocut6.gif) no-repeat 0px 0px;
+}
 
 
 .greensquare{
@@ -460,15 +506,16 @@ h2{
     min-height: 150px;
 }
 .method-backgroundsquare{
-    background: url(../images/nyito_modszertan_square_grey_medium.png) no-repeat 50% 50%;
+    background: url(../images/nyito_modszertan_blue.png) no-repeat 50% 50%;
     background-size: cover;
-    min-height: 230px;
+    min-height: 235px;
+    width:400px;
 }
 
 .coachorg-backgroundsquare{
-    background: url(../images/szervezeteknek.jpg) no-repeat 30% 90px;
+    background: url(../images/szervezeteknek.jpg) no-repeat ;
     background-size: cover;
-    min-height: 320px;
+    min-height: 235px;
 }
 .corpservice-background1{
     background: url(../images/szervezeteknek1.jpg) no-repeat 0px 0px;
@@ -509,14 +556,14 @@ h2{
 .coachprivate-backgroundsquare{
     background: url(../images/magan.jpg) no-repeat 50% 50%;
     background-size: cover;
-    min-height: 320px;
+    min-height: 235px;
 }
 
 .quotes-backgroundsquare,
 .quotes-background{
     background: url(../images/rolammondtak.jpg) no-repeat 50% 50%;
     background-size: cover;
-    min-height: 320px;
+    min-height: 235px;
 }
 
 .quotes-background{
@@ -529,7 +576,7 @@ h2{
 .education-backgroundsquare{
     background: url(../images/oklevelek_square.jpg) no-repeat 50% 50%;
     background-size: cover;
-    min-height: 320px;
+    min-height: 235px;
 }
 
 /*.company-logos{
@@ -1834,9 +1881,11 @@ padding:2em 0 0.5em 0;
   background-size:cover;
 }
 
+/*
  .tile{
   width: 50%;
 }
+*/
 
 .banner-info h2,
 .image-title h2{
@@ -2188,8 +2237,18 @@ a.blogs {
     .col-lg-6 {
         width: 50%;
     }
+    .mosaic
+    {
+        margin: auto;
+    }
+    .cred{
+        width: 900px;
+        margin: auto;
+    }
+
 
 }
+
 
 
 @media(max-width:480px){
