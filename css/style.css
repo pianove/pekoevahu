@@ -349,6 +349,13 @@ span.menu {
     font-size: 26px !important;
 */
 }
+
+.menu3x2{
+    background: url(../images/nyito_logo3x2.jpg) no-repeat cover;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
+}
 .tile {
     position: relative;
 /*    width: 33.33%;*/
@@ -464,8 +471,18 @@ h2{
 .home-background{
     background: url(../images/nyito_compress.jpg) no-repeat 0px 0px;
     background-size: cover;
-    height: 940px;
-    min-height: 620px;
+    height: 480px;
+/*    min-height: 620px;*/
+}
+
+#mirage{
+    display: none;
+}
+.home-mirage{
+    background: url(../images/nyito_banner.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    height: 480px;
+/*    min-height: 620px;*/
 }
 
 .methodology-background{

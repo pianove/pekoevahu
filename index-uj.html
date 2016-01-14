@@ -133,7 +133,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="header-container">
     <div class="header-title title-color grey-line"><h1>Bemutatkozás</h1></div>
     <div class="header-message">
-				 <p class="header-message">Célom, hogy az ügyfeleim megtapasztalják az önmagukban levő képességek és lehetőségek felszabadító erejét.</p>
+				 <p class="header-message">Célom, hogy az ügyfeleim megtapasztalják az önmagukban levő képességek és lehetőségek felszabadító erejét.<a class="switch" href="#mirage">hogy lasd az aranyokat: kisebb kep szeles kepernyon...</a><a class="back"> vissza</a></p>
 
     </div>
 </div>
@@ -150,7 +150,32 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			 <div class="clearfix"></div>
 		</div>
     </a>
-</div>
+    <script>
+							$(".switch").click(function(){
+								$(".header.home-background").hide();
+                                $("#mirage").show();
+							});
+
+        $(".back").click(function(){
+								$(".header.home-background").show();
+                                $("#mirage").hide();
+							});
+				 </script>
+
+    <div id="mirage" class="header home-mirage">
+
+    <a href=#intro class="scroll">
+
+			 <!--<div class="banner-info">
+				 <h2>CÉLOM, HOGY AZ ÜGYFELEIM MEGTAPASZTALJÁK AZ ÖNMAGUKBAN LEVŐ KÉPESSÉGEK ÉS LEHETŐSÉGEK FELSZABADÍTÓ EREJÉT.</h2>
+				 <p>CÉLOM, HOGY AZ ÜGYFELEIM MEGTAPASZTALJÁK AZ ÖNMAGUKBAN LEVŐ KÉPESSÉGEK ÉS LEHETŐSÉGEK FELSZABADÍTÓ EREJÉT.
+</p>
+-->
+
+			 <div class="clearfix"></div>
+		</div>
+    </a>
+
 <div id="intro" class="intro">
     <div class="container"><br>
         <p>Coachként egyéneket és csoportokat támogatok céljaik elérésében, amely során az élet bátor megélésére, <strong>az önmagunkért való kiállásra</strong> és felelősségvállalásra bíztatom ügyfeleimet.</p>
@@ -220,7 +245,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 });
 </script>
 <a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-<!---->
+<!----></div>
 </div>
 
 </body>
