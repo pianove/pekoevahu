@@ -454,7 +454,9 @@ h2{
     color:black;
 }
 
-
+.ny-menu-title i{
+    margin-left: 35%;
+}
 .tile a:hover{
     color: black;
     text-decoration: none;
