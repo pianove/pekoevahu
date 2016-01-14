@@ -474,6 +474,19 @@ h2{
     height: 480px;
 /*    min-height: 620px;*/
 }
+#scrollDown{
+	text-decoration: none;
+	position: absolute;
+	top: 500px;
+	right: 3%;
+/*	overflow: hidden;*/
+	width: 60px;
+	height: 60px;
+	border: none;
+	text-indent: 100%;
+	background: url("../images/open.png") no-repeat 0px 0px;
+    background-size: contain;
+}
 
 #mirage{
     display: none;
@@ -1749,16 +1762,16 @@ padding:2em 0 0.5em 0;
 	bottom: 14px;
 	right: 3%;
 	overflow: hidden;
-	width: 40px;
-	height: 40px;
+	width: 60px;
+	height: 60px;
 	border: none;
 	text-indent: 100%;
 	background: url("../images/to-top1custom.png") no-repeat 0px 0px;
     background-size: contain;
 }
 #toTopHover {
-	width: 40px;
-	height: 40px;
+	width: 50px;
+	height: 50px;
 	display: block;
 	overflow: hidden;
 	float: right;
