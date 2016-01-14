@@ -216,7 +216,7 @@ span.menu {
     display: none;
 }
 
-#selectEnglish{
+.home #selectEnglish{
 /*
     margin-right: 14px;
     font-size: 20px;
