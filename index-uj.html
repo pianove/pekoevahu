@@ -31,13 +31,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--<script src="js/move-top.js"></script>
 <script src="js/easing.js"></script>-->
 <script async src="js/all.min.js"></script>
- <script type="text/javascript">
+<script type="text/javascript">
 		jQuery(document).ready(function($) {
 			$(".scroll").click(function(event){
 				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+                var id=$(".page");
+                var target = $(id).offset().top;
+				$('html,body').animate({scrollTop:target},500,function(){
+                    window.location.hash = id;
+                }
+                                      );
 			});
+
+            $(".menu").click(function(){
+				$(".slide-menu ul").slideToggle("slow" , function(){
+				});
+            });
 		});
+
+
 	</script>
 <!--scrolling-->
 </head>
@@ -49,8 +61,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <h2 class="title-color">Pékó Éva </h2>
          <h4>Business és Life Coach, Team és Group Coach,  Önfejlesztési Tréner
 </h4></span>
-        <span class="right-top-header"><a id="selectEnglish"><img src="images/globe.png" alt="english">English</a> <a id="menuTitle" class="menu right-top-header" style="font-size: 25px;">MENÜ<img id="menuIcon" src="images/logosquare_small.gif" alt=""/></a></span>
-        <span class="menu"><img src="images/logosquare_small.gif" alt=""/></span>
+        <span class="right-top-header"><a id="selectEnglish"><img src="images/globe.png" alt="english">English</a> <a id="menuTitle" class="scroll menu right-top-header" style="font-size: 25px;">MENÜ<img id="menuIcon" src="images/logosquare_small.gif" alt=""/></a></span>
+        <span class="scroll menu"><img src="images/logosquare_small.gif" alt=""/></span>
     </div>
     <div id="slideMenu" class="slide-menu">
      <ul>
@@ -67,12 +79,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                  <li><a class="" href="quotes.html">Rólam mondták</a></li>
         </ul>
 </div>
- <script>
+<!-- <script>
 							$(".menu").click(function(){
 								$(".slide-menu ul").slideToggle("slow" , function(){
 								});
 							});
-				 </script>
+				 </script>-->
 <!--<div id="home" class="top-header">
     <h1 class="title-color">Pékó Éva </h1>
          <h4>Business és Life Coach, Team és group coach,  Önfejlesztési tréner
@@ -187,9 +199,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
          <p>© 2015 - Minden jog fenntartva</p>
          <p>Készítette <i class="fa fa-heart"></i>-tel: <a href="http://www.pianovszkyeniko.hu" target="_blank">Eniko Pianovszky</a>
             <br>
-          Sablon: <a href="http://w3layouts.com/">W3layouts</a></p>
+          <!--Sablon: <a href="http://w3layouts.com/">W3layouts</a></p>-->
 		 <div class="arrow">
-			 <a class="scroll" href="#home"><img src="images/top.png" alt=""></a>
+			 <a class="scroll" href=""><img src="images/top.png" alt=""></a>
 		 </div>
 	 </div>
 </div>

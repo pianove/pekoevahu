@@ -2,35 +2,22 @@
 		jQuery(document).ready(function($) {
 			$(".scroll").click(function(event){
 				event.preventDefault();
-                var id=$(".cred");
+                var id=$(".page");
                 var target = $(id).offset().top;
 				$('html,body').animate({scrollTop:target},500,function(){
                     window.location.hash = id;
                 }
                                       );
 			});
-		});
-	</script></head><body><div class="page"><div id="home" class="home top-header"><span class="left-top-header"><h2 class="title-color">Pékó Éva</h2><h4>Business és Life Coach, Team és Group Coach, Önfejlesztési Tréner</h4></span> <span class="right-top-header"><a id="selectEnglish"><img src="images/globe.png" alt="english">English</a> <a id="menuTitle" class="menu right-top-header" style="font-size: 25px;">MENÜ<img id="menuIcon" src="images/logosquare_small.gif" alt></a></span> <span class="menu"><img src="images/logosquare_small.gif" alt></span></div><div id="slideMenu" class="slide-menu"><ul><li><a><img src="images/globe.png" alt="english">English</a></li><li><a href="#home">Üdvözlöm</a></li><li><a href="index-uj.html">Bemutatkozom</a></li><li><a class href="methodology.html">Módszertanom</a></li><li><a class href="corporateservice.html">Szervezeteknek</a></li><li><a class href="individual.html">Magánszemélyeknek</a></li><li><a class href="background.html">Képzettségem</a></li><li><a class href="quotes.html">Rólam mondták</a></li></ul></div><script>
-							/*$(".menu").click(function(){
-								$(".slide-menu ul").slideToggle("slow" , function(){
-								});
-							});*/
 
-                jQuery(document).ready(function($) {
-                        $(".menu").click(function(event){
-                            event.preventDefault();
-                            var id=$(".page");
-                            var target = $(id).offset().top;
-                            $('html,body').animate({scrollTop:target},500,function(){
-                                window.location.hash = id;
-
-                }
-                                      );
-                            $(".slide-menu ul").slideToggle("slow" , function(){
-								});
-			});
+            $(".menu").click(function(){
+				$(".slide-menu ul").slideToggle("slow" , function(){
+				});
+            });
 		});
-				 </script><script>
+
+
+	</script></head><body><div class="page"><div id="home" class="home top-header"><span class="left-top-header"><h2 class="title-color">Pékó Éva</h2><h4>Business és Life Coach, Team és Group Coach, Önfejlesztési Tréner</h4></span> <span class="right-top-header"><a id="selectEnglish"><img src="images/globe.png" alt="english">English</a> <a id="menuTitle" class="scroll menu right-top-header" style="font-size: 25px;">MENÜ<img id="menuIcon" src="images/logosquare_small.gif" alt></a></span> <span class="scroll menu"><img src="images/logosquare_small.gif" alt></span></div><div id="slideMenu" class="slide-menu"><ul><li><a><img src="images/globe.png" alt="english">English</a></li><li><a href="#home">Üdvözlöm</a></li><li><a href="index-uj.html">Bemutatkozom</a></li><li><a class href="methodology.html">Módszertanom</a></li><li><a class href="corporateservice.html">Szervezeteknek</a></li><li><a class href="individual.html">Magánszemélyeknek</a></li><li><a class href="background.html">Képzettségem</a></li><li><a class href="quotes.html">Rólam mondták</a></li></ul></div><script>
 							$("span.menu").click(function(){
 								$(".top-menu ul").slideToggle("slow" , function(){
 								});
@@ -45,7 +32,7 @@
     $("#header3").click(function(){
     $(".header").css("background-image","url(images/_MG_5321_ok_rolam_mondtakfilter.JPG)");
     });
-            </script></div><div id="contact" class="contact"><div class="container"><h3>HA KÉSZEN ÁLL(SZ), SEGÍTEK A VÁLTOZÁSBAN !</h3><div class="touch-top"><div class="col-md-8 touch-left"><form action="mailTo:coach@pekoeva.hu"><input type="text" value="név" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}"> <input type="text" value="email cím" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"><input type="submit" value="ELKÜLD"></form></div><div class="clearfix"></div></div></div></div><div class="footer"><div class="container"><div class="social"><a href="#"><i class="facebook"></i></a> <a href="#"><i class="twitter"></i></a> <a href="#"><i class="dribble"></i></a> <a href="#"><i class="google"></i></a> <a href="#"><i class="youtube"></i></a></div><br><p>© 2015 - Minden jog fenntartva</p><p>Készítette <i class="fa fa-heart"></i>-tel: <a href="http://www.pianovszkyeniko.hu" target="_blank">Eniko Pianovszky</a><br>Sablon: <a href="http://w3layouts.com/">W3layouts</a></p><div class="arrow"><a class="scroll" href="#page"><img src="images/top.png" alt></a></div></div></div><script type="text/javascript">
+            </script></div><div id="contact" class="contact"><div class="container"><h3>HA KÉSZEN ÁLL(SZ), SEGÍTEK A VÁLTOZÁSBAN !</h3><div class="touch-top"><div class="col-md-8 touch-left"><form action="mailTo:coach@pekoeva.hu"><input type="text" value="név" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}"> <input type="text" value="email cím" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"><input type="submit" value="ELKÜLD"></form></div><div class="clearfix"></div></div></div></div><div class="footer"><div class="container"><div class="social"><a href="#"><i class="facebook"></i></a> <a href="#"><i class="twitter"></i></a> <a href="#"><i class="dribble"></i></a> <a href="#"><i class="google"></i></a> <a href="#"><i class="youtube"></i></a></div><br><p>© 2015 - Minden jog fenntartva</p><p>Készítette <i class="fa fa-heart"></i>-tel: <a href="http://www.pianovszkyeniko.hu" target="_blank">Eniko Pianovszky</a><br>Sablon: <a href="http://w3layouts.com/">W3layouts</a></p><div class="arrow"><a class="scroll" href="#home"><img src="images/top.png" alt></a></div></div></div><script type="text/javascript">
 		$(document).ready(function() {
 				/*
 				var defaults = {
