@@ -212,11 +212,17 @@ span.menu {
 .home #menuTitle{
     display: none;
 }
+.home span.menu{
+    display: none;
+}
 
-/*#selectEnglish{
+#selectEnglish{
+/*
     margin-right: 14px;
     font-size: 20px;
-}*/
+*/
+    padding-top: 2.5em;
+}
 
 .slide-menu {
 	width: 250px;
@@ -250,7 +256,9 @@ span.menu {
   text-decoration: none;
 }
 
-
+.slide-menu ul li:first-child{
+    margin-top: 2em;
+}
 .right-top-header a:hover,
 .slide-menu ul li a:hover,
 .right-top-header a:focus,
@@ -1601,7 +1609,7 @@ a.blogs:hover{
   font-size: 14px;
   cursor: pointer;
   font-weight: 500;
-  margin: 27px 0 0 0px;
+  margin: 27px 0 0 15px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -1983,11 +1991,14 @@ padding:2em 0 0.5em 0;
 }
 }
 @media(max-width:667px){
- span.menu {
+ .home .span.menu {
   display: block;
   text-align: right;
   cursor: pointer;
-  position: relative;
+/*  position: relative;*/
+  position: absolute;
+  top: 0;
+  right: 10px;
   padding: 1em 0;
 }
 
@@ -2022,7 +2033,7 @@ padding:2em 0 0.5em 0;
   font-size:1.4em;
 }
 .top-header {
-  margin: 1em 0;
+/*  margin: 1em 0;*/
 }
 .header {
   min-height: 350px;
@@ -2045,17 +2056,28 @@ padding:2em 0 0.5em 0;
 }
 }
 @media(max-width:640px){
- span.menu {
+ .home span.menu,
+span.menu{
   display: block;
   text-align: right;
   cursor: pointer;
-  position: relative;
-  padding: 1.5em 0;
+/*  position: relative;*/
+/*  padding: 1.5em 0;*/
+  position: absolute;
+  top: 3px;
+  right: 10px;
 }
 .left-top-header {
   text-align: center;
 }
 
+.slide-menu {
+	width: 100%;
+}
+
+.slide-menu ul li{
+        margin-left: 2em;
+}
 #selectEnglish,
 #menuTitle{
   display: none;
@@ -2230,6 +2252,12 @@ a.blogs {
 .touch-left form input[type="text"] {
   width: 100%;
 }
+.touch-left form input[type="submit"] {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
 .map iframe {
   min-height: 250px;
 }
@@ -2287,9 +2315,9 @@ a.blogs {
 
 
 @media(max-width:480px){
-span.menu {
+/*span.menu {
   padding: 0.7em 0;
-}
+}*/
 .logo h1 a {
   font-size: 0.6em;
   padding: 27px 9px;
@@ -2362,7 +2390,6 @@ span.menu {
 }
 .touch-left form input[type=submit] {
   font-size: 12px;
-  margin: 1em 0 0 0px;
   padding: 9px 27px;
 }
 .touch-left form input[type="text"],.touch-left form textarea {
@@ -2413,9 +2440,9 @@ span.menu {
 }
 }
 @media(max-width:320px){
-span.menu {
+/*span.menu {
   padding: 1.2em 0;
-}
+}*/
 .logo {
   left: 35%;
 }

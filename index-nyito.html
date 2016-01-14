@@ -29,8 +29,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script src="js/jquery-1.11.1.min.js"></script>
 <!--<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />-->
 <!--scrolling-->
-<!--<script src="js/move-top.js"></script>
-<script src="js/easing.js"></script>-->
+<!--<script src="js/move-top.js"></script>-->
+<script src="js/easing.js"></script>
 <script async src="js/all.min.js"></script>
  <script type="text/javascript">
 		jQuery(document).ready(function($) {
@@ -62,8 +62,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <div id="slideMenu" class="slide-menu">
      <ul>
          <li><a><img src="images/globe.png" alt="english">English</a></li>
-				<li><a href="index-nyito.html">Üdvözlöm</a></li>
-         <li><a href="#intro">Bemutatkozom</a></li>
+				<li><a href="#home">Üdvözlöm</a></li>
+         <li><a href="index-uj.html">Bemutatkozom</a></li>
          <li><a class="" href="methodology.html">Módszertanom</a></li>
 
 
@@ -75,10 +75,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </ul>
 </div>
  <script>
-							$(".menu").click(function(){
+							/*$(".menu").click(function(){
 								$(".slide-menu ul").slideToggle("slow" , function(){
 								});
-							});
+							});*/
+
+                jQuery(document).ready(function($) {
+                        $(".menu").click(function(event){
+                            event.preventDefault();
+                            var id=$(".page");
+                            var target = $(id).offset().top;
+                            $('html,body').animate({scrollTop:target},500,function(){
+                                window.location.hash = id;
+
+                }
+                                      );
+                            $(".slide-menu ul").slideToggle("slow" , function(){
+								});
+			});
+		});
 				 </script>
 <!--<div id="home" class="top-header">
     <h1 class="title-color">Pékó Éva </h1>
@@ -164,7 +179,8 @@ EREDMÉNYES VÁLLALAT
 
 <div class="tile image cut5"><a href="background.html"><h4 class="white ny-menu-title">Képzettségem</h4><div class="image-title-filter"><div class= "education-backgroundsquare"></div>
 				<h2>FOLYAMATOSAN FEJLESZTEM MAGAM, HOGY EGYÜTT NŐHESSEK ÜGYFELEIMMEL.</h2>
-				</div></a></div>
+				</div></a><div class="clearfix"></div>
+    </div>
 
 
     <div class="tile image cut6">
@@ -173,7 +189,7 @@ EREDMÉNYES VÁLLALAT
         <div class="image-title-filter">
             <div class="method-backgroundsquare"></div>
 				 <h2>A TARTÓS VÁLTOZÁS KULCSA, HOGY A FELMERÜLŐ KÉRDÉSEKET TÖBB SZINTEN IS MEGVIZSGÁLJUK, MELYHEZ INTEGRÁLT MÓDSZERTANT KÍNÁLOK.</h2>
-				</div></a>
+				</div></a><div class="clearfix"></div>
         </div>
 
 
@@ -230,7 +246,7 @@ EREDMÉNYES VÁLLALAT
     </div>
 
 
-    <div class="cred">
+    <!--<div class="cred">
         <h4 class="intro cred-title uppercase">Az alábbi szervezetek kiváló munkatársaival dolgozhattam</h4>
         <div class="company-logos"> <img src="images/logo1.png" alt="Ateknea Solutions">
             <img src="images/logo2.png" alt="Trigranit">
@@ -241,7 +257,7 @@ EREDMÉNYES VÁLLALAT
             <img src="images/logo7.png" alt="X APT New Frontier Group">
             <img src="images/logo8.png" alt="MOVA"></div>
 
-    </div>
+    </div>-->
 
 
 <div id="contact" class="contact">
@@ -289,7 +305,7 @@ EREDMÉNYES VÁLLALAT
             <br>
           Sablon: <a href="http://w3layouts.com/">W3layouts</a></p>
 		 <div class="arrow">
-			 <a class="scroll" href="#home"><img src="images/top.png" alt=""></a>
+			 <a class="scroll" href="#page"><img src="images/top.png" alt=""></a>
 		 </div>
 	 </div>
 </div>
