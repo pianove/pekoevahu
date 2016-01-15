@@ -535,7 +535,7 @@ h2{
 #scrollDown{
 	text-decoration: none;
 	position: absolute;
-	top: 500px;
+	top: 420px;
 	right: 3%;
 /*	overflow: hidden;*/
 	width: 60px;
@@ -846,8 +846,8 @@ h2{
 .banner-info,
 .image-title{
 	float:right;
-	width:42%;
-     margin: 12em 30px 0px 0em;
+	width:58%;
+     margin: 8em 30px 0px 0em;
     padding: 0;
 }
 #intro.container{
@@ -1890,7 +1890,7 @@ padding:2em 0 0.5em 0;
 }
 .banner-info,
 .image-title{
-  margin: 9em 0 0 0em;
+/*  margin: 9em 0 0 0em;*/
 }
 .banner-info h2,
 .image-title h2{
@@ -1916,7 +1916,7 @@ padding:2em 0 0.5em 0;
 }
 .banner-info,
 .image-title{
-  margin: 10em 0 0 0em;
+/*  margin: 10em 0 0 0em;*/
   width: 65%;
   padding-left: 89px;
 }
@@ -1957,11 +1957,11 @@ padding:2em 0 0.5em 0;
 */
 .banner-info h2,
 .image-title h2{
-  font-size: 2.2em;
+  font-size: 2em;
 }
 .banner-info,
 .image-title{
-  margin: 23% 0 0 0em;
+/*  margin: 23% 0 0 0em;*/
   padding: 0 0px 0 59px;
 }
 
@@ -2040,9 +2040,11 @@ padding:2em 0 0.5em 0;
 }
 }
 @media (max-width: 768px){
+/*
 .header {
   min-height: 400px;
 }
+*/
 
 .home-background {
   background: url(../images/nyito_medium.jpg) 50% 50% no-repeat;
@@ -2057,7 +2059,7 @@ padding:2em 0 0.5em 0;
 
 .banner-info h2,
 .image-title h2{
-  font-size: 2em;
+  font-size: 1.65em;
   line-height: normal;
 }
 .logo h1 a {
@@ -2276,6 +2278,10 @@ span.menu{
 .corpservice.banner-info{
     float: left;
     text-align: center;
+}
+
+#scrollDown{
+    top:380px;
 }
 .content p,
 .content li,
