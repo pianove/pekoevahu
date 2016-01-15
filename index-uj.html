@@ -43,6 +43,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                       );
 			});
 
+            $(".scroll-2-content").click(function(event){
+				event.preventDefault();
+                var id=$(".page-content");
+                var target = $(id).offset().top-140;
+				$('html,body').animate({scrollTop:target},500,function(){
+                    window.location.hash = id;
+                }
+                                      );
+			});
+
             $(".menu").click(function(){
 				$(".slide-menu ul").slideToggle("slow" , function(){
 				});
@@ -56,12 +66,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <body>
 <div  class="page">
 <!--top-header-->
-    <div id="home" class="top-header">
+    <div id="inPage" class="top-header">
         <span class="left-top-header">
     <h2 class="title-color">Pékó Éva </h2>
-         <h4>Business és Life Coach, Team és Group Coach,  Önfejlesztési Tréner
+         <h4 class="long-txt">Business és Life Coach, Team és Group Coach,  Önfejlesztési Tréner
+</h4><h4 class="short-txt">Coach, Önfejlesztési Tréner
 </h4></span>
-        <span class="right-top-header"><a id="selectEnglish"><img src="images/globe.png" alt="english">English</a> <a id="menuTitle" class="scroll menu right-top-header" style="font-size: 25px;">MENÜ<img id="menuIcon" src="images/logosquare_small.gif" alt=""/></a></span>
+        <span class="right-top-header"><a id="selectEnglish"><img src="images/globe.png" alt="english">English</a> <a id="menuTitle" class="scroll menu right-top-header">MENÜ</a><div id="menuIcon"><h1><a class="scroll menu"></a></h1></div></span>
         <span class="scroll menu"><img src="images/logosquare_small.gif" alt=""/></span>
     </div>
     <div id="slideMenu" class="slide-menu">
@@ -130,29 +141,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </div>
 -->
 <!--header-->
-<div class="header-container">
-    <div class="header-title title-color grey-line"><h1>Bemutatkozás</h1></div>
-    <div class="header-message">
-				 <p class="header-message">Célom, hogy az ügyfeleim megtapasztalják az önmagukban levő képességek és lehetőségek felszabadító erejét.<a class="switch" href="#mirage">hogy lasd az aranyokat: kisebb kep szeles kepernyon...</a><a class="back"> vissza</a></p>
 
-    </div>
-</div>
 <div class="header home-background">
-
-    <a id="scrollDown" href=#intro >
-
-<!--
+    <a href="#" class="scroll-2-content">
 			 <div class="banner-info">
 
 				 <h2>CÉLOM, HOGY AZ ÜGYFELEIM MEGTAPASZTALJÁK AZ ÖNMAGUKBAN LEVŐ KÉPESSÉGEK ÉS LEHETŐSÉGEK FELSZABADÍTÓ EREJÉT.</h2>
 				 <p>CÉLOM, HOGY AZ ÜGYFELEIM MEGTAPASZTALJÁK AZ ÖNMAGUKBAN LEVŐ KÉPESSÉGEK ÉS LEHETŐSÉGEK FELSZABADÍTÓ EREJÉT.
 </p>
         </div>
--->
-</a>
 			 <div class="clearfix"></div>
+    </a>
+    <a href="#" id="scrollDown" class="scroll-2-content">
+</a>
 		</div>
 
+<div class="header-container">
+    <div class="header-title title-color grey-line"><h1>Bemutatkozás</h1></div>
+    <!--<div class="header-message">
+				 <p class="header-message">Célom, hogy az ügyfeleim megtapasztalják az önmagukban levő képességek és lehetőségek felszabadító erejét.<a class="switch" href="#mirage">hogy lasd az aranyokat: kisebb kep szeles kepernyon...</a><a class="back"> vissza</a></p>
+
+    </div>-->
+</div>
     <script>
 							$(".switch").click(function(){
 								$(".header.home-background").hide();
@@ -180,10 +190,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </a>-->
         </div>
 
-<div id="intro" class="intro">
-    <div class="container"><br>
+<div id="intro" class="intro page-content">
+        <div class="container"><br>
         <p>Coachként egyéneket és csoportokat támogatok céljaik elérésében, amely során az élet bátor megélésére, <strong>az önmagunkért való kiállásra</strong> és felelősségvállalásra bíztatom ügyfeleimet.</p>
-            <h3>Abban támogatom minden coaching partnerem, HOGY felismerje:<br>írója és rendezője <span class="grey uppercase">és NEM ELSZENVEDŐJE,</span> főszereplője  <span class="grey uppercase">és NEM MELLÉKSZEREPLŐJE</span> életének.</h3>
+            <h3 class="bg-grey">Abban támogatom minden coaching partnerem, HOGY felismerje:<br>írója és rendezője <span class="grey uppercase">és NEM ELSZENVEDŐJE,</span> főszereplője  <span class="grey uppercase">és NEM MELLÉKSZEREPLŐJE</span> életének.</h3>
             <h4 class="title-color">Jellemzőim:</h4>
             <ul >
                 <li><span class="fa fa-check title-color"></span> Szeretem a kihívásokat.</li>
@@ -203,7 +213,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	 <div class="container">
 		 <h3>Kapcsolatfelvétel</h3>
 		 <div class="touch-top">
-			 <div class="col-md-8 touch-left">
+			 <div class="touch-left">
 				 <form action="mailTo:coach@pekoeva.hu">
 					<input type="text" value="név" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" />
 					<input type="text" value="email cím" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" />
@@ -217,6 +227,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </div>
 <div class="footer">
 	 <div class="container">
+         <div class="menu-footer-nav grey"><ul>
+            <li><a href="index-nyito.html">Nyitó</a></li> &nbsp; | &nbsp;
+         <li><a href="#intro">Bemutatkozás</a></li>
+&nbsp; | &nbsp;
+                 <li><a class="" href="quotes.html">Rólam mondták</a></li>&nbsp; | &nbsp;
+				<li><a class="" href="corporateservice.html">Szervezeteknek</a></li>&nbsp; | &nbsp;
+
+                 <li><a class="" href="individual.html">Magánszemélyeknek</a></li>&nbsp; | &nbsp;
+                 <li><a class="" href="background.html">Képzettségem</a></li>&nbsp; | &nbsp;
+         <li><a class="" href="methodology.html">Módszertanom</a></li>
+
+        </ul>
+             </div>
 		 <div class="social">
 				<a href="#"><i class="facebook"></i></a>
 				<a href="#"><i class="twitter"></i></a>
@@ -224,14 +247,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<a href="#"><i class="google"></i></a>
 				<a href="#"><i class="youtube"></i></a>
 		 </div>
-         <br>
-         <p>© 2015 - Minden jog fenntartva</p>
-         <p>Készítette <i class="fa fa-heart"></i>-tel: <a href="http://www.pianovszkyeniko.hu" target="_blank">Eniko Pianovszky</a>
-            <br>
+
+<div class="bottom-line">
+
+         <p class="grey"><a href="http://www.pianovszkyeniko.hu" target="_blank" class="left grey">Készítette: Pianovszky Eniko</a>
+             <span class="right">© 2016 - Minden jog fenntartva</span></p>
           <!--Sablon: <a href="http://w3layouts.com/">W3layouts</a></p>-->
-		 <div class="arrow">
+		 <!--<div class="arrow">
 			 <a class="scroll" href=""><img src="images/top.png" alt=""></a>
-		 </div>
+		 </div>-->
+         </div>
 	 </div>
 </div>
 <!---->
@@ -250,7 +275,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </script>
 <a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 
-<!----></div>
+
+<!---->
+
 </div>
 
 </body>

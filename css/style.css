@@ -88,6 +88,10 @@ strong{
 .center{
     text-align: center;
 }
+.bg-grey{
+    background-color: #f4f4f6;
+}
+
 
 #header1,
 #header2,
@@ -125,9 +129,9 @@ strong{
 .logo h1 a:hover,
 .logo h1 a:focus,
 .logo h1 a:active,
-#menuIcon:hover,
-#menuIcon:focus,
-#menuIcon:active
+#menuIcon h1 a:hover,
+#menuIcon h1 a:focus,
+#menuIcon h1 a:active
 {
  transform: rotate(360deg);
 }
@@ -137,7 +141,8 @@ span.menu {
 }
 
 .page {
-    padding-top: 86px;
+/*    padding-top: 71px;*/
+    padding-top: 83px;
     background-color: #fff;
 }
 
@@ -156,8 +161,8 @@ span.menu {
   width: 100%;
   zoom: 1;
   z-index: 9999;
-  padding: 10px 0 0 10px;
-  border-bottom: 1px solid #f4f4f6;
+  padding: 10px 0 2px 10px;
+/*  border-bottom: 1px solid #f4f4f6;*/
 
 }
 
@@ -165,16 +170,22 @@ span.menu {
 .top-header.container {
   padding: 0;
 }
-
+.short-txt{
+  display: none;
+}
 .left-top-header{
     float: left;
     text-align: left;
 }
 
+.left-top-header h4{
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
 .right-top-header{
     float:right;
     right:0;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 .right-top-header img,
 .slide-menu img{
@@ -186,16 +197,24 @@ span.menu {
 */
 }
 
-.menu img{
-    height:44px;
-    width: 44px;
+#menuIcon h1 a{
+    height:74px;
+    width: 74px;
+    float: right;
+    z-index: 100;
     border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border: 4px solid #fff;
-
+    position: absolute;
+    background:#d06079;
+    background-image: url(../images/logosquare_small.gif);
+    background-size: 75px 72px;
+    display: inline-block;
+    right: -1px;
+    top: 35px;
 }
 
 .menu.right-top-header img{
@@ -209,12 +228,12 @@ span.menu {
     font-size: 16px;
 }
 
-.home #menuTitle{
-    display: none;
-}
+.home #menuTitle,
+.home #menuIcon,
 .home span.menu{
     display: none;
 }
+
 
 .home #selectEnglish{
 /*
@@ -222,6 +241,10 @@ span.menu {
     font-size: 20px;
 */
     padding-top: 2.5em;
+}
+
+#inPage #selectEnglish{
+    display: none;
 }
 
 .slide-menu {
@@ -258,7 +281,15 @@ span.menu {
 
 .slide-menu ul li:first-child{
     margin-top: 2em;
+    margin-bottom: 3em;
 }
+
+
+.home .slide-menu ul li:first-child{
+    display: none;
+    margin-bottom: auto;
+}
+
 .right-top-header a:hover,
 .slide-menu ul li a:hover,
 .right-top-header a:focus,
@@ -267,7 +298,7 @@ span.menu {
 /*.slide-menu ul li a:active,*/
 .right-top-header a:visited
 /*.slide-menu ul li a:visited*/{
-    color:#d06079;
+/*    color:#d06079;*/
 }
 .top-menu ul {
   text-align: justify;
@@ -291,9 +322,7 @@ span.menu {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.slide-menu ul li:first-child{
-    display: none;
-}
+
 
 .top-menu ul li a .scroll .right {
     padding-left: 1em;
@@ -307,13 +336,13 @@ span.menu {
 
 .header-container{
     text-align: center;
-    padding: 60px 0 30px 0;
+    padding: 30px 0 0 0;
     max-width: 1050px;
     margin: auto;
 }
 
 .header-title {
-    margin: 0 0 36px 0;
+/*    margin: 0 0 36px 0;*/
     font-size: 24px;
 }
 
@@ -351,10 +380,14 @@ span.menu {
 }
 
 .menu3x2{
-    background: url(../images/nyito_logo3x2.jpg) no-repeat cover;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center top;
+    background: url(../images/nyito_logo3x2.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 470px;
+    margin: 0;
+    padding: 0;
+/*    background-position: center top;*/
+
 }
 .tile {
     position: relative;
@@ -363,6 +396,16 @@ span.menu {
     float: left;
     overflow: hidden;
 
+}
+.tile-3x2{
+    height: 235px;
+    width: 33.333%;
+    margin: 1px;
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    background-size: contain;
+    border: 1px solid white;
 }
 
 
@@ -373,6 +416,11 @@ h2{
 .left{
     float: left !important;
 }
+.right{
+    text-align: right;
+    float: right;
+}
+
 
 .up{
     margin-top: 2em !important;
@@ -397,6 +445,7 @@ h2{
     margin:2em 0;
 /*    width: 100%;*/
     width: 900px;
+    height: 800px;
     display: block;
 }
 .image{
@@ -406,6 +455,11 @@ h2{
     display: inline-block;
     background-size: contain;
 }
+
+.tile-3x2 .ny-menu-title{
+    top:0;
+}
+
 
 .ny-menu-title{
     position: absolute;
@@ -424,12 +478,15 @@ h2{
 }
 
 .tile:hover .image-title-filter,
-.tile:focus .image-title-filter{
+.tile:focus .image-title-filter,
+.tile-3x2:hover .image-title-filter,
+.tile-3x2:focus .image-title-filter{
     opacity:1 !important;
     bottom:0%;
 }
 
-.tile .image-title-filter{
+.tile .image-title-filter,
+.tile-3x2 .image-title-filter{
     opacity:0;
 /*	position:absolute;*/
 	bottom: 0%;
@@ -473,13 +530,13 @@ h2{
 .home-background{
     background: url(../images/nyito_compress.jpg) no-repeat 0px 0px;
     background-size: cover;
-    height: 480px;
+    height: 420px;
 /*    min-height: 620px;*/
 }
 #scrollDown{
 	text-decoration: none;
 	position: absolute;
-	top: 500px;
+	top: 420px;
 	right: 3%;
 /*	overflow: hidden;*/
 	width: 60px;
@@ -490,23 +547,18 @@ h2{
     background-size: contain;
 }
 
-#mirage{
-    display: none;
-}
-.home-mirage{
-    background: url(../images/nyito_banner.jpg) no-repeat 0px 0px;
-    background-size: cover;
-    height: 480px;
-/*    min-height: 620px;*/
-}
-
 .methodology-background{
     background: url(../images/nyito_modszertan_blue.png) no-repeat 0px 0px;
     background-size: contain;
     min-height: 620px;
 }
 
-.home-backgroundsquare{
+.tile-3x2 .home-backgroundsquare {
+    background: url(../images/nyito_medium.jpg) no-repeat;
+    background-size: cover;
+    height: 235px;
+}
+.tile .home-backgroundsquare{
     background: url(../images/nyito_medium_square.jpg) no-repeat 0px 0px;
     background-size: cover;
     height: 235px;
@@ -785,8 +837,8 @@ h2{
 .banner-info,
 .image-title{
 	float:right;
-	width:42%;
-     margin: 12em 30px 0px 0em;
+	width:58%;
+     margin: 8em 30px 0px 0em;
     padding: 0;
 }
 #intro.container{
@@ -1595,7 +1647,11 @@ a.blogs:hover{
 }
 /*--contact--*/
 .contact{
-	padding:3em 0;
+	padding: 2em 0;
+    margin: auto;
+    border-top: 1px solid #f4f4f6;
+    max-width: 1050px;
+    text-align: center;
 }
 /*
 .touch-top{
@@ -1696,16 +1752,42 @@ a.blogs:hover{
 }
 /*----*/
 .footer{
-text-align:center;
-background:#595959;
-padding:1em 0 1em 0;
+/*text-align:center;*/
+/*background:#595959;*/
+padding:2em 0 10px 0;
+   background: url(../images/logo3x2bw.jpg) no-repeat center 10px;
+    min-height: 250px;
+    position: relative;
 }
 .footer p,
-.footer a{
-color: #fff;
+.footer a,
+.footer span{
+/*color: #fff;*/
 font-size: 14px;
 }
 
+.menu-footer-nav{
+    text-align: center;
+    margin: 3em 0;
+}
+.menu-footer-nav ul li{
+/*    text-align: justify;*/
+    display: inline-block;
+    margin: 0 23px;
+/*    font-size: 18px;*/
+}
+
+.menu-footer-nav ul li a{
+    color: #d06079;
+    font-size: 16px;
+}
+
+.bottom-line{
+    position: absolute;
+    bottom: 5px;
+    text-align: justify;
+    width: 83%;
+}
 /*
 .social{
 margin-top:1.5em;
@@ -1799,7 +1881,7 @@ padding:2em 0 0.5em 0;
 }
 .banner-info,
 .image-title{
-  margin: 9em 0 0 0em;
+/*  margin: 9em 0 0 0em;*/
 }
 .banner-info h2,
 .image-title h2{
@@ -1825,7 +1907,7 @@ padding:2em 0 0.5em 0;
 }
 .banner-info,
 .image-title{
-  margin: 10em 0 0 0em;
+/*  margin: 10em 0 0 0em;*/
   width: 65%;
   padding-left: 89px;
 }
@@ -1859,16 +1941,18 @@ padding:2em 0 0.5em 0;
 .top-menu ul li:nth-child(3) {
   margin-right: 12em;
 }
+/*
 .header {
  height: 504px;
 }
+*/
 .banner-info h2,
 .image-title h2{
-  font-size: 2.2em;
+  font-size: 2em;
 }
 .banner-info,
 .image-title{
-  margin: 23% 0 0 0em;
+/*  margin: 23% 0 0 0em;*/
   padding: 0 0px 0 59px;
 }
 
@@ -1947,9 +2031,11 @@ padding:2em 0 0.5em 0;
 }
 }
 @media (max-width: 768px){
+/*
 .header {
   min-height: 400px;
 }
+*/
 
 .home-background {
   background: url(../images/nyito_medium.jpg) 50% 50% no-repeat;
@@ -1964,7 +2050,7 @@ padding:2em 0 0.5em 0;
 
 .banner-info h2,
 .image-title h2{
-  font-size: 2em;
+  font-size: 1.65em;
   line-height: normal;
 }
 .logo h1 a {
@@ -2024,7 +2110,7 @@ padding:2em 0 0.5em 0;
 }
 @media(max-width:667px){
  .home .span.menu {
-  display: block;
+/*  display: block;*/
   text-align: right;
   cursor: pointer;
 /*  position: relative;*/
@@ -2090,7 +2176,7 @@ padding:2em 0 0.5em 0;
 @media(max-width:640px){
  .home span.menu,
 span.menu{
-  display: block;
+/*  display: block;*/
   text-align: right;
   cursor: pointer;
 /*  position: relative;*/
@@ -2100,9 +2186,15 @@ span.menu{
   right: 10px;
 }
 .left-top-header {
-  text-align: center;
+/*  text-align: center;*/
+}
+.short-txt{
+  display: block;
 }
 
+.long-txt{
+    display: none;
+}
 .slide-menu {
 	width: 100%;
 }
@@ -2110,8 +2202,10 @@ span.menu{
 .slide-menu ul li{
         margin-left: 2em;
 }
-#selectEnglish,
-#menuTitle{
+
+
+#inPage #selectEnglish
+    /*#menuTitle*/{
   display: none;
 }
 
@@ -2175,6 +2269,10 @@ span.menu{
 .corpservice.banner-info{
     float: left;
     text-align: center;
+}
+
+#scrollDown{
+    top:380px;
 }
 .content p,
 .content li,
@@ -2306,7 +2404,8 @@ a.blogs {
   margin: 1em 0 0 0;
 }
 .footer p,
-.footer a{
+.footer a,
+.footer span{
   font-size: 0.9em;
 }
 .footer {
@@ -2434,6 +2533,9 @@ a.blogs {
 }
 }
 @media(max-width:414px){
+.page{
+    padding-top: 62px;
+}
 .home-background {
   background: url(../images/nyito_medium.jpg) no-repeat -124px 0px;
   background-size: cover;
@@ -2446,9 +2548,11 @@ a.blogs {
 }
 
 
+/*
 .top-header {
   margin: 1em 0;
 }
+*/
 
 .top-header h2{
     font-size: 1.5em;
