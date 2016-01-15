@@ -439,6 +439,7 @@ h2{
     margin:2em 0;
 /*    width: 100%;*/
     width: 900px;
+    height: 800px;
     display: block;
 }
 .image{
@@ -1650,7 +1651,11 @@ a.blogs:hover{
 }
 /*--contact--*/
 .contact{
-	padding:3em 0;
+	padding: 2em 0;
+    margin: auto;
+    border-top: 1px solid #f4f4f6;
+    max-width: 1050px;
+    text-align: center;
 }
 /*
 .touch-top{
