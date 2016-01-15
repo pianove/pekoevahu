@@ -547,16 +547,6 @@ h2{
     background-size: contain;
 }
 
-#mirage{
-    display: none;
-}
-.home-mirage{
-    background: url(../images/nyito_banner.jpg) no-repeat 0px 0px;
-    background-size: cover;
-    height: 480px;
-/*    min-height: 620px;*/
-}
-
 .methodology-background{
     background: url(../images/nyito_modszertan_blue.png) no-repeat 0px 0px;
     background-size: contain;
