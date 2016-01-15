@@ -227,12 +227,12 @@ span.menu {
     font-size: 16px;
 }
 
-.home #menuTitle{
-    display: none;
-}
+.home #menuTitle,
+.home #menuIcon,
 .home span.menu{
     display: none;
 }
+
 
 .home #selectEnglish{
 /*
@@ -2176,7 +2176,9 @@ span.menu{
 .slide-menu ul li{
         margin-left: 2em;
 }
-#selectEnglish,
+
+
+#inPage #selectEnglish,
 #menuTitle{
   display: none;
 }
