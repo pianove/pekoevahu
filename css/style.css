@@ -346,7 +346,8 @@ span.menu {
     font-size: 24px;
 }
 
-.home .header-title{
+.home .header-title,
+.contact .header-title{
      margin: 0 0 36px 0;
 }
 
@@ -949,7 +950,7 @@ label{
 	font-size:1.2em;
     padding: 20px 10px 20px 10px;
 	text-align:center;
-    font-weight: 700;
+/*    font-weight: 700;*/
     text-transform: uppercase;
     line-height: 1.2;
 }
@@ -1056,7 +1057,7 @@ hr{
 .corpservice h4{
 	font-size:1.5em;
     text-align: center;
-    font-weight: 700;
+/*    font-weight: 700;*/
     padding-top: 10px;
 }
 
@@ -1453,13 +1454,13 @@ li.cd-testimonials-item{
 	padding:2em 10px;
 }
 
-.about-right h3,.service h3,.gallery h3,.blog h3,.contact h3, .intro h3{
+.about-right h3,.service h3,.gallery h3,.blog h3,.intro h3{
 	color:#d06079;
 	font-size:1.5em;
-	font-family: 'Source Sans Pro' sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	text-align:center;
     text-transform: uppercase;
-    font-weight: 700;
+/*    font-weight: 700;*/
     line-height: 1.2;
     padding: 20px 0 20px 0;
 }
