@@ -415,6 +415,11 @@ h2{
 .left{
     float: left !important;
 }
+.right{
+    text-align: right;
+    float: right;
+}
+
 
 .up{
     margin-top: 2em !important;
@@ -1756,16 +1761,42 @@ a.blogs:hover{
 }
 /*----*/
 .footer{
-text-align:center;
-background:#595959;
-padding:1em 0 1em 0;
+/*text-align:center;*/
+/*background:#595959;*/
+padding:2em 0 10px 0;
+   background: url(../images/logo3x2bw.jpg) no-repeat center 10px;
+    min-height: 250px;
+    position: relative;
 }
 .footer p,
-.footer a{
-color: #fff;
+.footer a,
+.footer span{
+/*color: #fff;*/
 font-size: 14px;
 }
 
+.menu-footer-nav{
+    text-align: center;
+    margin: 3em 0;
+}
+.menu-footer-nav ul li{
+/*    text-align: justify;*/
+    display: inline-block;
+    margin: 0 23px;
+/*    font-size: 18px;*/
+}
+
+.menu-footer-nav ul li a{
+    color: #d06079;
+    font-size: 16px;
+}
+
+.bottom-line{
+    position: absolute;
+    bottom: 5px;
+    text-align: justify;
+    width: 83%;
+}
 /*
 .social{
 margin-top:1.5em;
@@ -2178,8 +2209,8 @@ span.menu{
 }
 
 
-#inPage #selectEnglish,
-#menuTitle{
+#inPage #selectEnglish
+    /*#menuTitle*/{
   display: none;
 }
 
@@ -2374,7 +2405,8 @@ a.blogs {
   margin: 1em 0 0 0;
 }
 .footer p,
-.footer a{
+.footer a,
+.footer span{
   font-size: 0.9em;
 }
 .footer {
@@ -2502,6 +2534,9 @@ a.blogs {
 }
 }
 @media(max-width:414px){
+.page{
+    padding-top: 62px;
+}
 .home-background {
   background: url(../images/nyito_medium.jpg) no-repeat -124px 0px;
   background-size: cover;
@@ -2514,9 +2549,11 @@ a.blogs {
 }
 
 
+/*
 .top-header {
   margin: 1em 0;
 }
+*/
 
 .top-header h2{
     font-size: 1.5em;
