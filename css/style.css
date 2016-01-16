@@ -360,9 +360,19 @@ span.menu {
       background: url(../images/rainbow_line.gif) bottom center no-repeat;
 }
 
+.right-sep{
+    border-right: 1px solid #f4f4f6;
+}
 .grey-line h1{
     background: url(../images/rainbow_line_grey.gif) bottom center no-repeat;
 
+}
+.wordart{
+    background: url(../images/pekoevahu%20wordartretouche.jpg) center no-repeat;
+    background-size: contain;
+    height: 286px;
+    min-height: 196px;
+    margin-top: 30px;
 }
 .header-message{
     width: 100% !important;
@@ -2515,7 +2525,9 @@ a.blogs {
 .about-left {
   min-height: 283px;
 }
-
+.wordart .right-sep {
+    border: 0;
+}
 .about-right a {
   font-size: 0.85em;
   padding: 0.7em 1.5em;
