@@ -211,7 +211,7 @@ span.menu {
     position: absolute;
     background:#d06079;
     background-image: url(../images/logosquare_small.gif);
-    background-size: 85px 85px;
+    background-size: 89px 88px;
     display: inline-block;
     right: -1px;
     top: 35px;
@@ -2231,9 +2231,9 @@ span.menu{
 	width: 100%;
 }
 
-.slide-menu ul li{
+/*.slide-menu ul li{
         margin-left: 2em;
-}
+}*/
 
 
 #inPage #selectEnglish
