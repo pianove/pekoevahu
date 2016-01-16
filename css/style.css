@@ -185,7 +185,7 @@ span.menu {
 .right-top-header{
     float:right;
     right:0;
-    margin-right: 10px;
+    margin-right: 8px;
 }
 .right-top-header img,
 .slide-menu img{
@@ -237,8 +237,10 @@ span.menu {
 #menuTitle{
     letter-spacing: 1px;
     margin-top: 6px;
+/*
     right: 2px;
     margin-right: 14px;
+*/
 }
 
 .home #selectEnglish{
