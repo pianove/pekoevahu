@@ -1785,6 +1785,7 @@ a.blogs:hover{
 /*background:#595959;*/
 padding:2em 0 10px 0;
    background: url(../images/logo3x2bw.jpg) no-repeat center 10px;
+    background-size: cover;
     min-height: 250px;
     position: relative;
 }
