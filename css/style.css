@@ -185,7 +185,7 @@ span.menu {
 .right-top-header{
     float:right;
     right:0;
-    margin-right: 8px;
+    margin-right: 10px;
 }
 .right-top-header img,
 .slide-menu img{
@@ -2072,8 +2072,10 @@ padding:2em 0 0.5em 0;
   height: 126px;
   width: 126px;
 }
+
 #inPage #selectEnglish{
     right: 110px;
+}
 }
 @media (max-width: 768px){
 /*
@@ -2556,7 +2558,7 @@ a.blogs {
 .about-left {
   min-height: 283px;
 }
-.wordart .right-sep {
+.wordart.right-sep {
     border: 0;
 }
 .about-right a {
@@ -2624,6 +2626,10 @@ a.blogs {
 .image-title{
   width: 65%;
 }
+.menu-footer-nav {
+    width: 300px;
+}
+
 
 }
 @media(max-width:320px){
