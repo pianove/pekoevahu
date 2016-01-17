@@ -567,7 +567,7 @@ h2{
 .home-background{
     background: url(../images/nyito_compress.jpg) no-repeat 0px 0px;
     background-size: cover;
-    height: 420px;
+    height: 680px;
 /*    min-height: 620px;*/
 }
 #scrollDown{
@@ -1934,6 +1934,7 @@ padding:2em 0 0.5em 0;
 .home-background {
   background: url(../images/nyito_compress.jpg) no-repeat 0px 0;
   background-size: cover;
+  height: 420px;
 }
 }
 @media (max-width: 1024px){
@@ -2091,7 +2092,7 @@ padding:2em 0 0.5em 0;
 */
 
 .home-background {
-  background: url(../images/nyito_medium.jpg) 50% 50% no-repeat;
+  background: url(../images/nyito_medium.jpg) 50% 20% no-repeat;
   background-size:cover;
 }
 
