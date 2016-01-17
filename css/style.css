@@ -379,6 +379,12 @@ color:#d06079;
 .right-sep{
     border-right: 1px solid #f4f4f6;
 }
+
+.left-sep{
+    border-left: 1px solid #f4f4f6;
+}
+
+
 .grey-line h1{
     background: url(../images/rainbow_line_grey.gif) bottom center no-repeat;
 
@@ -2558,7 +2564,7 @@ a.blogs {
 .about-left {
   min-height: 283px;
 }
-.wordart.right-sep {
+.left-sep {
     border: 0;
 }
 .col-xxs-12{
