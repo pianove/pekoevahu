@@ -392,7 +392,7 @@ color:#d06079;
 .wordart{
     background: url(../images/pekoevahu%20wordartretouche.jpg) center no-repeat;
     background-size: contain;
-    height: 286px;
+/*    height: 286px;*/
 /*    min-height: 196px;*/
     margin-top: 10px;
 }
@@ -1349,6 +1349,9 @@ li.cd-testimonials-item{
     width: 30%;
     margin: 0 1.6666% 3em;
   }
+  .wordart{
+    height: 146px;
+  }
 }
 
 .cd-author img, .cd-author .cd-author-info {
@@ -1903,6 +1906,38 @@ padding:2em 0 0.5em 0;
 }
 
 /*--responsive--*/
+
+@media(min-width:480px){
+    .col-md-9 {
+        width: 75%;
+    }
+    .col-md-3 {
+        width: 25%;
+    }
+
+
+}
+
+@media(min-width:992px){
+    .col-lg-6 {
+        width: 50%;
+    }
+    .mosaic
+    {
+        margin: auto;
+    }
+    .cred{
+        width: 900px;
+        margin: auto;
+    }
+
+}
+
+@media(min-width:992px) and (max-width: 1169px){
+.wordart{
+        height: 216px;
+    }
+}
 @media (max-width: 1280px){
 .about-left {
   background: url(../images/_MG_5526_ok_kepzettseg.jpg) no-repeat 0px -77px;
@@ -2018,7 +2053,9 @@ padding:2em 0 0.5em 0;
 .company-logos img{
     width: 200px;
 }
-
+.wordart{
+        height: 286px;
+}
 .icon-pic {
   width: 25%;
 }
@@ -2471,32 +2508,7 @@ a.blogs {
 }
 }
 
-@media(min-width:480px){
-    .col-md-9 {
-        width: 75%;
-    }
-    .col-md-3 {
-        width: 25%;
-    }
 
-
-}
-
-@media(min-width:992px){
-    .col-lg-6 {
-        width: 50%;
-    }
-    .mosaic
-    {
-        margin: auto;
-    }
-    .cred{
-        width: 900px;
-        margin: auto;
-    }
-
-
-}
 
 
 
