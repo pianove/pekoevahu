@@ -2629,6 +2629,12 @@ a.blogs {
 }
 }
 @media(max-width:384px){
+#menuIcon h1 a {
+    top: 30px;
+}
+#menuTitle{
+    margin-top: 0px;
+}
 .header {
   min-height: 335px;
 }
