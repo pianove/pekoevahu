@@ -144,6 +144,7 @@ span.menu {
 /*    padding-top: 71px;*/
     padding-top: 83px;
     background-color: #fff;
+    overflow-x: hidden;
 }
 
 
@@ -573,7 +574,7 @@ h2{
 #scrollDown{
 	text-decoration: none;
 	position: absolute;
-	top: 420px;
+	top: 690px;
 	right: 3%;
 /*	overflow: hidden;*/
 	width: 60px;
@@ -856,12 +857,8 @@ h2{
     text-align: center;
     letter-spacing: 1px;
     font-weight: 700;
-/*    font-family: 'Titillium Web', sans-serif;*/
-/*    line-height: 3.34vw;*/
 }
 .about.banner-info p{
-    display: none;
-/*	color:black;*/
     color:#d06079;
 	font-size:18px;
 	line-height:1.8em;
@@ -875,7 +872,7 @@ h2{
 .image-title{
 	float:right;
 	width:58%;
-     margin: 8em 30px 0px 0em;
+     margin: 12em 30px 0px 0em;
     padding: 0;
 }
 #intro.container{
@@ -907,7 +904,7 @@ h2{
 }
 
 
-.banner-info h2,
+.banner-info-text h2,
 .image-title h2{
 	color:#fff;
 	font-size:2.2em;
@@ -918,15 +915,7 @@ h2{
     line-height: normal;
     text-align: center;
 }
-.banner-info p,
-.image-title p{
-    display: none;
-	color:#fff;
-	font-size:1em;
-	line-height:1.8em;
-	margin-top:2em;
-    font-weight: 400;
-}
+
 .banner-info a{
   color: #fff;
   padding: 0.6em 3em;
@@ -979,7 +968,7 @@ label{
 .methodology-content h3,
 .individual-content h3{
     color:#d06079;
-	font-size:1.2em;
+/*	font-size:1.2em;*/
     padding: 20px 10px 20px 10px;
 	text-align:center;
 /*    font-weight: 700;*/
@@ -1040,7 +1029,7 @@ label{
 .methodology-title h3,
 .quotes-title h3{
 	color:#d06079;
-	font-size:2.5em;
+/*	font-size:2.5em;*/
     padding-bottom: 1em;
 	font-family: 'Dosis-Regular';
 	text-align:center;
@@ -1491,7 +1480,7 @@ li.cd-testimonials-item{
 
 .about-right h3,.service h3,.gallery h3,.blog h3,.intro h3{
 	color:#d06079;
-	font-size:1.5em;
+/*	font-size:1.5em;*/
 	font-family: 'Source Sans Pro', sans-serif;
 	text-align:center;
     text-transform: uppercase;
@@ -1938,6 +1927,7 @@ padding:2em 0 0.5em 0;
         height: 216px;
     }
 }
+
 @media (max-width: 1280px){
 .about-left {
   background: url(../images/_MG_5526_ok_kepzettseg.jpg) no-repeat 0px -77px;
@@ -1956,7 +1946,7 @@ padding:2em 0 0.5em 0;
 .image-title{
 /*  margin: 9em 0 0 0em;*/
 }
-.banner-info h2,
+.banner-info-text h2,
 .image-title h2{
   font-size: 2em;
   line-height: inherit;
@@ -1984,6 +1974,7 @@ padding:2em 0 0.5em 0;
 /*  margin: 10em 0 0 0em;*/
   width: 65%;
   padding-left: 89px;
+  margin: 6em 30px 0 0;
 }
 
 .header {
@@ -1992,6 +1983,9 @@ padding:2em 0 0.5em 0;
 }
 .logo {
   left: 43%;
+}
+#scrollDown {
+    top: 420px;
 }
 .about-right h4 {
   font-size: 1.6em;
@@ -2020,7 +2014,7 @@ padding:2em 0 0.5em 0;
  height: 504px;
 }
 */
-.banner-info h2,
+.banner-info-text h2,
 .image-title h2{
   font-size: 2em;
 }
@@ -2139,7 +2133,7 @@ padding:2em 0 0.5em 0;
 }
 */
 
-.banner-info h2,
+.banner-info-text h2,
 .image-title h2{
   font-size: 1.65em;
   line-height: normal;
@@ -2153,14 +2147,14 @@ padding:2em 0 0.5em 0;
 }
 .banner-info,
 .image-title{
-  margin: 7em 0 0 0em;
+  margin: 5em 0 0 0em;
 }
 .map iframe {
   width: 100%;
   min-height: 320px;
 }
 .about-right h3, .service h3, .gallery h3, .blog h3, .contact h3 {
-  font-size: 1.5em;
+/*  font-size: 1.5em;*/
 }
 .service {
   padding: 3em 0;
@@ -2364,7 +2358,7 @@ span.menu{
 }
 
 #scrollDown{
-    top:380px;
+    top:375px;
 }
 .content p,
 .content li,
@@ -2386,7 +2380,7 @@ span.menu{
     list-style: none;
 }
 .about.banner-info h2,
-.banner-info h2,
+.banner-info-text h2,
 .image-title h2{
   font-size: 1.5em;
 }
@@ -2532,14 +2526,19 @@ a.blogs {
   background-size: cover;
 }
 
-.banner-info h2,
+
 .about.banner-info h2,
 .image-title h2{
   display: none;
 }
 
+.banner-info-text h2{
+	font-size:1em;
+	line-height:1.3em;
+	margin-top:2em;
+    font-weight: 400;
+}
 .about.banner-info p,
-.banner-info p,
 .image-title p{
   display: block;
   font-size: 1.3em;
@@ -2614,7 +2613,7 @@ a.blogs {
     padding-top: 62px;
 }
 .home-background {
-  background: url(../images/nyito_medium.jpg) no-repeat -124px 0px;
+  background: url(../images/nyito_medium.jpg) no-repeat -24px 0px;
   background-size: cover;
 }
 .banner-info {
@@ -2652,7 +2651,7 @@ a.blogs {
   min-height: 335px;
 }
 .home-background {
-  background: url(../images/nyito_medium.jpg) no-repeat -115px 0px;
+  background: url(../images/nyito_medium.jpg) no-repeat -15px 0px;
   background-size: cover;
 }
 .banner-info,
@@ -2660,9 +2659,11 @@ a.blogs {
   width: 65%;
 }
 .menu-footer-nav {
-    width: 300px;
+  width: 300px;
 }
-
+h3{
+  font-size: 20px;
+}
 
 }
 @media(max-width:320px){
@@ -2688,10 +2689,11 @@ a.blogs {
   width: 80%;
   padding: 0 0px 0 15px;
 }
-.banner-info p,
+.banner-info-text h2,
 .image-title p{
   font-size: 1em;
-  margin-top: 6em;
+  margin-top: 4em;
+  line-height: normal;
 }
 .banner-info a,
 .image-title a{
@@ -2720,7 +2722,7 @@ a.blogs {
   background-size:cover;
 }
 .about-right h3, .service h3, .gallery h3, .blog h3, .contact h3 {
-  font-size: 1.5em;
+/*  font-size: 1.5em;*/
 }
 .service-grids {
   margin-top: 1.5em;

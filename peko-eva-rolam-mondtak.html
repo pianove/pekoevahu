@@ -1,43 +1,59 @@
 <!--
-Au<!--
 Author:Eniko Pianovszky
 Author URL: http://pianovszkyeniko.hu
-Template by w3layouts
-Template URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
+
+**********************************************
+
+Please note, that if you make ANY CHANGES TO THE HTML MANUALLY, you have to DELETE /sitecake-temp FOLDER FROM THE SERVER. In this way Sitecake parses HTML again from the source, otherwise it will continue working with draft HTML you've made last time editing from the /sitecake-temp folder.
 -->
 <!DOCTYPE HTML>
 <html lang=hu>
 <head>
-<title>Pékó Éva</title>
+<title>Pékó Éva, Coach, Önfejlesztési Tréner</title>
 <link rel="shortcut icon" type="image/gif" href="images/logocircle_small.gif">
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
 <link href="css/all.min.css" rel="stylesheet" type="text/css" media="all" />
 <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"/>
-<link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet" type="text/css">
-<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro&subset=latin-ext' rel='stylesheet'>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Peko Eva, Eva Peko, Pékó Éva, Éva Pékó, pekoeva,evapeko,pékóéva, évapékó, coach, personal development, consultant,tanácsadó, vezetés, életvitel, tanácsadás" />
+<meta name="Description" content="Pékó Éva, Business és Life Coach, Team és Group Coach,  Önfejlesztési Tréner, Tanácsadó, rólam mondták">
+<meta name="keywords" content="Peko, Eva, Pékó, Éva, Éva, pekoeva,evapeko,pékóéva, évapékó, coach, personal development, önfejlesztés, consultant,tanácsadó, vezetés, életvitel, tanácsadás, rolam mondtak" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <script src="js/jquery-1.11.1.min.js"></script>
-<!--<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />-->
-<!--scrolling-->
-<!--<script src="js/move-top.js"></script>
-<script src="js/easing.js"></script>-->
 <script async src="js/all.min.js"></script>
-    <script src="js/readmore.min.js"></script>
- <script>
-	jQuery(document).ready(function($) {
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
 			$(".scroll").click(function(event){
 				event.preventDefault();
-
-				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+                var id=$(".page");
+                var target = $(id).offset().top;
+				$('html,body').animate({scrollTop:target},500,function(){
+                    window.location.hash = id;
+                }
+                                      );
 			});
+
+            $(".scroll-2-content").click(function(event){
+				event.preventDefault();
+                var id=$(".page-content");
+                var target = $(id).offset().top-140;
+				$('html,body').animate({scrollTop:target},500,function(){
+                    window.location.hash = id;
+                }
+                                      );
+			});
+
+            $(".menu").click(function(){
+				$(".slide-menu ul").slideToggle("slow" , function(){
+				});
+            });
 		});
-	</script>
+</script>
 <!--scrolling-->
+<script async src="http://www.google-analytics.com/analytics.js"></script>
 </head>
 <body>
 <!--top-header-->
