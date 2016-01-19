@@ -565,6 +565,10 @@ h2{
     min-height: 250px;
 }
 
+#about {
+    max-width: 1050px;
+    margin: auto;
+}
 .home-background{
     background: url(../images/nyito_compress.jpg) no-repeat 0px 0px;
     background-size: cover;
@@ -1691,6 +1695,12 @@ a.blogs:hover{
     border-top: 1px solid #f4f4f6;
     max-width: 1050px;
     text-align: center;
+}
+
+.touch-top.align-about{
+    text-align: left;
+    padding: 2em 4em;
+    max-width: 1050px;
 }
 /*
 .touch-top{
