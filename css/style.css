@@ -1032,6 +1032,7 @@ label{
 .quotes-container{
     margin: auto;
     padding: 0;
+    width: 90%;
 }
 .quotes-title{
     padding-top: 30px;
@@ -1083,8 +1084,8 @@ hr{
   overflow: auto;
 }*/
 .cd-testimonials-all .cd-testimonials-all-wrapper > ul {
-  width: 100%;
-  max-width: 1170px;
+  /*width: 100%;
+  max-width: 1170px;*/
 /*  margin: 4em auto;*/
   list-style: none;
   position: relative;
@@ -1181,8 +1182,8 @@ li.cd-testimonials-item{
 /*  border-top-color: rgba(136,237,85,0.75);*/
   border-top-color: #CED8F6;
 }
-.quote{
-  max-height: 14.1em;
+.quote {
+  max-height: 14.2em;
 }
 
 .cd-testimonials-all .cd-author {
@@ -1246,13 +1247,17 @@ li.cd-testimonials-item{
   vertical-align: middle;
   list-style: none;
 }
+.cd-author img.logo-img{
+    border: 1px solid #848484;
+}
+
 .cd-author img {
   width: 52px;
   height: 52px;
   border-radius: 50%;
   margin-right: 15px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-  border: 1px solid #848484;
+
 }
 .cd-author .cd-author-info {
   text-align: left;
