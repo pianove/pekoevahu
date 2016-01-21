@@ -1,203 +1,146 @@
 <!--
-Au<!--
 Author:Eniko Pianovszky
 Author URL: http://pianovszkyeniko.hu
-Template by w3layouts
-Template URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
+
+**********************************************
+
+Please note, that if you make ANY CHANGES TO THE HTML MANUALLY, you have to DELETE /sitecake-temp FOLDER FROM THE SERVER. In this way Sitecake parses HTML again from the source, otherwise it will continue working with draft HTML you've made last time editing from the /sitecake-temp folder.
 -->
 <!DOCTYPE HTML>
 <html lang=hu>
 <head>
-<title>Pékó Éva</title>
-<base href="">
+<title>Pékó Éva, Coach, Önfejlesztési Tréner</title>
 <link rel="shortcut icon" type="image/gif" href="images/logocircle_small.gif">
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
 <link href="css/all.min.css" rel="stylesheet" type="text/css" media="all" />
 <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"/>
-<link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet" type="text/css">
-<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro&subset=latin-ext' rel='stylesheet'>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Peko Eva, Eva Peko, Pékó Éva, Éva Pékó, pekoeva,evapeko,pékóéva, évapékó, coach, personal development, consultant,tanácsadó, vezetés, életvitel, tanácsadás" />
+<meta name="Description" content="Pékó Éva, Business és Life Coach, Team és Group Coach,  Önfejlesztési Tréner, Tanácsadó, bemutatkozás">
+<meta name="keywords" content="Peko, Eva, Pékó, Éva, Éva, pekoeva,evapeko,pékóéva, évapékó, coach, personal development, önfejlesztés, consultant,tanácsadó, vezetés, életvitel, tanácsadás" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <script src="js/jquery-1.11.1.min.js"></script>
-<!--<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />-->
-<!--scrolling-->
-<!--<script src="js/move-top.js"></script>
-<script src="js/easing.js"></script>-->
 <script async src="js/all.min.js"></script>
- <script type="text/javascript">
+<!--COPY ONLY TO RELEVANT HEAD-->
+<!--<script src="js/readmore.min.js"></script>-->
+<script type="text/javascript">
 		jQuery(document).ready(function($) {
-            $('html').scroll(function(){
-                $(".logo h1 a").css("transform","rotate(360deg)");
-            });
 			$(".scroll").click(function(event){
 				event.preventDefault();
-
-				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+                var id=$(".page");
+                var target = $(id).offset().top;
+				$('html,body').animate({scrollTop:target},500,function(){
+                    window.location.hash = id;
+                }
+                                      );
 			});
-             $(".logo h1 a").css("transform","rotate(360deg)");
+
+            $(".scroll-2-content").click(function(event){
+				event.preventDefault();
+                var id=$(".page-content");
+                var target = $(id).offset().top-140;
+				$('html,body').animate({scrollTop:target},500,function(){
+                    window.location.hash = id;
+                }
+                                      );
+			});
+
+            $(".menu").click(function(){
+				$(".slide-menu ul").slideToggle("slow" , function(){
+				});
+            });
 		});
-	</script>
+</script>
 <!--scrolling-->
+<script async src="http://www.google-analytics.com/analytics.js"></script>
 </head>
 <body>
+<div  class="page">
+    <div id="inPage" class="top-header">
 <!--top-header-->
-<div id="home" class="top-header">
-	 <div class="container">
-		 <div class="logo">
-				<h1><a href="index-uj.html" title="home"></a></h1>
-		 </div>
-		 <div class="top-menu">
-			 <span class="menu"><img src="images/nav-iconcustom.png" alt=""/></span>
-			 <ul>
-<!--				<li><a class="scroll" href="#home">Home</a></li>-->
-				<li><a style="color:#d06079;" href="methodology.html">Módszertanom</a></li><li><a class="" href="peko-eva-coaching-szervezeteknek.html">Szervezeteknek</a></li>
-                <li><a class="" href="peko-eva-coaching-maganszemelyeknek.html">Magánszemélyeknek</a></li>
-<!--
-				<li><a class="scroll" href="#corporateservice">Szervezeteknek</a></li>
-                 <li><a class="scroll" href="#individualservice">Magánszemélyeknek</a></li>
--->
+        <span class="left-top-header">
+    <h2 class="title-color">Pékó Éva </h2>
+         <h4 class="long-txt">Business és Life Coach, Team és Group Coach,  Önfejlesztési Tréner
+</h4><h4 class="short-txt">Coach, Önfejlesztési Tréner
+</h4></span>
+        <span class="right-top-header">
+            <a href="#" id="menuTitle" class="scroll menu right-top-header">MENÜ</a>
+            <a href="#" id="selectEnglish">
+                <img src="images/globe.png" alt="english">English</a>
+            <div id="menuIcon">
+                <h1>
+                    <a href="#" class="scroll menu"></a></h1></div></span>
+        <span class="scroll menu"><img src="images/logosquare_small.gif" alt=""/></span>
+    </div>
+    <div id="slideMenu" class="slide-menu">
+     <ul>
+         <li><a href="#"><img src="images/globe.png" alt="english">English</a></li>
+				<li><a href="index-nyito.html">Üdvözlöm</a></li>
+         <li><a href="#intro">Bemutatkozom</a></li>
+         <li><a class="" href="methodology.html">Módszertanom</a></li>
+
+
+				<li><a class="" href="peko-eva-coaching-szervezeteknek.html">Szervezeteknek</a></li>
+                 <li><a class="" href="peko-eva-coaching-maganszemelyeknek.html">Magánszemélyeknek</a></li>
+
                  <li><a class="" href="peko-eva-kepzettseg.html">Képzettségem</a></li>
                  <li><a class="" href="peko-eva-rolam-mondtak.html">Rólam mondták</a></li>
-<!--
-				<li><a class="scroll" href="#gallery">Gallery</a></li>
-				<li><a class="scroll" href="#blog">Blog</a></li>
--->
-<!--				<li><a class="scroll" href="#contact">Contact</a></li>-->
-			 </ul>
-		     <!-- script-for-menu -->
-				 <script>
-							$("span.menu").click(function(){
+        </ul>
+</div>
+    <script>
+     $("span.menu").click(function(){
 								$(".top-menu ul").slideToggle("slow" , function(){
 								});
 							});
-				 </script>
-		     <!-- script-for-menu -->
-		  </div>
-	 </div>
-</div>
-<!--Methodology-->
-<div id="methodology" class="methodology-title">
-<!--        <h3>Módszertanom</h3>-->
-        <!--header-->
-            <div class="header methodology-background">
-                <a href=#methodology-content class="scroll">
-		<div class="container">
+	 </script>
+	 <!-- script-for-menu -->
 
-			 <div class="clearfix"></div>
-		</div>
-    </a>
-</div>
-    </div>
-<div id="methodology-content" class=" container methodology-content">
-    <div class="center title-color banner-info-text">
-				 <!--<h2>A TARTÓS VÁLTOZÁS KULCSA, HOGY A FELMERÜLŐ KÉRDÉSEKET TÖBB SZINTEN IS MEGVIZSGÁLJUK, MELYHEZ INTEGRÁLT MÓDSZERTANT KÍNÁLOK.</h2>-->
-				 <h2>A TARTÓS VÁLTOZÁS KULCSA, HOGY A FELMERÜLŐ KÉRDÉSEKET TÖBB SZINTEN IS MEGVIZSGÁLJUK, MELYHEZ INTEGRÁLT MÓDSZERTANT KÍNÁLOK.</h2></div>
-<!--    <div class="methodology-content container">-->
-        <br><p><strong>Abban támogatom ügyfeleimet, hogy</strong>  az aktuálisan felmerülő munkahelyi és magánéleti kérdésekre, olyan <strong>egyéni megoldás(oka)t találjanak</strong>, mely az adott helyzetben - figyelembe véve a körülményeket, a lehetőségeket és legmerészebb vágyakat – a kitűzött célok eléréséhez a leginkább megfelelő.<br>
-    Találkozásaink során, az ügyfél <strong>meglévő, személyes erősségeire</strong> támaszkodva jutunk el a <strong>szükséges lépések felismeréséig és tudatosításáig</strong>. Ezeket a lépéseket a partneremnek mind a belső világa mind a külvilág irányába felelősen kell megtennie. Az ehhez való felkészülésben segítek.</p>
-    <h3>CÉLOM, HOGY MINDEN COACHING PARTNEREM MEGTAPASZTALJA Ő ÉLETE ALAKÍTÓJA:<br>írója és rendezője <span class="grey uppercase">és NEM ELSZENVEDŐJE,</span> főszereplője  <span class="grey uppercase">és NEM MELLÉKSZEREPLŐJE</span> életének.</h3>
-<div class="container" style= "display:none">
-    <div class="container col-lg-6 col-md-9 col-xs-12">
-    <ul class="justify">
-        <li class="title-color uppercase">írója és rendezője</li>
-        <li>és NEM</li>
-        <li class="grey uppercase bold">elszenvedője</li>
-    </ul>
-    <ul class="justify">
-        <li class="title-color uppercase">főszereplője</li>
-        <li>és NEM</li>
-        <li class="grey uppercase bold">mellékszereplője</li>
-    </ul>
-    </div>
-    <div class="container col-lg-6 col-md-3 col-xs-12">
-        <p></p>
-        <h3 class="left">életének.</h3>
-        <p></p>
-    </div>
-</div>
 
-<p>
-A köztem és ügyfeleim között kialakult térben sokkal több történik, mint ami a szavak szintjén tetten érhető: a változás kezdődik el itt. Az első lépéseket kísérem, vigyázom, majd mikor a partner úgy érzi készen áll rá, magától halad tovább.
-<br><br>
-A felmerülő problémák többsége a másokkal való találkozás, együttműködés, a társas érintkezés helyzeteiben mutatkozik meg. Hiszen ha csak egyedül lennénk ezen a bolygón nem lenne kivel konfliktusba bonyolódni és kivel összehasonlítani magunkat.</p>
-    <h3>PROBLÉMÁINK<br>KÉPESSÉGEINK ÉS LEHETŐSÉGEINK FELISMERÉSÉNÉK HIÁNYÁBÓL EREDNEK</h3>
-    <div class="container">
-    <div class="methodology-left">
+
+    <div id="methodology" class="methodology-title">
+        <div class="header methodology-background">
+            <a href="#" class="scroll-2-content">
+                <div class="container">
+                    <div class="center title-color banner-info-text">
+                        <h2>A TARTÓS VÁLTOZÁS KULCSA, HOGY A FELMERÜLŐ KÉRDÉSEKET TÖBB SZINTEN IS MEGVIZSGÁLJUK, MELYHEZ INTEGRÁLT MÓDSZERTANT KÍNÁLOK.</h2>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                </div>
+            </a>
+            <a href="#" id="scrollDown" class="scroll-2-content"></a>
+        </div>
     </div>
 
-    <div class="methodology-content">
-        <h3>Ennek megvalósításában segédkezem.</h3>
+    <div class="header-container">
+        <div class="header-title title-color grey-line">
+            <h1>Módszertanom</h1>
+        </div>
+    </div>
 
-    <p>Integrált módszertant alakítottam ki, melynek középpontjában <strong>a tranzakció analízis áll, </strong>amelyet hatékony <strong>önismereti</strong> (The Work, Living Inquiry) és <strong>drámapedagógiai módszer</strong>ekkel ötvözök. Emellett, gyakran élek a brief coaching és általános coaching eszközeivel is. Ezek‚ ’mennyiségi’ összetételét úgy alakítom ki, hogy az a lehető leghatékonyabban támogassa az ügyfél személyes és szakmai fejlődését, élethosszig tartó viselkedésbeli és életminőségbeli változás elérését. <br><br>Coachként elköteleztem magam a <strong>magas minőségű szakmai munka</strong>  mellett, melyet mindenkor képviselek, és amelyet az ICF Nemzetközi Coach Szövetség szakmai, etikai és titoktartási normáinak betartása mellett végzek.<br><br><strong>10 éves vezetői, ill. tanácsadói múltam</strong> biztosítja, hogy egyénre szabott és integrált megközelítésemet cégek és magánszemélyek esetében, valamint csoportos és egyéni kapcsolatban egyaránt hatékonyan tudjam alkalmazni.
-</p>
-        <p>A coaching alkalmak hatására jelentős mértékben <strong>nő az önismeret</strong>, <strong>magabiztosabbá, ön-azonossá </strong> válik ügyfelem.</p>
-
-        <ul><p><strong>Változik</strong> ügyfelem <strong>befelé és kifelé irányuló  kommunikáció</strong>ja is,  mely a mindennapi élet számos területén érezteti hatását:
-</p>
-            <li><span class="fa fa-check title-color">  </span>  <strong>könnyebbé válik  a döntéshozatal,</strong></li>
-            <li><span class="fa fa-check title-color">  </span> <strong>javulnak az emberi kapcsolatok,</strong>
-            </li>
-            </li><li><span class="fa fa-check title-color">  </span>korábban elképzelhetetlennek hitt célok, <strong>  új utak nyílnak meg</strong> az ügyfél előtt.</li>
-        </ul>
-</div>
-   </div>
-</div>
-<!---->
-<div id="contact" class="contact">
-	 <div class="container">
-		 <h3>Kapcsolatfelvétel</h3>
-		 <div class="touch-top">
-			 <div class="col-md-8 touch-left">
-				 <form action="mailTo:coach@pekoeva.hu">
-					<input type="text" value="név" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" />
-					<input type="text" value="email cím" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" />
-<!--					<textarea onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Üzenet / Message';}"></textarea>-->
-					<input type="submit" value="ELKÜLD">
-				 </form>
-			 </div>
-			 <!--<div class="col-md-4 touch-right">
-					<div class="touch-right-top">
-							<span class="add"> </span>
-							<h4>123 MAIN STREET,<label>CITY, COUNTRY</label></h4>
-					</div>
-					<div class="touch-right-top">
-							<span class="mail"> </span>
-							<p><a href="mailto:example@email.com">EMAIL@DOMAIN.COM</a></p>
-					</div>
-					<div class="touch-right-top">
-							<span class="num"> </span>
-							<p>+0123 456 789</p>
-					</div>
-			 </div>-->
-				<div class="clearfix"></div>
-		  </div>
-	 </div>
-</div>
-<div class="footer">
-	 <div class="container">
-		 <div class="social">
-				<a href="#"><i class="facebook"></i></a>
-				<a href="#"><i class="twitter"></i></a>
-				<a href="#"><i class="dribble"></i></a>
-				<a href="#"><i class="google"></i></a>
-				<a href="#"><i class="youtube"></i></a>
-		 </div>
-         <br>
-         <<p>© 2015 - Minden jog fenntartva</p>
-         <p>Készítette <i class="fa fa-heart"></i>-tel: <a href="http://www.pianovszkyeniko.hu" target="_blank">Eniko Pianovszky</a>
-            <br>
-          Sablon: <a href="http://w3layouts.com/">W3layouts</a></p>
-		 <div class="arrow">
-			 <a class="scroll" href="#home"><img src="images/top.png" alt=""></a>
-		 </div>
-	 </div>
-</div>
-<!---->
-<script type="text/javascript">
+    <div id="methodology-content" class="container methodology-content page-content">
+        
+        <p><strong>Abban támogatom ügyfeleimet, hogy</strong> az aktuálisan felmerülő munkahelyi és magánéleti kérdésekre, olyan <strong>egyéni megoldás(oka)t találjanak</strong>, mely az adott helyzetben - figyelembe véve a körülményeket, a lehetőségeket és legmerészebb vágyakat – a kitűzött célok eléréséhez a leginkább megfelelő.<br>Találkozásaink során, az ügyfél <strong>meglévő, személyes erősségeire</strong> támaszkodva jutunk el a <strong>szükséges lépések felismeréséig és tudatosításáig</strong>. Ezeket a lépéseket a partneremnek mind a belső világa mind a külvilág irányába felelősen kell megtennie. Az ehhez való felkészülésben segítek.</p>
+        <h3>CÉLOM, HOGY MINDEN COACHING PARTNEREM MEGTAPASZTALJA Ő ÉLETE ALAKÍTÓJA:<br>írója és rendezője <span class="grey uppercase">és NEM ELSZENVEDŐJE,</span> főszereplője <span class="grey uppercase">és NEM MELLÉKSZEREPLŐJE</span> életének.</h3>
+        
+        <div class="container" style="display:none"><div class="container col-lg-6 col-md-9 col-xs-12"><ul class="justify"><li class="title-color uppercase">írója és rendezője</li><li>és NEM</li><li class="grey uppercase bold">elszenvedője</li></ul><ul class="justify"><li class="title-color uppercase">főszereplője</li><li>és NEM</li><li class="grey uppercase bold">mellékszereplője</li></ul></div><div class="container col-lg-6 col-md-3 col-xs-12"><p></p><h3 class="left">életének.</h3>
+            
+            <p></p></div>
+        </div>
+        <p>A köztem és ügyfeleim között kialakult térben sokkal több történik, mint ami a szavak szintjén tetten érhető: a változás kezdődik el itt. Az első lépéseket kísérem, vigyázom, majd mikor a partner úgy érzi készen áll rá, magától halad tovább.<br><br>A felmerülő problémák többsége a másokkal való találkozás, együttműködés, a társas érintkezés helyzeteiben mutatkozik meg. Hiszen ha csak egyedül lennénk ezen a bolygón nem lenne kivel konfliktusba bonyolódni és kivel összehasonlítani magunkat.
+        </p>
+        <h3>PROBLÉMÁINK<br>KÉPESSÉGEINK ÉS LEHETŐSÉGEINK FELISMERÉSÉNÉK HIÁNYÁBÓL EREDNEK</h3>
+        <div class="container">
+            <div class="methodology-left"></div>
+            <div class="methodology-content">
+                <h3>Ennek megvalósításában segédkezem.</h3>
+                <p>Integrált módszertant alakítottam ki, melynek középpontjában <strong>a tranzakció analízis áll,</strong>amelyet hatékony <strong>önismereti</strong> (The Work, Living Inquiry) és <strong>drámapedagógiai módszer</strong>ekkel ötvözök. Emellett, gyakran élek a brief coaching és általános coaching eszközeivel is. Ezek‚ ’mennyiségi’ összetételét úgy alakítom ki, hogy az a lehető leghatékonyabban támogassa az ügyfél személyes és szakmai fejlődését, élethosszig tartó viselkedésbeli és életminőségbeli változás elérését.<br><br>Coachként elköteleztem magam a <strong>magas minőségű szakmai munka</strong> mellett, melyet mindenkor képviselek, és amelyet az ICF Nemzetközi Coach Szövetség szakmai, etikai és titoktartási normáinak betartása mellett végzek.<br><br><strong>10 éves vezetői, ill. tanácsadói múltam</strong> biztosítja, hogy egyénre szabott és integrált megközelítésemet cégek és magánszemélyek esetében, valamint csoportos és egyéni kapcsolatban egyaránt hatékonyan tudjam alkalmazni.</p>
+                <p>A coaching alkalmak hatására jelentős mértékben <strong>nő az önismeret</strong>, <strong>magabiztosabbá, ön-azonossá</strong> válik ügyfelem.</p>
+                <ul>
+                    <p><strong>Változik</strong> ügyfelem <strong>befelé és kifelé irányuló kommunikáció</strong>ja is, mely a mindennapi élet számos területén érezteti hatását:</p><li><span class="fa fa-check title-color"></span> <strong>könnyebbé válik a döntéshozatal,</strong></li><li><span class="fa fa-check title-color"></span> <strong>javulnak az emberi kapcsolatok,</strong></li><li><span class="fa fa-check title-color"></span>korábban elképzelhetetlennek hitt célok, <strong>új utak nyílnak meg</strong> az ügyfél előtt.</li></ul></div></div></div><div id="contact" class="contact"><div class="container"><h3>Kapcsolatfelvétel</h3><div class="touch-top"><div class="col-md-8 touch-left"><form action="mailTo:coach@pekoeva.hu"><input type="text" value="név" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}"> <input type="text" value="email cím" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"><input type="submit" value="ELKÜLD"></form></div><div class="clearfix"></div></div></div></div><div class="footer"><div class="container"><div class="social"><a href="#"><i class="facebook"></i></a> <a href="#"><i class="twitter"></i></a> <a href="#"><i class="dribble"></i></a> <a href="#"><i class="google"></i></a> <a href="#"><i class="youtube"></i></a></div><br><<p>© 2015 - Minden jog fenntartva</p><p>Készítette <i class="fa fa-heart"></i>-tel: <a href="http://www.pianovszkyeniko.hu" target="_blank">Eniko Pianovszky</a><br>Sablon: <a href="http://w3layouts.com/">W3layouts</a></p><div class="arrow"><a class="scroll" href="#home"><img src="images/top.png" alt></a></div></div></div><script type="text/javascript">
 		$(document).ready(function() {
 				/*
 				var defaults = {
@@ -209,11 +152,4 @@ A felmerülő problémák többsége a másokkal való találkozás, együttműk
 				*/
 		$().UItoTop({ easingType: 'easeOutQuart' });
 });
-</script>
-<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-<!---->
-
-
-</body>
-</html>
-
+</script><a href="#to-top" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a></body></html>
