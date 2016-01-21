@@ -393,7 +393,7 @@ color:#d06079;
 .wordart{
     background: url(../images/pekoevahu%20wordartretouche.jpg) center no-repeat;
     background-size: contain;
-/*    height: 286px;*/
+    height: 246px;
 /*    min-height: 196px;*/
     margin-top: 10px;
 }
@@ -559,6 +559,7 @@ h2{
 .header{
 /*  min-height: 750px;*/
 /*  font-family: 'Titillium Web', sans-serif;*/
+    height: 680px;
 }
 
 .about{
@@ -572,7 +573,7 @@ h2{
 .home-background{
     background: url(../images/nyito_compress.jpg) no-repeat 0px 0px;
     background-size: cover;
-    height: 680px;
+/*    height: 680px;*/
 /*    min-height: 620px;*/
 }
 #scrollDown{
@@ -711,7 +712,7 @@ h2{
 }
 
 .corpservice-background5{
-    background: url(../images/szervezeteknek5.jpg) no-repeat 0px 0px;
+    background: url(../images/szervezeteknek5.jpg) 60% 0% no-repeat;
     background-size: cover;
     min-height: 520px;
 }
@@ -897,17 +898,6 @@ h2{
     text-align: center;
 }
 
-.corpservice.banner-info{
-    margin-top:10px !important;
-    width: 45% !important;
-
-}
-
-.corpservice img{
-    height:150px;
-    margin-left: 10%;
-}
-
 
 .banner-info-text h2,
 .image-title h2{
@@ -968,6 +958,11 @@ label{
 .intro {
     text-align: center;
     padding:1em;
+}
+
+.intro.container>.col-lg-8{
+    padding-top: 3em;
+    padding-left: 2em;
 }
 
 .methodology-content h3,
@@ -1237,15 +1232,15 @@ li.cd-testimonials-item{
     margin-left: 1em;
   }*/
 }
-@media only screen and (min-width: 1170px) {
-  /*.cd-testimonials-all .cd-testimonials-item {
+/*@media only screen and (min-width: 1170px) {
+  .cd-testimonials-all .cd-testimonials-item {
     width: 33.3333%;
     margin: 0 1.6666% 3em;
-  }*/
+  }
   .wordart{
     height: 146px;
   }
-}
+}*/
 
 .cd-author img, .cd-author .cd-author-info {
   display: inline-block;
@@ -1291,6 +1286,11 @@ li.cd-testimonials-item{
 
 }*/
 
+.corpservice.page-content{
+    margin: auto;
+    max-width: 90%;
+}
+
 .futr-grid{
     padding: 0 0 0 10px !important;
 }
@@ -1298,6 +1298,25 @@ li.cd-testimonials-item{
 .icon-info ul{
     padding-left: 15px;
 }
+
+.corpservice.banner-info{
+    margin-top:10px !important;
+/*    width: 45% !important;*/
+
+}
+.company-logos{
+    margin: auto;
+    width: 80%;
+}
+
+.company-logos img{
+    width: 200px;
+}
+.corpservice img{
+    height:150px;
+/*    margin-left: 10%;*/
+}
+
 .methodology-right{
 /*	width:51.8%;*/
 	float:left;
@@ -1309,10 +1328,11 @@ li.cd-testimonials-item{
 .methodology-content h4,
 .intro h4,
 .corpservice h4{
-	font-size:1.5em;
+	font-size:20px;
     text-align: center;
 /*    font-weight: 700;*/
     padding-top: 10px;
+    line-height: 26px;
 }
 
 .justify{
@@ -1461,8 +1481,18 @@ li.cd-testimonials-item{
   color:#9F9F9F;
   font-size: 35px;
 }
+
+#corpservice.container{
+    max-width: 90%;
+}
+
+.futr-grid{
+    text-align: center;
+}
 .icon-info {
-  float: left;
+/*  float: left;*/
+  text-align: left;
+  margin: auto;
 /*
   width: 74%;
   margin-left: 3%;
@@ -1690,7 +1720,7 @@ a.blogs:hover{
 }
 /*--contact--*/
 .contact{
-	padding: 2em 0;
+	padding: 2em 0 0;
     margin: auto;
     border-top: 1px solid #f4f4f6;
     max-width: 1050px;
@@ -1765,16 +1795,43 @@ a.blogs:hover{
 	background: transparent;
 	color:#d06079;
 }
+.col-md-4.touch-right{
+  margin-top: 1em;
+}
+
+#SkypeButton_Call_evapeko_1 img{
+    background: #d06079;
+    padding: 2px;
+    border-radius: 6px;
+}
+
+
+.col-md-4.touch-right li{
+    list-style: none;
+    text-align: justify;
+    display: inline-block;
+    margin: auto 1em;
+}
 .touch-right-top:nth-child(1) {
   margin-top: 0;
 }
 .touch-right-top {
   text-align: center;
-  margin-top: 8px;
+  margin-top: 1.5em;
     color: #999;
 }
 .touch-right-top p a{
 	color:#999;
+}
+
+.touch-right-top p{
+    margin: 0;
+}
+
+.touch-right-top i.fa.fa-skype{
+    color: skyblue;
+    background: white;
+    font-size: 2em;
 }
 .touch-right-top span.add {
   background-position: 0px 0px;
@@ -1942,11 +1999,11 @@ padding:2em 0 0.5em 0;
 
 }
 
-@media(min-width:992px) and (max-width: 1169px){
+/*@media (min-width:992px){
 .wordart{
-        height: 216px;
+        height: 246px;
     }
-}
+}*/
 
 @media (max-width: 1280px){
 .about-left {
@@ -1969,24 +2026,22 @@ padding:2em 0 0.5em 0;
 .banner-info-text h2,
 .image-title h2{
   font-size: 2em;
-  line-height: inherit;
+  line-height: 1.2;
 }
-/*
 .header{
-   min-height: 740px;
+   height: 420px;
 }
-*/
 .home-background {
   background: url(../images/nyito_compress.jpg) no-repeat 0px 0;
   background-size: cover;
-  height: 420px;
+/*  height: 420px;*/
 }
 .quotes-background,
 .education-background,
 .indservice-background,
 .methodology-background,
 .corpservice-background{
-    height: 420px;
+/*    height: 420px;*/
 }
 
 }
@@ -2044,7 +2099,7 @@ padding:2em 0 0.5em 0;
 */
 .banner-info-text h2,
 .image-title h2{
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .banner-info,
 .image-title{
@@ -2073,11 +2128,12 @@ padding:2em 0 0.5em 0;
 }*/
 
 .company-logos img{
-    width: 200px;
+    width: 160px;
 }
 .wordart{
         height: 286px;
 }
+
 
 .cd-author img {
     width: 32px;
@@ -2102,6 +2158,9 @@ padding:2em 0 0.5em 0;
 .futr-grid{
 /*  width: 50%;*/
   float: left;
+}
+.icon-info p.title-color{
+  text-align: center;
 }
 
 .glyphicon-phone:before, .glyphicon-thumbs-up:before, .glyphicon-picture:before, .glyphicon-user:before {
@@ -2180,7 +2239,7 @@ padding:2em 0 0.5em 0;
 
 .banner-info-text h2,
 .image-title h2{
-  font-size: 1.65em;
+  font-size: 1.5em;
   line-height: normal;
 }
 .logo h1 a {
@@ -2193,6 +2252,10 @@ padding:2em 0 0.5em 0;
 .banner-info,
 .image-title{
   margin: 5em 0 0 0em;
+}
+
+.intro.container>.col-lg-8{
+    padding-left: 1em;
 }
 .map iframe {
   width: 100%;
@@ -2409,8 +2472,10 @@ span.menu{
 }
 
 .corpservice.banner-info{
-    float: left;
+/*    float: right;*/
     text-align: center;
+    padding: 0;
+    width: 70%;
 }
 
 #scrollDown{
@@ -2438,7 +2503,7 @@ span.menu{
 .about.banner-info h2,
 .banner-info-text h2,
 .image-title h2{
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .about.banner-info p{
@@ -2446,7 +2511,8 @@ span.menu{
 }
 
 .company-logos img{
-    width: 40%;
+    width: 30%;
+    height: 30%;
 }
 .banner-info,
 .image-title {
@@ -2476,11 +2542,9 @@ span.menu{
   padding: 0;
   margin-bottom: 2em;
 }
+
 .icon-pic {
   width: 13%;
-}
-.icon-info {
-  width: 84%;
 }
 .grids2 {
   margin-top:0em;
@@ -2583,21 +2647,31 @@ a.blogs {
 }
 
 
-.about.banner-info h2,
+/*.about.banner-info h2,
 .image-title h2{
   display: none;
+}*/
+.corpservice.banner-info-text h2{
+    margin-top: 0;
+    line-height: 1.1;
+    float: right;
+    z-index: 9999;
+    position: absolute;
 }
 
 .banner-info-text.up h2{
     margin-top: 0;
 }
 
+.corpservice.banner-info{
+    padding: 0;
+    width: 70%;
+}
 
 .banner-info-text h2{
 	font-size:1em;
 	line-height:1.3em;
 	margin-top:2em;
-    font-weight: 400;
 }
 .about.banner-info p,
 .image-title p{
@@ -2620,10 +2694,7 @@ a.blogs {
 .icon-pic {
   width: 18%;
 }
-.icon-info {
-  width: 76%;
-  margin-left: 4%;
-}
+
 .icon-info p {
   margin-top: 0.5em;
 }
@@ -2643,6 +2714,11 @@ a.blogs {
 .col-xxs-12{
     width: 100%;
 }
+
+.intro.container>.col-lg-8{
+    padding: 1em 0 0;
+}
+
 
 .wordart{
     height: 196px;
@@ -2760,7 +2836,7 @@ h3{
   left: 35%;
 }
 .header {
-  min-height: 276px;
+  height: 276px;
 }
 .home-background {
   background: url(../images/nyito_medium.jpg) no-repeat -95px 0px;
@@ -2799,10 +2875,7 @@ h3{
 .icon-info h4 a {
   font-size: 0.9em;
 }
-.icon-info {
-  width: 76%;
-  margin-left: 6%;
-}
+
 .about-left {
 /*  min-height: 204px;*/
   background: url(../images/_MG_5526_ok_kepzettseg.jpg) no-repeat 0px 0px;
