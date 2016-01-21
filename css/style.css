@@ -1720,7 +1720,7 @@ a.blogs:hover{
 }
 /*--contact--*/
 .contact{
-	padding: 2em 0;
+	padding: 2em 0 0;
     margin: auto;
     border-top: 1px solid #f4f4f6;
     max-width: 1050px;
@@ -1795,16 +1795,43 @@ a.blogs:hover{
 	background: transparent;
 	color:#d06079;
 }
+.col-md-4.touch-right{
+  margin-top: 1em;
+}
+
+#SkypeButton_Call_evapeko_1 img{
+    background: #d06079;
+    padding: 2px;
+    border-radius: 6px;
+}
+
+
+.col-md-4.touch-right li{
+    list-style: none;
+    text-align: justify;
+    display: inline-block;
+    margin: auto 1em;
+}
 .touch-right-top:nth-child(1) {
   margin-top: 0;
 }
 .touch-right-top {
   text-align: center;
-  margin-top: 8px;
+  margin-top: 1.5em;
     color: #999;
 }
 .touch-right-top p a{
 	color:#999;
+}
+
+.touch-right-top p{
+    margin: 0;
+}
+
+.touch-right-top i.fa.fa-skype{
+    color: skyblue;
+    background: white;
+    font-size: 2em;
 }
 .touch-right-top span.add {
   background-position: 0px 0px;
