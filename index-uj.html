@@ -147,27 +147,34 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--</div>-->
 </div>
   <div id="contact" class="contact">
-	 <div class="container">
+         <div class="header-title title-color grey-line"><h1>Kapcsolatfelvétel</h1></div>
 		 <div class="touch-top">
-			 <div class="col-md-8 touch-left">
-                   <div class="header-title title-color grey-line"><h1>Kapcsolatfelvétel</h1></div>
+			 <div class="touch-left">
 				 <form id="contactform"  name="contactform" method="post">
+                     <div class="form-item">
 					<label>Keresztnév:</label>
                      <input type="text"  id="first_name" name="first_name"/>
-                     <label for="last_name" id="last_name">Vezetéknév:<span class="required">*</span></label>
+                     </div>
+                     <div class="form-item">
+                     <label for="last_name" id="last_name">Vezetéknév:<span class="required title-color">*</span></label>
                      <input type="text"  id="last_name" name="last_name" value="" required />
-                     <label for="email" id="email">Email cím:<span class="required">*</span></label>
+                         </div>
+                    <div class="form-item"> <label for="email" id="email">Email cím:<span class="required title-color">*</span></label>
 					<input type="text"  id="email" name="email" value="" required />
+                     </div>
+                     <div class="form-item">
                      <label for="org_name" id="org_name">Szervezet neve:</label>
                      <input type="text"  name="org_name" value="" />
-                     <label for="message" id="message">Üzenet:<span class="required">*</span></label>
-					<textarea placeholder="Kérem írja ide üzenetét..." id="message" name="message" value="" required></textarea>
+                     </div>
+
+                     <label for="message" id="message" style="text-align:left;">Üzenet:<span class="required title-color">*</span></label>
+					<textarea id="message" name="message" value="" required></textarea>
                       <div id="error">
                      <span>
                          <div class="error-msg"></div>
                      </span>
                  </div>
-					<input type="submit" value="ELKÜLD" name="submit"/>
+					<input type="submit" value="ELKÜLD" name="submit" class=""/>
 
 				 </form>
 
@@ -175,11 +182,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                  </div>
 
 			 </div>
-             <div class="col-md-4 touch-right"><ul>
+             <div class="touch-right"><ul>
 <li>
 					<div class="touch-right-top">
 							<span class="mail"> </span>
-							<p><a href="mailto:coach@pekoeva.hu">coach@pekoeva.hu</a></p>
+							<p><a href="#contactform">coach@pekoeva.hu</a></p>
 					</div></li>
 					<!--<div class="touch-right-top">
 							<span class="num"> </span>
@@ -213,7 +220,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			 </div>
 			<div class="clearfix"></div>
 		  </div>
-	 </div>
 </div>
 <div class="footer">
 	 <div class="container">

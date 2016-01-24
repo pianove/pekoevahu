@@ -34,16 +34,16 @@ $(function() {
         },
         messages: {
             last_name: {
-                required: "come on, you have a name don't you?",
-                minlength: "your name must consist of at least 2 characters"
+                required: "<span class= 'hun-txt'>Kérem, adja meg vezetéknevét.</span><span class= 'en-txt'> Please enter your last name.</span>",
+                minlength: "<span class= 'hun-txt'>A vezetéknévnek min. 2 karakternek kell lennie. </span><span class= 'en-txt'>Your name must consist of at least 2 characters.</span>"
             },
             email: {
-                required: "no email, no message",
-                email: "Your email address must be in the format of name@domain.com"
+                required: "<span class= 'hun-txt'> Kérem, adja meg email címét. </span><span class= 'en-txt'> Please enter your email address.</span>",
+                email: "<span class= 'hun-txt'>Kérem, email címét név@pelda.hu formátumban adja meg. </span><span class= 'en-txt'> Your email address must be in the format of name@domain.com.</span>"
             },
             message: {
-                required: "um...yea, you have to write something to send this form.",
-                minlength: "thats all? really?"
+                required: "<span class= 'hun-txt'>Kérem, írjon üzenetet.</span><span class= 'en-txt'>You have to write something to send this form.</span>",
+                minlength: "<span class= 'hun-txt'>Ez nagyon rövid üzenet. Kérem, javítsa.</span><span class= 'en-txt'> You have to write more than 2 characters.</span>"
             }
 
         },
@@ -80,13 +80,13 @@ $(function() {
 
         // callback handler that will be called on success
         request.done(function (response, textStatus, jqXHR) {
-           $('#success').html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">×</button><strong>Well done!</strong> You successfully read this important alert message.</div>');
+           $('#success').html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">×</button><span class="hun-txt">Köszönöm, hogy megtisztelt érdeklődésével! Hamarosan felveszem Önnel a kapcsolatot.</span><span class="en-txt">Thank you for contacting me. I will be in touch with you very soon.</span></div>');
             $form[0].reset();
         });
 
         // callback handler that will be called on failure
         request.fail(function (jqXHR, textStatus, errorThrown) {
-          
+
             // log the error to the console
 //            console.error(
 //                "The following error occured: " + textStatus, errorThrown);
