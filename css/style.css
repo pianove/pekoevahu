@@ -1799,6 +1799,55 @@ a.blogs:hover{
 	background: transparent;
 	color:#d06079;
 }
+
+form label {
+    margin-bottom:.2em;
+    font-size:1.3rem;
+    line-height:1.3rem;
+    font-size:13px;
+    line-height:13px;
+    color:#999;
+
+}
+form label.error {
+    margin-bottom:1em;
+    font-size:1.2rem;
+    line-height:1.2rem;
+    font-size:12px;
+    line-height:12px;
+    color:#c0392b
+}
+form input[type="text"].error, form textarea.error {
+    background:#e6e6e6;
+    border-color:#c0392b
+}
+
+
+
+/*#success {
+    display:none;
+}*/
+/*#success span p {
+    display:block;
+    position:absolute;
+    top:0;
+    width:100%;
+}*/
+
+/*#success p, #error p {
+    margin-top:6em;
+}*/
+/*#success span p {
+  color:#9bd32d;
+}*/
+#error {
+  color:#c0392b;
+}
+
+.required {
+    color:#e9266d;
+}
+
 .col-md-4.touch-right{
   margin-top: 1em;
 }
