@@ -6,7 +6,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 **********************************************
 
-Please note, that if you make ANY CHANGES TO THE HTML MANUALLY, you have to DELETE /sitecake-temp FOLDER FROM THE SERVER. In this way Sitecake parses HTML again from the source, otherwise it will continue working with draft HTML you've made last time editing from the /sitecake-temp folder.
 -->
 <!DOCTYPE HTML>
 <html lang=hu>
@@ -118,9 +117,9 @@ Please note, that if you make ANY CHANGES TO THE HTML MANUALLY, you have to DELE
 
     <div id="intro" class="intro page-content">
         <div class="container"><br>
+        <p>Coachként egyéneket és csoportokat támogatok céljaik elérésében, amely során az élet bátor megélésére, <strong>az önmagukért való kiállásra</strong> és felelősségvállalásra bíztatom ügyfeleimet.</p>
             <h3 class="bg-grey">Abban támogatom minden coaching partnerem, HOGY felismerje:<br>írója és rendezője <span class="grey uppercase">és NEM ELSZENVEDŐJE,</span> főszereplője  <span class="grey uppercase">és NEM MELLÉKSZEREPLŐJE</span> életének.</h3></div>
 <div class="intro container">
-        <p>Coachként egyéneket és csoportokat támogatok céljaik elérésében, amely során az élet bátor megélésére, <strong>az önmagukért való kiállásra</strong> és felelősségvállalásra bíztatom ügyfeleimet.</p>
 
 
     <div class="col-xxs-12 col-xs-6 col-md-4 col-lg-4 ">
@@ -148,22 +147,46 @@ Please note, that if you make ANY CHANGES TO THE HTML MANUALLY, you have to DELE
 <!--</div>-->
 </div>
   <div id="contact" class="contact">
-	 <div class="container">
+         <div class="header-title title-color grey-line"><h1>Kapcsolatfelvétel</h1></div>
 		 <div class="touch-top">
-			 <div class="col-md-8 touch-left">
-                   <div class="header-title title-color grey-line"><h1>Kapcsolatfelvétel</h1></div>
-				 <form action="mailto:coach@pekoeva.hu">
-					<input type="text" value="név" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" />
-					<input type="text" value="email cím" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" />
-<!--					<textarea onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Üzenet / Message';}"></textarea>-->
-					<input type="submit" value="ELKÜLD">
+			 <div class="touch-left">
+				 <form id="contactform"  name="contactform" method="post">
+                     <div class="form-item">
+					<label>Keresztnév:</label>
+                     <input type="text"  id="first_name" name="first_name"/>
+                     </div>
+                     <div class="form-item">
+                     <label for="last_name" id="last_name">Vezetéknév:<span class="required title-color">*</span></label>
+                     <input type="text"  id="last_name" name="last_name" value="" required />
+                         </div>
+                    <div class="form-item"> <label for="email" id="email">Email cím:<span class="required title-color">*</span></label>
+					<input type="text"  id="email" name="email" value="" required />
+                     </div>
+                     <div class="form-item">
+                     <label for="org_name" id="org_name">Szervezet neve:</label>
+                     <input type="text"  name="org_name" value="" />
+                     </div>
+
+                     <label for="message" id="message" style="text-align:left;">Üzenet:<span class="required title-color">*</span></label>
+					<textarea id="message" name="message" value="" required></textarea>
+                      <div id="error">
+                     <span>
+                         <div class="error-msg"></div>
+                     </span>
+                 </div>
+					<input type="submit" value="ELKÜLD" name="submit" class=""/>
+
 				 </form>
+
+                 <div id="success">
+                 </div>
+
 			 </div>
-             <div class="col-md-4 touch-right"><ul>
+             <div class="touch-right"><ul>
 <li>
 					<div class="touch-right-top">
 							<span class="mail"> </span>
-							<p><a href="mailto:coach@pekoeva.hu">coach@pekoeva.hu</a></p>
+							<p><a href="#contactform">coach@pekoeva.hu</a></p>
 					</div></li>
 					<!--<div class="touch-right-top">
 							<span class="num"> </span>
@@ -197,7 +220,6 @@ Please note, that if you make ANY CHANGES TO THE HTML MANUALLY, you have to DELE
 			 </div>
 			<div class="clearfix"></div>
 		  </div>
-	 </div>
 </div>
 <div class="footer">
 	 <div class="container">
@@ -248,10 +270,13 @@ Please note, that if you make ANY CHANGES TO THE HTML MANUALLY, you have to DELE
 
   ga('create', 'UA-67215332-2', 'auto');
   ga('send', 'pageview');
+    </script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.12.0/additional-methods.js"></script>
 
-</script>
 
-</script>
 </body>
 </html>
 

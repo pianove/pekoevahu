@@ -71,6 +71,9 @@ body{
     color: #848484;
     font-size: 18px;
 }
+.en-txt{
+    display: none;
+}
 strong{
     color: black;
 }
@@ -1736,43 +1739,41 @@ a.blogs:hover{
     padding: 2em 4em;
     max-width: 1050px;
 }
-/*
+
 .touch-top{
-	margin-top:2.5em;
+	margin:60px auto 0;
+    width: 90%;
 }
-*/
-.touch-left form input[type="text"]:nth-child(1) {
-  margin-right: 25px;
+
+
+.touch-left form input[type="text"],
+.touch-left form textarea{
+    background-color: #f4f4f6;
+    border: 0px;
 }
-.touch-left form  input[type="text"] {
-  width: 33%;
-  margin: 7px auto;
+form .form-item{
+    display: inline-block;
+    text-align: left;
+    min-width: 47%;
+    margin: 0 0 24px;
+    position: relative;
+}
+form .form-item:nth-child(odd){
+    margin-right: 5%;
+}
+
+.touch-left form input[type="text"] {
+  width: 100%;
+/*  margin: 7px auto;*/
   color: #848484;
-  background: none;
   padding: 10px 10px;
-  outline: none;
-  border: 1px solid #999;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
 }
 .touch-left form textarea {
   width: 100%;
-  margin: 2em 0 0 0;
-  color: #999;
+  color: #848484;
   resize: none;
-  background: none;
   height: 150px;
   padding: 15px;
-  outline: none;
-  border: 1px solid #999;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
 }
 .touch-left form input[type=submit] {
   color: #ffffff;
@@ -1781,11 +1782,6 @@ a.blogs:hover{
   cursor: pointer;
   font-weight: 500;
   margin: 27px 0 0 15px;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
   border: 2px solid #d06079;
   background: #d06079;
   transition:0.5s all;
@@ -1799,9 +1795,57 @@ a.blogs:hover{
 	background: transparent;
 	color:#d06079;
 }
-.col-md-4.touch-right{
+
+form label {
+    margin-bottom:.2em;
+    line-height:20px;
+    color:black;
+    display: block;
+
+}
+form label.error {
+    margin-bottom:1em;
+    line-height:1.2rem;
+    font-size:12px;
+    line-height:12px;
+    color:#c0392b
+}
+form input[type="text"].error, form textarea.error {
+    background:#e6e6e6;
+    border-color:#c0392b
+}
+
+/*#success span p {
+    display:block;
+    position:absolute;
+    top:0;
+    width:100%;
+}*/
+
+/*#success p, #error p {
+    margin-top:6em;
+}*/
+/*#success span p {
+  color:#9bd32d;
+}*/
+
+#success {
+    margin-top: 1em;
+}
+
+#error {
+  color:#c0392b;
+}
+
+.required {
+    color:#e9266d;
+}
+
+.touch-right{
   margin-top: 1em;
 }
+
+
 
 #SkypeButton_Call_evapeko_1 img{
     background: #d06079;
@@ -1810,7 +1854,7 @@ a.blogs:hover{
 }
 
 
-.col-md-4.touch-right li{
+.touch-right li{
     list-style: none;
     text-align: justify;
     display: inline-block;
@@ -2734,20 +2778,21 @@ a.blogs {
   font-size: 0.85em;
   line-height: 1.7em;
 }
+
+form .form-item{
+    width: 100%;
+}
 .touch-left form input[type=submit] {
   font-size: 12px;
   padding: 9px 27px;
 }
 .touch-left form input[type="text"],.touch-left form textarea {
-  width: 100%;
+
   font-size: 0.9em;
   padding:10px;
 }
 .touch-right-top h4 {
   letter-spacing: 0px;
-}
-.col-md-4.touch-right li {
-    margin: 0;
 }
 }
 
