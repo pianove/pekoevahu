@@ -884,6 +884,9 @@ h2{
     max-width: 970px;
 }
 
+.intro.container li{
+    margin-bottom: 5px;
+}
 
 .image-title-filter h2{
 	color:#fff;
@@ -2754,9 +2757,7 @@ a.blogs {
 .about-left {
   min-height: 283px;
 }
-.left-sep {
-    border: 0;
-}
+
 .col-xxs-12{
     width: 100%;
 }
