@@ -182,8 +182,8 @@ span.menu {
 }
 
 #logo-left h1 a {
-    height: 64px;
-    width: 64px;
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -191,7 +191,7 @@ span.menu {
     -o-border-radius: 50%;
     border: 3px solid #fff;
     background: url(../images/logosquare_small.gif) #d06079;
-    background-size: 59px 58px;
+    background-size: 65px 64px;
     display: inline-block;
     margin-right: 16px;
 }
@@ -213,7 +213,7 @@ span.menu {
     display: inline-block;
     vertical-align: top;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     font-size: 32px;
     position: absolute;
     margin-top: 6px;
@@ -439,9 +439,9 @@ color:#d06079;
 
 }
 .wordart{
-    background: url(../images/pekoevahu%20wordartretouche.jpg) center no-repeat;
-    background-size: contain;
-    height: 246px;
+    background: url(../images/wordartbggrey.png) center no-repeat;
+    background-size: cover;
+    height: 286px;
 /*    min-height: 196px;*/
     margin-top: 10px;
 }
