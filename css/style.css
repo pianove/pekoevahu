@@ -134,7 +134,10 @@ strong{
 .logo h1 a:active,
 #menuIcon h1 a:hover,
 #menuIcon h1 a:focus,
-#menuIcon h1 a:active
+#menuIcon h1 a:active,
+#logo-left h1 a:hover,
+#logo-left h1 a:focus,
+#logo-left h1 a:active
 {
  transform: rotate(360deg);
 }
@@ -155,12 +158,13 @@ span.menu {
 /*    border: 0;*/
 }
 
+
  .top-header {
 /*  margin: 0 1em;*/
   text-align: center;
   position: fixed;
   top: 0;
-  background-color: #fff;
+  background: linear-gradient(#f4f4f6,white);
 /*  height: 75px;*/
   width: 100%;
   zoom: 1;
@@ -170,6 +174,23 @@ span.menu {
 
 }
 
+#logo-left{
+    display: inline-block;
+}
+
+#logo-left h1 a {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 3px solid #fff;
+    background: url(../images/logosquare_small.gif) #d06079;
+    background-size: 59px 58px;
+    display: inline-block;
+}
 
 .top-header.container {
   padding: 0;
@@ -182,15 +203,54 @@ span.menu {
     text-align: left;
 }
 
+.left-top-header h2{
+    display: inline-block;
+    vertical-align: top;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: titillium-web, sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    position: absolute;
+}
+
 .left-top-header h4{
+    display: inline-block;
+    font-family: titillium-web, sans-serif;
+    font-size: larger;
+    vertical-align: bottom;
+}
+/*.left-top-header h4{
     margin-top: 3px;
     margin-bottom: 3px;
-}
+}*/
 .right-top-header{
     float:right;
     right:0;
     margin-right: 10px;
 }
+
+.right-contact-top-header{
+    position: absolute;
+    right: -10px;
+    top: -20px
+}
+
+.right-contact-top-header img {
+    height: 36px;
+    vertical-align: bottom;
+}
+.right-contact-top-header li{
+    display: inline-block;
+}
+.right-contact-top-header.touch-right-top {
+    vertical-align: bottom;
+}
+
+#SkypeButton_Call_evapeko_1 li{
+    display: block;
+}
+
 .right-top-header img,
 .slide-menu img{
     height:24px;
@@ -2423,6 +2483,9 @@ padding:2em 0 0.5em 0;
 .header {
   min-height: 350px;
 }
+.right-contact-top-header{
+    display: none;
+}
 
 
 .logo {
@@ -2841,12 +2904,15 @@ form .form-item{
 }
 */
 
+/*
 .top-header h2{
     font-size: 1.5em;
 }
+*/
 
 .top-header h4{
     font-size: 16px;
+    line-height: 24px;
 }
 .bottom-line span.right{
     float: left;

@@ -1,7 +1,7 @@
  <?php
 
 
- $email_to = "eniko.pianovszky@gmail.com";
+ $email_to = "coach@pekoeva.hu";
 
  $email_subject = "Üzenet / Message from pekoeva.hu visitor";
 
