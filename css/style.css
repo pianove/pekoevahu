@@ -153,6 +153,9 @@ span.menu {
     overflow-x: hidden;
 }
 
+.page-content{
+    padding: 0 1em;
+}
 
 .home.top-header{
 /*    border: 0;*/
@@ -190,6 +193,7 @@ span.menu {
     background: url(../images/logosquare_small.gif) #d06079;
     background-size: 59px 58px;
     display: inline-block;
+    margin-right: 16px;
 }
 
 .top-header.container {
@@ -201,6 +205,8 @@ span.menu {
 .left-top-header{
     float: left;
     text-align: left;
+    font-family: Titillium Web,sans-serif;
+    font-weight: 400;
 }
 
 .left-top-header h2{
@@ -208,17 +214,16 @@ span.menu {
     vertical-align: top;
     text-transform: uppercase;
     letter-spacing: 4px;
-    font-family: titillium-web, sans-serif;
-    font-weight: 500;
     font-size: 32px;
     position: absolute;
+    margin-top: 6px;
 }
 
 .left-top-header h4{
     display: inline-block;
-    font-family: titillium-web, sans-serif;
     font-size: larger;
     vertical-align: bottom;
+    font-weight: 300;
 }
 /*.left-top-header h4{
     margin-top: 3px;
@@ -230,26 +235,6 @@ span.menu {
     margin-right: 10px;
 }
 
-.right-contact-top-header{
-    position: absolute;
-    right: -10px;
-    top: -20px
-}
-
-.right-contact-top-header img {
-    height: 36px;
-    vertical-align: bottom;
-}
-.right-contact-top-header li{
-    display: inline-block;
-}
-.right-contact-top-header.touch-right-top {
-    vertical-align: bottom;
-}
-
-#SkypeButton_Call_evapeko_1 li{
-    display: block;
-}
 
 .right-top-header img,
 .slide-menu img{
@@ -428,7 +413,7 @@ color:#d06079;
 
 .home .header-title,
  .header-title{
-     margin: 0 0 36px 0;
+/*     margin: 0 0 36px 0;*/
 }
 
 .header-title h1 {
@@ -1019,7 +1004,7 @@ label{
 /*--intro--*/
 .intro {
     text-align: center;
-    padding:1em;
+/*    padding:1em;*/
 }
 
 .intro.container>.col-lg-8{
@@ -1911,7 +1896,7 @@ form input[type="text"].error, form textarea.error {
 
 
 #SkypeButton_Call_evapeko_1 img{
-    background: #d06079;
+/*    background: #d06079;*/
     padding: 2px;
     border-radius: 6px;
 }
@@ -2483,9 +2468,6 @@ padding:2em 0 0.5em 0;
 .header {
   min-height: 350px;
 }
-.right-contact-top-header{
-    display: none;
-}
 
 
 .logo {
@@ -2929,7 +2911,7 @@ form .form-item{
   min-height: 335px;
 }
 .home-background {
-  background: url(../images/nyito_medium.jpg) no-repeat -15px 0px;
+  background: url(../images/nyito_medium.jpg) no-repeat -15px 10px;
   background-size: cover;
 }
 .banner-info,
@@ -2964,8 +2946,12 @@ h3{
   height: 276px;
 }
 .home-background {
-  background: url(../images/nyito_medium.jpg) no-repeat -95px 0px;
+  background: url(../images/nyito_medium.jpg) no-repeat -85px 10px;
   background-size: cover;
+}
+
+#scrollDown {
+    top: 345px;
 }
 .banner-info-text.up h2{
     margin-top: 0 !important;
