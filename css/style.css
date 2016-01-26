@@ -764,7 +764,7 @@ h2{
 }
 
 .corpservice-background5{
-    background: url(../images/szervezeteknek5.jpg) 60% 0% no-repeat;
+    background: url(../images/szervezeteknek.jpg) 60% 0% no-repeat;
     background-size: cover;
     min-height: 520px;
 }
@@ -2763,20 +2763,21 @@ a.blogs {
 .image-title h2{
   display: none;
 }*/
-.corpservice.banner-info-text h2{
-    margin-top: 0;
-    line-height: 1.1;
+.corpservice.banner-info-text h2 {
+    /* margin-top: 0; */
+    line-height: normal;
     float: right;
     z-index: 9999;
     position: absolute;
+    font-size: 0.8em;
 }
 
 .banner-info-text.up h2{
     margin-top: 0;
 }
 
-.corpservice.banner-info{
-    padding: 0;
+.corpservice.banner-info {
+    padding: 0 0 0 40px;
     width: 70%;
 }
 
@@ -3018,6 +3019,15 @@ h3{
   font-size: 0.85em;
   margin-top: 1em;
 }
+
+.corpservice.banner-info {
+    width: 70%;
+}
+
+.corpservice.banner-info-text h2 {
+    margin-top: 0;
+}
+
 .glyphicon-phone:before, .glyphicon-thumbs-up:before, .glyphicon-picture:before, .glyphicon-user:before {
   font-size: 20px;
 }
