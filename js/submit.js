@@ -80,7 +80,7 @@ $(function() {
 
         // callback handler that will be called on success
         request.done(function (response, textStatus, jqXHR) {
-           $('#success').html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">×</button><span class="hun-txt">Köszönöm, hogy megtisztelt érdeklődésével! Hamarosan felveszem Önnel a kapcsolatot.</span><span class="en-txt">Thank you for contacting me. I will be in touch with you very soon.</span></div>');
+           $('#success').html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">×</button><span class="hun-txt">Üzenetét sikeresen elküldte. Köszönöm, hogy megtisztelt érdeklődésével! Hamarosan felveszem Önnel a kapcsolatot.</span><span class="en-txt">Your message has been sent successfully. Thank you for contacting me. I will be in touch with you very soon.</span></div>');
             $form[0].reset();
         });
 

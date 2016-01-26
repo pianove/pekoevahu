@@ -6,7 +6,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 **********************************************
 
-Please note, that if you make ANY CHANGES TO THE HTML MANUALLY, you have to DELETE /sitecake-temp FOLDER FROM THE SERVER. In this way Sitecake parses HTML again from the source, otherwise it will continue working with draft HTML you've made last time editing from the /sitecake-temp folder.
 -->
 <!DOCTYPE HTML>
 <html lang=hu>
@@ -16,14 +15,16 @@ Please note, that if you make ANY CHANGES TO THE HTML MANUALLY, you have to DELE
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
 <link href="css/all.min.css" rel="stylesheet" type="text/css" media="all" />
 <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"/>
-<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro&subset=latin-ext' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300&subset=latin-ext' rel='stylesheet'>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="Description" content="Pékó Éva, Business és Life Coach, Team és Group Coach,  Önfejlesztési Tréner, Tanácsadó, rólam mondták">
-<meta name="keywords" content="Peko, Eva, Pékó, Éva, Éva, pekoeva,evapeko,pékóéva, évapékó, coach, personal development, önfejlesztés, consultant,tanácsadó, vezetés, életvitel, tanácsadás, rolam mondtak" />
+<meta name="Description" content="Pékó Éva, Business és Life Coach, Team és Group Coach,  Önfejlesztési Tréner, Tanácsadó, bemutatkozás">
+<meta name="keywords" content="Peko, Eva, Pékó, Éva, Éva, pekoeva,evapeko,pékóéva, évapékó, coach, personal development, önfejlesztés, consultant,tanácsadó, vezetés, életvitel, tanácsadás" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <script src="js/jquery-1.11.1.min.js"></script>
 <script async src="js/all.min.js"></script>
+<!--COPY ONLY TO RELEVANT HEAD-->
 <script src="js/readmore.min.js"></script>
 <script type="text/javascript">
 		jQuery(document).ready(function($) {
@@ -57,36 +58,37 @@ Please note, that if you make ANY CHANGES TO THE HTML MANUALLY, you have to DELE
 <script async src="http://www.google-analytics.com/analytics.js"></script>
 </head>
 <body>
-    <div  class="page">
-<!--top-header-->
-  <div id="inPage" class="top-header">
+<div  class="page">
+    <div id="inPage" class="top-header">
 <!--top-header-->
         <span class="left-top-header">
+    <div id="logo-left">
+                <h1>
+                    <a href="#contact" class=""></a></h1></div>
     <h2 class="title-color">Pékó Éva </h2>
-         <h4 class="long-txt">Business és Life Coach, Team és Group Coach,  Önfejlesztési Tréner
-</h4><h4 class="short-txt">Coach, Önfejlesztési Tréner
+         <h4 class="">Coach | Tréner | Tanácsadó
 </h4></span>
         <span class="right-top-header">
-            <a href="#" id="menuTitle" class="scroll menu right-top-header">MENÜ</a>
             <a href="#" id="selectEnglish">
-                <img src="images/globe.png" alt="english">English</a>
+                <img src="images/globe.png" alt="english">EN</a>
             <div id="menuIcon">
                 <h1>
                     <a href="#" class="scroll menu"></a></h1></div></span>
-        <span class="scroll menu"><img src="images/logosquare_small.gif" alt=""/></span>
+       <!-- <span class="scroll menu"><img src="images/logosquare_small.gif" alt=""/></span>-->
     </div>
     <div id="slideMenu" class="slide-menu">
      <ul>
-         <li><a href="#"><img src="images/globe.png" alt="english">English</a></li>
-				<li><a href="index-nyito.html">Üdvözlöm</a></li>
+         <li><a href="#" class="select-english"><img src="images/globe.png" alt="english">English</a></li>
+				</li>
          <li><a href="index-uj.html">Bemutatkozom</a></li>
          <!--<li><a class="" href="methodology.html">Módszertanom</a></li>-->
 
 <li><a class="" href="peko-eva-rolam-mondtak.html">Rólam mondták</a></li>
-                 <li><a class="" href="peko-eva-coaching-maganszemelyeknek.html">Magánszemélyeknek</a></li>
-				<li><a class="" href="peko-eva-coaching-szervezeteknek.html">Szervezeteknek</a></li>
+                 <li><a class="" href="peko-eva-coaching-maganszemelyeknek.html">Coaching Magánszemélyeknek</a></li>
+				<li><a class="" href="peko-eva-coaching-tanacsadas-szervezeteknek.html">Ajánlatom Szervezeteknek</a></li>
 
                  <li><a class="" href="peko-eva-kepzettseg.html">Képzettségem</a></li>
+        <li><a class="" href="#contact">Kapcsolat</a></li>
 
         </ul>
 </div>
@@ -102,12 +104,15 @@ Please note, that if you make ANY CHANGES TO THE HTML MANUALLY, you have to DELE
   <a href="#" class="scroll-2-content">
     <div class="header quotes-background">
         <div class="left up banner-info banner-info-text">
-				 <h2>ITT MOST NEM ÉN BESZÉLEK.</h2>
+				 <h2>ITT MOST NEM ÉN BESZÉLEK.
+             <span id="scrollDown" class="scroll-2-content">
+        <i class="fa fa-long-arrow-down"></i>
+</span>
+            </h2>
 		</div>
 				 <div class="clearfix"></div>
     </a>
-        <a href="#" id="scrollDown" class="scroll-2-content">
-</a>
+
         </div>
 
 <div class="header-container">
@@ -155,7 +160,7 @@ Please note, that if you make ANY CHANGES TO THE HTML MANUALLY, you have to DELE
 				<div class="cd-author">
 					<img src="images/labdaavatar.jpg" alt="Author image">
 					<ul class="cd-author-info">
-						<li>S.K.</li>
+						<li>S.E.</li>
                         <li>Ügyvéd</li>
                         <li></li>
 					</ul>
@@ -313,7 +318,7 @@ Please note, that if you make ANY CHANGES TO THE HTML MANUALLY, you have to DELE
             </li>
             <li class="cd-testimonials-item">
             <div class="back-lightblue quote-bubble">
-                    <p class="quote">„Éva kiváló előadó, nagyon HITElESEN beszélt a témáról; tetszett a beszélgetés közvetlen légköre; a téma jó gondolatébresztő.”</p>
+                    <p class="quote">„Éva kiváló előadó, nagyon HITELESEN beszélt a témáról; tetszett a beszélgetés közvetlen légköre; a téma jó gondolatébresztő.”</p>
                 </div>
               <div class="cd-author">
 					<img src="images/labdaavatar.jpg" alt="Author image">
@@ -528,23 +533,47 @@ Please note, that if you make ANY CHANGES TO THE HTML MANUALLY, you have to DELE
 
     </script>
 
-<div id="contact" class="contact">
-	 <div class="container">
+ <div id="contact" class="contact">
+         <div class="header-title title-color grey-line"><h1>Kapcsolatfelvétel</h1></div>
 		 <div class="touch-top">
-			 <div class="col-md-8 touch-left">
-                   <div class="header-title title-color grey-line"><h1>Kapcsolatfelvétel</h1></div>
-				 <form action="mailto:coach@pekoeva.hu">
-					<input type="text" value="név" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" />
-					<input type="text" value="email cím" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" />
-<!--					<textarea onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Üzenet / Message';}"></textarea>-->
-					<input type="submit" value="ELKÜLD">
+			 <div class="touch-left">
+				 <form id="contactform"  name="contactform" method="post">
+                     <div class="form-item">
+					<label>Keresztnév:</label>
+                     <input type="text"  id="first_name" name="first_name"/>
+                     </div>
+                     <div class="form-item">
+                     <label for="last_name" id="last_name">Vezetéknév:<span class="required title-color">*</span></label>
+                     <input type="text"  id="last_name" name="last_name" value="" required />
+                         </div>
+                    <div class="form-item"> <label for="email" id="email">Email cím:<span class="required title-color">*</span></label>
+					<input type="text"  id="email" name="email" value="" required />
+                     </div>
+                     <div class="form-item">
+                     <label for="org_name" id="org_name">Szervezet neve:</label>
+                     <input type="text"  name="org_name" value="" />
+                     </div>
+
+                     <label for="message" id="message" style="text-align:left;">Üzenet:<span class="required title-color">*</span></label>
+					<textarea id="message" name="message" value="" required></textarea>
+                      <div id="error">
+                     <span>
+                         <div class="error-msg"></div>
+                     </span>
+                 </div>
+					<input type="submit" value="ELKÜLD" name="submit" class=""/>
+
 				 </form>
+
+                 <div id="success">
+                 </div>
+
 			 </div>
-             <div class="col-md-4 touch-right"><ul>
+             <div class="touch-right"><ul>
 <li>
 					<div class="touch-right-top">
 							<span class="mail"> </span>
-							<p><a href="mailto:coach@pekoeva.hu">coach@pekoeva.hu</a></p>
+							<p><a href="#contactform">coach@pekoeva.hu</a></p>
 					</div></li>
 					<!--<div class="touch-right-top">
 							<span class="num"> </span>
@@ -553,19 +582,19 @@ Please note, that if you make ANY CHANGES TO THE HTML MANUALLY, you have to DELE
                  <li>
                  <div class="touch-right-top" style="margin-top:0;">
                      <script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
-<div id="SkypeButton_Call_evapeko_1" style="height: 68px;">
+<div id="SkypeButton_Call_evapeko_1">
  <script type="text/javascript">
  Skype.ui({
  "name": "call",
  "element": "SkypeButton_Call_evapeko_1",
  "participants": ["evapeko"],
- "imageSize": 32,
-"imageColor": "white"
+ "imageSize": 32
+//"imageColor": "white"
  });
  </script>
 </div>
                      					<!--<i class="skype fa fa-skype"></i>-->
-							<p>evapeko</p>
+							<p style="padding-left: 12px;">evapeko</p>
 					</div>
                      </li>
                  <li>
@@ -578,21 +607,21 @@ Please note, that if you make ANY CHANGES TO THE HTML MANUALLY, you have to DELE
 			 </div>
 			<div class="clearfix"></div>
 		  </div>
-	 </div>
 </div>
 <div class="footer">
 	 <div class="container">
          <div class="menu-footer-nav grey"><ul>
-            <li><a href="index-nyito.html">Nyitó</a></li><span class="menu-footer-line"> &nbsp; | &nbsp;</span>
-         <li><a href="index-uj.html">Bemutatkozás</a></li>
-<span class="menu-footer-line"> &nbsp; | &nbsp;</span>
-                 <li><a class="" href="peko-eva-rolam-mondtak.html">Rólam mondták</a></li><span class="menu-footer-line"> &nbsp; | &nbsp;</span>
-				<li><a class="" href="peko-eva-coaching-szervezeteknek.html">Szervezeteknek</a></li><span class="menu-footer-line"> &nbsp; | &nbsp;</span>
 
-                 <li><a class="" href="peko-eva-coaching-maganszemelyeknek.html">Magánszemélyeknek</a></li><span class="menu-footer-line"> &nbsp; | &nbsp;</span>
-                 <li><a class="" href="peko-eva-kepzettseg.html">Képzettségem</a></li><!--<span class="menu-footer-line"> &nbsp; | &nbsp;</span>
-         <li><a class="" href="methodology.html">Módszertanom</a></li>
--->
+         <li><a href="index-uj.html">Bemutatkozom</a></li>
+<span class="menu-footer-line"> &nbsp; | &nbsp;</span>
+                 <li><a class="" href="peko-eva-rolam-mondtak.html">Rólam mondták</a></li>
+             <span class="menu-footer-line"> &nbsp; | &nbsp;</span>
+
+                 <li><a class="" href="peko-eva-coaching-maganszemelyeknek.html">Coaching Magánszemélyeknek</a></li>
+             <span class="menu-footer-line"> &nbsp; | &nbsp;</span>
+				<li><a class="" href="peko-eva-coaching-tanacsadas-szervezeteknek.html">Ajánlatom Szervezeteknek</a></li>
+             <span class="menu-footer-line"> &nbsp; | &nbsp;</span>
+                 <li><a class="" href="peko-eva-kepzettseg.html">Képzettségem</a></li>
         </ul>
              </div>
 		 <div class="social">
@@ -629,9 +658,12 @@ Please note, that if you make ANY CHANGES TO THE HTML MANUALLY, you have to DELE
 
   ga('create', 'UA-67215332-2', 'auto');
   ga('send', 'pageview');
+    </script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.12.0/additional-methods.js"></script>
 
-</script>
 
 </body>
 </html>
-
