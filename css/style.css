@@ -1603,7 +1603,7 @@ li.cd-testimonials-item{
 /*	width:51.8%;*/
     width: 100%;
 	float:left;
-	padding:0em 4em;
+	padding: 2.5em 4em;
 }
 .about span{
     margin-right:10px;
@@ -2200,7 +2200,7 @@ padding:2em 0 0.5em 0;
 .about-right {
 /*  width: 47.8%;*/
   width: 100%;
-  padding: 0em 2em;
+  padding: 2em 2em;
 }
 .touch-left form input[type="text"]:nth-child(1) {
   margin-right: 19px;
