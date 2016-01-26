@@ -3,9 +3,9 @@
 
  $email_to = "coach@pekoeva.hu";
 
- $email_subject = "Üzenet / Message from pekoeva.hu visitor";
+ $email_subject = "Uzenet / Message from pekoeva.hu visitor";
 
-  $email_message = "Még egy kedves érdeklődő! Üzenet az alábbi adatokkal.\n";
+  $email_message = "Meg egy kedves erdeklodo! Uzenet az alabbi adatokkal.\n";
 
  $first_name = $_REQUEST['first_name']; // not required
 
@@ -25,15 +25,15 @@
 
     }
 
-    $email_message .= "Keresztnév: ".clean_string($first_name)."\n";
+    $email_message .= "Keresztneve: ".clean_string($first_name)."\n";
 
-    $email_message .= "Vezetéknév: ".clean_string($last_name)."\n";
+    $email_message .= "Vezetekneve: ".clean_string($last_name)."\n";
 
     $email_message .= "Email: ".clean_string($email_from)."\n";
 
     $email_message .= "Szervezet: ".clean_string($org_name)."\n";
 
-    $email_message .= "Üzenet: ".clean_string($message)."\n";
+    $email_message .= "Uzenet: ".clean_string($message)."\n";
 
 
 // create email headers
