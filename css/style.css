@@ -901,14 +901,16 @@ h2{
     width: 60%;
 */
     position: absolute;
-    width: 80%;
-    margin: 2em 10%;
-    float: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top:83px;
+    /* float: none; */
 }
 .about.banner-info-text h2{
     background-color: rgba(31,31,31,0.5);
     padding: 10px;
-
+    margin: 0;
 }
 
 .about.page-content{
@@ -1584,9 +1586,7 @@ li.cd-testimonials-item{
 	margin-top:3.5em;
 }
 /*--about--*/
-.about{
-	padding:2em 10px;
-}
+
 
 .about-right h3,.service h3,.gallery h3,.blog h3,.intro h3{
 	color:#d06079;
@@ -2647,6 +2647,7 @@ span.menu{
     margin: 13em 0 0;
     width: 80%;
 }
+
 /* Show only 4 lines in smaller screens */
 .quotes-section {
   max-height: 24em; /* (4 * 1.5 = 6) */
@@ -2677,11 +2678,7 @@ span.menu{
 .service {
   padding:2em 0 1em 0;
 }
-.about {
-  padding: 10px;
-/*  color:#999;*/
 
-}
 .blog-grid {
   width: 100%;
   padding: 0;
@@ -3002,6 +2999,9 @@ h3{
   margin: 3em 0 0 0em;
   width: 80%;
   padding: 0 0px 0 15px;
+}
+.about.banner-info {
+    top: 63px;
 }
 .indservice.banner-info {
     margin: 10em 0 0;
