@@ -40,8 +40,8 @@ Please note, that if you make ANY CHANGES TO THE HTML MANUALLY, you have to DELE
 
             $(".scroll-2-content").click(function(event){
 				event.preventDefault();
-                var id=$(".page-content");
-                var target = $(id).offset().top-140;
+                var id=$(".header-container");
+                var target = $(id).offset().top-70;
 				$('html,body').animate({scrollTop:target},500,function(){
                     window.location.hash = id;
                 }
