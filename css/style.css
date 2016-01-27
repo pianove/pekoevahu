@@ -132,9 +132,6 @@ strong{
 .logo h1 a:hover,
 .logo h1 a:focus,
 .logo h1 a:active,
-#menuIcon h1 a:hover,
-#menuIcon h1 a:focus,
-#menuIcon h1 a:active,
 #logo-left h1 a:hover,
 #logo-left h1 a:focus,
 #logo-left h1 a:active
@@ -142,6 +139,21 @@ strong{
  transform: rotate(360deg);
 }
 
+#menuIcon h1 a:hover{
+    background:  url(../images/nav_icon_color.png) no-repeat;
+    background-size: contain;
+}
+
+#menuIcon h1 a.scroll.menu.color-menu-icon:hover{
+    background:  url(../images/nav_icon_color.png) no-repeat !important;
+    background-size: contain !important;
+}
+/*
+#menuIcon h1 a:active,
+#menuIcon h1 a:focus{
+    background:  url(../images/close.gif) no-repeat;
+    background-size: contain;
+}*/
 span.menu {
   display: none;
 }
@@ -229,6 +241,16 @@ span.menu {
     margin-top: 3px;
     margin-bottom: 3px;
 }*/
+
+.left-top-header h4 i.fa.fa-circle{
+    font: normal normal normal 6px/1 FontAwesome;
+    margin: 0 4px;
+    position: relative;
+    top: -4px;
+    color: #E0E0E2;
+    /* color: #D1D0D0;
+}
+
 .right-top-header{
     float:right;
     right:0;
@@ -247,15 +269,15 @@ span.menu {
 }
 
 #menuIcon h1 a{
-    height: 25px;
-    width: 55px;
+    height: 18px;
+    width: 32px;
     z-index: 100;
     position: absolute;
     background: url(../images/nav_icon.png) no-repeat;
     background-size: contain;
     display: inline-block;
-    top: 55px;
-    right: 15px;
+    top: 56px;
+    right: 23px;
 }
 
 .menu.right-top-header img{
@@ -266,7 +288,7 @@ span.menu {
     margin-bottom: 0.33em;
     color: #848484;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .home #menuTitle,
@@ -293,13 +315,22 @@ span.menu {
 }
 
 #inPage #selectEnglish{
-    right: 3px;
+    /*right: 3px;
     position: absolute;
     top: 15px;
     width: 55px;
     margin-right: 10px;
     letter-spacing: 1px;
-    font-weight: 300;
+    color: #d06079;*/
+    right: 58px;
+    position: absolute;
+    top: 50px;
+    width: 55px;
+    margin-right: 10px;
+    letter-spacing: 1px;
+    /* color: #d06079; */
+    /* font-weight: 300; */
+    font-size: 22px;
     font-family: Titillium Web, sans-serif;
 }
 
@@ -319,55 +350,111 @@ span.menu {
 }
 .slide-menu  ul{
 	margin: 0;
-	z-index: 999;
-	position: absolute;
-	text-align: left;
+    z-index: 999;
+    position: absolute;
+    text-align: left;
     width: inherit;
-	background:#fff;
-    height: 100%;
+    border: 2px solid #f4f4f6;
 }
 .slide-menu ul li a {
-  padding: .5em 20px;
-  display: block;
-  font-size: 20px;
-  border-bottom: 1px solid #f4f4f6;
-  color: #848484;
-  font-family: Titillium Web, sans-serif;
-  font-weight: 300;
-  text-decoration: none;
+    padding: 8px 20px;
+    display: block;
+    font-size: 20px;
+    border-bottom: 1px solid white;
+    color: #848484;
+    font-family: Titillium Web,sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    -webkit-transition: all 2s cubic-bezier(0.215, 0.061, 0.355, 1);
+    -moz-transition: all 2s cubic-bezier(0.215, 0.061, 0.355, 1);
+    -o-transition: all 2s cubic-bezier(0.215, 0.061, 0.355, 1);
+    transition: all 2s cubic-bezier(0.215, 0.061, 0.355, 1);
+    text-decoration: none;
+}
+.slide-menu ul li a span{
+    display: inline-block;
+    z-index: 2;
+}
+.slide-menu ul li a:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    bottom: 0;
+    width: 0;
+    z-index: 0;
+    background: rgba(255,255,255,0.075);
+    -webkit-transition: all 0.3s cubic-bezier(0.215, 0.061, 0.355, 1);
+    -moz-transition: all 0.3s cubic-bezier(0.215, 0.061, 0.355, 1);
+    -o-transition: all 0.3s cubic-bezier(0.215, 0.061, 0.355, 1);
+    transition: all 0.3s cubic-bezier(0.215, 0.061, 0.355, 1);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: block !important;
 }
 
 .slide-menu ul li:first-child{
     margin-top: 2em;
-    margin-bottom: 3em;
+}
+
+.slide-menu ul li:nth-child(2){
+    margin-top: 3em;
 }
 
 
-.home .slide-menu ul li:first-child{
+.slide-menu ul li a.select-english img{
+    width: 20px;
+    margin-bottom: 4px;
+    margin-right: 4px;
+}
+
+
+.slide-menu ul li:first-child{
     display: none;
-    margin-bottom: auto;
+/*    margin-bottom: auto;*/
 }
 
 #inPage a#selectEnglish img{
-    display: none
+    display: none;
+}
+
+
+.slide-menu ul li a:hover,
+.slide-menu ul li a:focus,
+.slide-menu ul li a:active
+/*
+.right-top-header a:visited,
+.slide-menu ul li a:visited
+*/
+{
+/*    color: #d06079;*/
+    color: white;
 }
 
 .right-top-header a:hover,
-.slide-menu ul li a:hover,
 .right-top-header a:focus,
-.slide-menu ul li a:focus,
-.right-top-header a:active,
-.slide-menu ul li a:active,
-.right-top-header a:visited
-.slide-menu ul li a:visited{
-color:#d06079;
+.right-top-header a:active
+/*
+.right-top-header a:visited,
+.slide-menu ul li a:visited
+*/
+{
+    color: #d06079;
 }
+
+.slide-menu ul li a:hover,
+.slide-menu ul li a:focus{
+    background-color: #9C9C9D;
+}
+
 .top-menu ul {
-  text-align: justify;
+    text-align: justify;
 }
 
 .top-menu ul li {
-  display: inline-block;
+    display: inline-block;
 }
 
 .top-menu{
@@ -1277,7 +1364,7 @@ li.cd-testimonials-item{
   border-top-color: #CED8F6;
 }
 .quote {
-  max-height: 14.2em;
+  max-height: 180px;
 }
 
 .cd-testimonials-all .cd-author {
@@ -2028,7 +2115,7 @@ font-size: 14px;
 
 .menu-footer-nav ul li a{
     color: #d06079;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .bottom-line{
@@ -2564,6 +2651,11 @@ span.menu{
 .slide-menu {
 	width: 100%;
 }
+.slide-menu ul li a {
+    padding: 8px 20px;
+    font-size: 18px;
+    letter-spacing: normal;
+}
 
 /*.slide-menu ul li{
         margin-left: 2em;
@@ -2575,17 +2667,12 @@ span.menu{
   display: none;
 }
 
-#menuIcon h1 a {
-    top: 52px;
-}
-
 #menuIcon{
   display: block;
     }
 
 .slide-menu ul li:first-child{
     display: inline-block;
-    margin-bottom: 3em;
 }
 .top-menu span img{
 	display:inline-block;
@@ -2974,7 +3061,7 @@ li .cd-testimonials-item{
 }
 @media(max-width:384px){
 #menuIcon h1 a {
-    top: 30px;
+    right: 3%;
 }
 #menuTitle{
     margin-top: 0px;
@@ -3022,13 +3109,17 @@ h3{
     margin-right: 2px;
 }
 
+#menuIcon h1 a {
+    top: 15px;
+}
+
 .left-top-header h2 {
     font-size: 22px;
     margin-top: 0;
 }
 
-#menuIcon h1 a {
-    width: 45px;
+.slide-menu ul li a {
+    font-size: 16px;
 }
 
 .header {
