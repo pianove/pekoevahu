@@ -366,10 +366,10 @@ span.menu {
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
-    -webkit-transition: all 2s cubic-bezier(0.215, 0.061, 0.355, 1);
-    -moz-transition: all 2s cubic-bezier(0.215, 0.061, 0.355, 1);
-    -o-transition: all 2s cubic-bezier(0.215, 0.061, 0.355, 1);
-    transition: all 2s cubic-bezier(0.215, 0.061, 0.355, 1);
+    -webkit-transition: all 0.8s cubic-bezier(0.215, 0.061, 0.355, 1);
+    -moz-transition: all 0.8s cubic-bezier(0.215, 0.061, 0.355, 1);
+    -o-transition: all 0.8s cubic-bezier(0.215, 0.061, 0.355, 1);
+    transition: all 0.8s cubic-bezier(0.215, 0.061, 0.355, 1);
     text-decoration: none;
 }
 .slide-menu ul li a span{
@@ -1714,20 +1714,31 @@ li.cd-testimonials-item{
 /*	width:51.8%;*/
     width: 100%;
 	float:left;
-	padding: 2.5em 4em;
+	padding: 1em;
 }
+
+.about-right li{
+    line-height: 1.2;
+}
+
+.about-right li .col-md-6{
+    margin-bottom: 14px;
+/*    border-bottom: 1px solid #f4f4f6;*/
+}
+
 .about span{
-    margin-right:1em;
-
+    margin-left: 3.5em;
 }
 
-/*
+.about-right h3.bg-grey,
+.intro.container h3.bg-grey{
+    margin: 1em;
+}
+
 .about ul {
-    list-style: none;
-    padding: 1em 1em;
-
+    width: 90%;
+    margin: auto;
 }
-*/
 
 .about li {
     padding: 0 !important;
@@ -2220,7 +2231,6 @@ padding:2em 0 0.5em 0;
 
 }
 
-
 @media(min-width:992px){
     .col-lg-6 {
         width: 50%;
@@ -2510,6 +2520,14 @@ padding:2em 0 0.5em 0;
 }
 .about-right h3, .service h3, .gallery h3, .blog h3, .contact h3 {
 /*  font-size: 1.5em;*/
+}
+
+.about-right{
+    padding: 0;
+}
+
+.about span {
+    margin-left: 0;
 }
 /*
 .cd-testimonials-all .cd-testimonials-item {
@@ -2809,7 +2827,12 @@ span.menu{
   background-size: cover;
   width: 100%;
 }
-
+.about-right li .col-md-6 {
+    margin-left: 2em;
+}
+.about-right {
+   padding: 0;
+}
 .service {
   padding:2em 0 1em 0;
 }
@@ -3216,6 +3239,9 @@ h3{
 .about-right a {
   font-size: 0.8em;
   padding: 0.7em 1.3em;
+}
+.about-right li .col-md-6 {
+    margin-left: 0;
 }
 .galry-grids {
   padding: 0px 0 8px 0;
