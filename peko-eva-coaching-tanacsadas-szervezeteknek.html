@@ -48,8 +48,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                       );
 			});
 
+
             $(".menu").click(function(){
+                var $el = $(this);
 				$(".slide-menu ul").slideToggle("slow" , function(){
+                    if ($(this).is(':visible')) {
+                        $el.css("background-image","url(../images/close.gif)");
+                        $el.removeClass("color-menu-icon");
+
+                    }
+                    else
+                    {
+                        $el.css("background-image","url(../images/nav_icon.png)");
+                        $el.addClass("color-menu-icon");
+
+
+                    }
 				});
             });
 		});
@@ -57,17 +71,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--scrolling-->
 <script async src="http://www.google-analytics.com/analytics.js"></script>
 </head>
-
 <body>
 <div  class="page">
-    <div id="inPage" class="top-header">
 <!--top-header-->
+    <div id="inPage" class="top-header">
         <span class="left-top-header">
     <div id="logo-left">
                 <h1>
                     <a href="#contact" class=""></a></h1></div>
     <h2 class="title-color">Pékó Éva </h2>
-         <h4 class="">Coach | Tréner | Tanácsadó
+         <h4 class="">Coach <i class="fa fa-circle"></i> Tréner <i class="fa fa-circle"></i> Tanácsadó
 </h4></span>
         <span class="right-top-header">
             <a href="#" id="selectEnglish">
@@ -78,10 +91,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
        <!-- <span class="scroll menu"><img src="images/logosquare_small.gif" alt=""/></span>-->
     </div>
     <div id="slideMenu" class="slide-menu">
-     <ul>
+     <ul class="header bg-grey">
          <li><a href="#" class="select-english"><img src="images/globe.png" alt="english">English</a></li>
 				</li>
-         <li><a href="index-uj.html">Bemutatkozom</a></li>
+         <li><a href="index-uj.html"><span>Bemutatkozom</span></a></li>
          <!--<li><a class="" href="methodology.html">Módszertanom</a></li>-->
 
 <li><a class="" href="peko-eva-rolam-mondtak.html">Rólam mondták</a></li>
@@ -101,6 +114,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	 </script>
 	 <!-- script-for-menu -->
 
+
 <!--header-->
 <div class="header corpservice-background5">
     <a href="#" class="scroll-2-content">
@@ -114,8 +128,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			 <div class="clearfix"></div>
 		</div>
     </a>
-    <a href="#" id="scrollDown" class="scroll-2-content">
-</a>
 </div>
 <div class="header-container">
     <div class="header-title title-color grey-line"><h1>Ajánlatom Szervezeteknek</h1>
@@ -221,7 +233,7 @@ A cél(ok) meghatározása után, a választott témakörnek megfelelően össze
     </div>
 </div>
 
-<div id="contact" class="contact">
+  <div id="contact" class="contact">
          <div class="header-title title-color grey-line"><h1>Kapcsolatfelvétel</h1></div>
 		 <div class="touch-top">
 			 <div class="touch-left">
@@ -310,6 +322,8 @@ A cél(ok) meghatározása után, a választott témakörnek megfelelően össze
 				<li><a class="" href="peko-eva-coaching-tanacsadas-szervezeteknek.html">Ajánlatom Szervezeteknek</a></li>
              <span class="menu-footer-line"> &nbsp; | &nbsp;</span>
                  <li><a class="" href="peko-eva-kepzettseg.html">Képzettségem</a></li>
+             <span class="menu-footer-line"> &nbsp; | &nbsp;</span>
+             <li><a class="" href="#contact">Kapcsolat</a></li>
         </ul>
              </div>
 		 <div class="social">
@@ -351,8 +365,6 @@ A cél(ok) meghatározása után, a választott témakörnek megfelelően össze
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.12.0/additional-methods.js"></script>
-
-
 </body>
 </html>
 

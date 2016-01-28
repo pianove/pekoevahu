@@ -733,7 +733,6 @@ h2{
 .methodology-background{
     background: url(../images/nyito_modszertan_blue.png) no-repeat 0px 0px;
     background-size: contain;
-    height: 680px;
 }
 
 .tile-3x2 .home-backgroundsquare {
@@ -830,37 +829,31 @@ h2{
 .corpservice-background1{
     background: url(../images/szervezeteknek1.jpg) no-repeat 0px 0px;
     background-size: cover;
-    min-height: 520px;
 }
 
 .corpservice-background2{
     background: url(../images/szervezeteknek2.jpg) no-repeat 0px 0px;
     background-size: cover;
-    min-height: 520px;
 }
 
 .corpservice-background3{
     background: url(../images/szervezeteknek3.jpg) no-repeat 0px 0px;
     background-size: cover;
-    min-height: 520px;
 }
 
 .corpservice-background4{
     background: url(../images/szervezeteknek4.jpg) no-repeat 0px 0px;
     background-size: cover;
-    min-height: 520px;
 }
 
 .corpservice-background5{
     background: url(../images/szervezeteknek.jpg) 60% 0% no-repeat;
     background-size: cover;
-    min-height: 520px;
 }
 
 .indservice-background{
     background: url(../images/magan.jpg) 50% no-repeat;
     background-size: cover;
-    height: 680px;
 }
 
 .coachprivate-backgroundsquare{
@@ -869,8 +862,7 @@ h2{
     min-height: 235px;
 }
 
-.quotes-backgroundsquare,
-.quotes-background{
+.quotes-backgroundsquare{
     background: url(../images/rolammondtak.jpg) no-repeat 50% 50%;
     background-size: cover;
     min-height: 235px;
@@ -879,7 +871,6 @@ h2{
 .quotes-background{
     background: url(../images/rolammondtak.jpg) no-repeat 50% 50%;
     background-size: cover;
-    height: 680px;
 }
 
 

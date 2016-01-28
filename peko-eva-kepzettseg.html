@@ -49,7 +49,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			});
 
             $(".menu").click(function(){
+                var $el = $(this);
 				$(".slide-menu ul").slideToggle("slow" , function(){
+                    if ($(this).is(':visible')) {
+                        $el.css("background-image","url(../images/close.gif)");
+                        $el.removeClass("color-menu-icon");
+
+                    }
+                    else
+                    {
+                        $el.css("background-image","url(../images/nav_icon.png)");
+                        $el.addClass("color-menu-icon");
+
+
+                    }
 				});
             });
 		});
@@ -59,14 +72,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 <body>
 <div  class="page">
-    <div id="inPage" class="top-header">
-<!--top-header-->
+    <!--top-header-->
+       <div id="inPage" class="top-header">
         <span class="left-top-header">
     <div id="logo-left">
                 <h1>
                     <a href="#contact" class=""></a></h1></div>
     <h2 class="title-color">Pékó Éva </h2>
-         <h4 class="">Coach | Tréner | Tanácsadó
+         <h4 class="">Coach <i class="fa fa-circle"></i> Tréner <i class="fa fa-circle"></i> Tanácsadó
 </h4></span>
         <span class="right-top-header">
             <a href="#" id="selectEnglish">
@@ -77,10 +90,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
        <!-- <span class="scroll menu"><img src="images/logosquare_small.gif" alt=""/></span>-->
     </div>
     <div id="slideMenu" class="slide-menu">
-     <ul>
+     <ul class="header bg-grey">
          <li><a href="#" class="select-english"><img src="images/globe.png" alt="english">English</a></li>
 				</li>
-         <li><a href="index-uj.html">Bemutatkozom</a></li>
+         <li><a href="index-uj.html"><span>Bemutatkozom</span></a></li>
          <!--<li><a class="" href="methodology.html">Módszertanom</a></li>-->
 
 <li><a class="" href="peko-eva-rolam-mondtak.html">Rólam mondták</a></li>
@@ -99,6 +112,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							});
 	 </script>
 	 <!-- script-for-menu -->
+
 
 <!--header-->
 <div class="header about education-background">
@@ -122,8 +136,39 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div id="about" class="about page-content">
 	 <!--<div class="about-left"></div>-->
 	 <div class="about-right">
+         <div class="col-md-2 col-lg-2">
 		<h3>Tanulmányok</h3>
+         </div>
+         <div class="col-md-4 col-lg-4">
         <ul>
+            <li><span class="title-color"> Coaching képzés:</span>
+</li>
+            <li><span class="title-color">Team és group coach képzés:</span></li>
+             <li><span class="title-color"> Önvizsgálati facilitátor képzés:</span></li>
+             <li><span class="title-color"> Drámapedagógiai tanfolyam:</span></li>
+             <li><span class= "fa fa-check title-color"></span><span class="title-color"> Nemzetközi továbbképzések:</span>GE 6 sigma, Lean, CAP Coaches, Folyamat kiválóság, Hatékony facilitálás, Hatékony előadás, Projekt vezetés, Manager képzés, Tréner-képzés
+</li>
+                 <li><span class= "fa fa-check title-color"></span><span class="title-color"> Posztgraduális képzés:</span>Mérnök-közgazdász, Budapesti Közgazdaságtudományi Egyetem </li>
+            <li><span class= "fa fa-check title-color"></span><span class="title-color"> Egyetem:</span>Építőmérnök, Budapesti Műszaki Egyetem és egy éves ösztöndíj a Madridi Műszaki Egyetemen
+</li>
+         </ul><br>
+
+         </div>
+         <div class="col-md-6 col-lg-6">
+        <ul>
+            <li>Tranzakció analízis - Intact Academy (2 év)
+</li>
+            <li>Sämling Solutions (1 év)</li>
+             <li>Living Realization (1 év)</li>
+             <li>Magyar Drámapedagógiai Társaság</li>
+             <li><span class= "fa fa-check title-color"></span><span class="title-color"> Nemzetközi továbbképzések:</span>GE 6 sigma, Lean, CAP Coaches, Folyamat kiválóság, Hatékony facilitálás, Hatékony előadás, Projekt vezetés, Manager képzés, Tréner-képzés
+</li>
+                 <li><span class= "fa fa-check title-color"></span><span class="title-color"> Posztgraduális képzés:</span>Mérnök-közgazdász, Budapesti Közgazdaságtudományi Egyetem </li>
+            <li><span class= "fa fa-check title-color"></span><span class="title-color"> Egyetem:</span>Építőmérnök, Budapesti Műszaki Egyetem és egy éves ösztöndíj a Madridi Műszaki Egyetemen
+</li>
+         </ul><br>
+         </div>
+              <!--  <ul>
             <li><span class= "fa fa-check title-color"></span><span class="title-color"> Coaching képzés:</span> Tranzakció analízis - Intact Academy (2 év)
 </li>
             <li><span class= "fa fa-check title-color"> </span><span class="title-color">Team és group coach képzés:</span>Sämling Solutions (1 év)</li>
@@ -134,7 +179,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                  <li><span class= "fa fa-check title-color"></span><span class="title-color"> Posztgraduális képzés:</span>Mérnök-közgazdász, Budapesti Közgazdaságtudományi Egyetem </li>
             <li><span class= "fa fa-check title-color"></span><span class="title-color"> Egyetem:</span>Építőmérnök, Budapesti Műszaki Egyetem és egy éves ösztöndíj a Madridi Műszaki Egyetemen
 </li>
-         </ul><br>
+         </ul><br>-->
+
+
         <h3>Vezetői tapasztalat</h3>
          <ul>
             <li><span class= "fa fa-check title-color"></span><span class="title-color"> 5 év Senior projektvezető:</span> Budapest Bank Nyrt. /GE Capital Bankja
@@ -149,7 +196,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 <div class="clearfix"></div>
 </div>
-<div id="contact" class="contact">
+  <div id="contact" class="contact">
          <div class="header-title title-color grey-line"><h1>Kapcsolatfelvétel</h1></div>
 		 <div class="touch-top">
 			 <div class="touch-left">
@@ -238,6 +285,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<li><a class="" href="peko-eva-coaching-tanacsadas-szervezeteknek.html">Ajánlatom Szervezeteknek</a></li>
              <span class="menu-footer-line"> &nbsp; | &nbsp;</span>
                  <li><a class="" href="peko-eva-kepzettseg.html">Képzettségem</a></li>
+             <span class="menu-footer-line"> &nbsp; | &nbsp;</span>
+             <li><a class="" href="#contact">Kapcsolat</a></li>
         </ul>
              </div>
 		 <div class="social">
@@ -279,7 +328,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.12.0/additional-methods.js"></script>
-
 
 </body>
 </html>
