@@ -1113,6 +1113,7 @@ label{
 /*    font-weight: 700;*/
     text-transform: uppercase;
     line-height: 1.2;
+    margin: 10px 0 20px;
 }
 
 .individual-content {
@@ -1228,12 +1229,12 @@ hr{
   overflow: auto;
 }*/
 
-#wrapper {
+/*#wrapper {
     width: 100%;
     /* max-width: 1050px; */
     /* min-width: 800px; */
-    margin: 2em 1em;
-}
+    /*margin: 2em 1em;
+} */
 
 #columns {
 	-webkit-column-count: auto;
@@ -1511,6 +1512,9 @@ li.cd-testimonials-item{
     line-height: 26px;
 }
 
+.corpservice-credentials{
+    margin-top: 3em;
+}
 .justify{
     text-align: justify;
 }
@@ -1713,7 +1717,7 @@ li.cd-testimonials-item{
 	padding: 2.5em 4em;
 }
 .about span{
-    margin-right:10px;
+    margin-right:1em;
 
 }
 
@@ -1727,6 +1731,10 @@ li.cd-testimonials-item{
 
 .about li {
     padding: 0 !important;
+}
+
+.indent {
+    padding: 0 0 0 40px;
 }
 
 .about h4,
@@ -1893,10 +1901,18 @@ a.blogs:hover{
 	min-height:400px;
 }
 /*--contact--*/
+#goToContactForm{
+  display: block;
+  content: " ";
+  margin-top: 50px;
+  height: 50px;
+  border-top: 1px solid #f4f4f6;
+}
+
+
 .contact{
 	padding: 2em 0 0;
     margin: auto;
-    border-top: 1px solid #f4f4f6;
     max-width: 1050px;
     text-align: center;
 }
@@ -1936,7 +1952,7 @@ form .form-item:nth-child(odd){
   padding: 10px 10px;
 }
 .touch-left form textarea {
-  width: 100%;
+  width: 99%;
   color: #848484;
   resize: none;
   height: 150px;
@@ -2924,6 +2940,9 @@ a.blogs {
   margin: 4em 0 0 0em;
   width: 50%;
   padding: 0 0px 0 9px;
+}
+.corpservice-credentials{
+    margin-top: 0;
 }
 .icon-pic {
   width: 18%;
