@@ -49,7 +49,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			});
 
             $(".menu").click(function(){
+                var $el = $(this);
 				$(".slide-menu ul").slideToggle("slow" , function(){
+                    if ($(this).is(':visible')) {
+                        $el.css("background-image","url(../images/close.gif)");
+                        $el.removeClass("color-menu-icon");
+
+                    }
+                    else
+                    {
+                        $el.css("background-image","url(../images/nav_icon.png)");
+                        $el.addClass("color-menu-icon");
+
+
+                    }
 				});
             });
 		});
@@ -59,14 +72,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 <body>
 <div  class="page">
-    <div id="inPage" class="top-header">
 <!--top-header-->
+    <div id="inPage" class="top-header">
         <span class="left-top-header">
     <div id="logo-left">
                 <h1>
-                    <a href="#contact" class=""></a></h1></div>
+                    <a href="#goToContactForm" class="" title="Kapcsolat-Contact"></a></h1></div>
     <h2 class="title-color">Pékó Éva </h2>
-         <h4 class="">Coach | Tréner | Tanácsadó
+         <h4 class="">Coach <i class="fa fa-circle"></i> Tréner <i class="fa fa-circle"></i> Tanácsadó
 </h4></span>
         <span class="right-top-header">
             <a href="#" id="selectEnglish">
@@ -77,10 +90,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
        <!-- <span class="scroll menu"><img src="images/logosquare_small.gif" alt=""/></span>-->
     </div>
     <div id="slideMenu" class="slide-menu">
-     <ul>
+     <ul class="header bg-grey">
          <li><a href="#" class="select-english"><img src="images/globe.png" alt="english">English</a></li>
 				</li>
-         <li><a href="#inPage">Bemutatkozom</a></li>
+         <li><a href="index-uj.html">Bemutatkozom</a></li>
          <!--<li><a class="" href="methodology.html">Módszertanom</a></li>-->
 
 <li><a class="" href="peko-eva-rolam-mondtak.html">Rólam mondták</a></li>
@@ -88,7 +101,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<li><a class="" href="peko-eva-coaching-tanacsadas-szervezeteknek.html">Ajánlatom Szervezeteknek</a></li>
 
                  <li><a class="" href="peko-eva-kepzettseg.html">Képzettségem</a></li>
-        <li><a class="" href="#contact">Kapcsolat</a></li>
+        <li><a class="" href="#goToContactForm">Kapcsolat</a></li>
 
         </ul>
 </div>
@@ -150,7 +163,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 </div>
 
-</div>
+
+        <div id="goToContactForm"></div>
+    </div>
   <div id="contact" class="contact">
          <div class="header-title title-color grey-line"><h1>Kapcsolatfelvétel</h1></div>
 		 <div class="touch-top">
@@ -172,7 +187,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                      <input type="text"  name="org_name" value="" />
                      </div>
 
-                     <label for="message" id="message" style="text-align:left;">Üzenet:<span class="required title-color">*</span></label>
+                     <label for="message" id="message" style="text-align:left;padding-left: 5px;">Üzenet:<span class="required title-color">*</span></label>
 					<textarea id="message" name="message" value="" required></textarea>
                       <div id="error">
                      <span>
@@ -191,7 +206,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <li>
 					<div class="touch-right-top">
 							<span class="mail"> </span>
-							<p><a href="#contactform">coach@pekoeva.hu</a></p>
+							<p><a href="#goToContactForm">coach@pekoeva.hu</a></p>
 					</div></li>
 					<!--<div class="touch-right-top">
 							<span class="num"> </span>
@@ -240,6 +255,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<li><a class="" href="peko-eva-coaching-tanacsadas-szervezeteknek.html">Ajánlatom Szervezeteknek</a></li>
              <span class="menu-footer-line"> &nbsp; | &nbsp;</span>
                  <li><a class="" href="peko-eva-kepzettseg.html">Képzettségem</a></li>
+             <span class="menu-footer-line"> &nbsp; | &nbsp;</span>
+             <li><a class="" href="#goToContactForm">Kapcsolat</a></li>
         </ul>
              </div>
 		 <div class="social">
