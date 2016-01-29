@@ -48,11 +48,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 */
 
 body a{
-    transition:0.5s all;
-	-webkit-transition:0.5s all;
-	-moz-transition:0.5s all;
-	-o-transition:0.5s all;
-	-ms-transition:0.5s all;
+    transition:0.3s all;
+	-webkit-transition:0.3s all;
+	-moz-transition:0.3s all;
+	-o-transition:0.3s all;
+	-ms-transition:0.3s all;
 }
 h1,h2,h3{
 	padding:0 0;
@@ -366,17 +366,17 @@ span.menu {
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
-    -webkit-transition: all 0.8s cubic-bezier(0.215, 0.061, 0.355, 1);
-    -moz-transition: all 0.8s cubic-bezier(0.215, 0.061, 0.355, 1);
-    -o-transition: all 0.8s cubic-bezier(0.215, 0.061, 0.355, 1);
-    transition: all 0.8s cubic-bezier(0.215, 0.061, 0.355, 1);
+    -webkit-transition: all 0.3s cubic-bezier(0.215, 0.061, 0.355, 1);
+    -moz-transition: all 0.3s cubic-bezier(0.215, 0.061, 0.355, 1);
+    -o-transition: all 0.3s cubic-bezier(0.215, 0.061, 0.355, 1);
+    transition: all 0.3s cubic-bezier(0.215, 0.061, 0.355, 1);
     text-decoration: none;
 }
 .slide-menu ul li a span{
     display: inline-block;
     z-index: 2;
 }
-.slide-menu ul li a:before{
+/*.slide-menu ul li a:before{
     position: absolute;
     top: 0;
     left: 0;
@@ -393,7 +393,7 @@ span.menu {
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
     display: block !important;
-}
+}*/
 
 .slide-menu ul li:first-child{
     margin-top: 2em;
@@ -431,6 +431,7 @@ span.menu {
 {
 /*    color: #d06079;*/
     color: white;
+    background-color: #9C9C9D;
 }
 
 .right-top-header a:hover,
@@ -442,11 +443,6 @@ span.menu {
 */
 {
     color: #d06079;
-}
-
-.slide-menu ul li a:hover,
-.slide-menu ul li a:focus{
-    background-color: #9C9C9D;
 }
 
 .top-menu ul {
@@ -1761,6 +1757,7 @@ li.cd-testimonials-item{
 .about ul {
     width: 90%;
     margin: auto;
+    padding-left: 1em;
 }
 
 .about li {
