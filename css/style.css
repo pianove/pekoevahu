@@ -700,6 +700,29 @@ h2{
     max-width: 1050px;
     margin: auto;
 }
+
+
+.main-background{
+    height:100%;
+    width: 100%;
+    background:
+        url(../images/alapkep.jpg) 0px 0px no-repeat,
+        url(../images/nyito_compress.jpg) 0px 0px no-repeat;
+    background-size: cover;
+    border-radius: 0%;
+    -webkit-transition: all 2s linear;
+}
+
+.main-background:hover{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    transform: translate3d(-12px,-100px,0),
+        rotate(360deg);
+    background-position: cover;
+    visibility: hidden;
+}
+
 .home-background{
     background: url(../images/nyito_compress.jpg) no-repeat 0px 0px;
     background-size: cover;
