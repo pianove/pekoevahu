@@ -115,7 +115,7 @@ strong{
   font-size: 80%;
   text-decoration: none;
   background:#d06079;
-  background-image: url(../images/logosquare_small.gif);
+  background-image: url(../images/logosquare_small.png);
   background-size: 150px 145px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -202,7 +202,7 @@ span.menu {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border: 3px solid #fff;
-    background: url(../images/logosquare_small.gif) #d06079;
+    background: url(../images/logosquare_small.png);
     background-size: 65px 64px;
     display: inline-block;
     margin-right: 16px;
@@ -2942,7 +2942,6 @@ a.blogs {
     /* margin-top: 0; */
     line-height: normal;
     float: right;
-    z-index: 9999;
     position: absolute;
     font-size: 0.8em;
 }
