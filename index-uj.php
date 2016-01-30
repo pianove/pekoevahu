@@ -6,6 +6,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 **********************************************
 
+Please note, that if you make ANY CHANGES TO THE HTML MANUALLY, you have to DELETE /sitecake-temp FOLDER FROM THE SERVER. In this way Sitecake parses HTML again from the source, otherwise it will continue working with draft HTML you've made last time editing from the /sitecake-temp folder.
 -->
 <!DOCTYPE HTML>
 <html lang=hu>
@@ -16,7 +17,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href="css/all.min.css" rel="stylesheet" type="text/css" media="all" />
 <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"/>
 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro&subset=latin-ext' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="Description" content="Pékó Éva, Business és Life Coach, Team és Group Coach,  Önfejlesztési Tréner, Tanácsadó, bemutatkozás">
@@ -59,32 +59,56 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 <body>
 <div  class="page">
-    <div id="home" class="top-header">
+    <div id="inPage" class="top-header">
 <!--top-header-->
         <span class="left-top-header">
-             <div id="logo-left">
-                <h1>
-                    <a href="#contact" class=""></a></h1></div>
     <h2 class="title-color">Pékó Éva </h2>
-         <h4 class="">Coach | Tréner | Tanácsadó
+         <h4 class="long-txt">Business és Life Coach, Team és Group Coach,  Önfejlesztési Tréner
+</h4><h4 class="short-txt">Coach, Önfejlesztési Tréner
 </h4></span>
-
-
+        <span class="right-top-header">
+            <a href="#" id="menuTitle" class="scroll menu right-top-header">MENÜ</a>
+            <a href="#" id="selectEnglish">
+                <img src="images/globe.png" alt="english">English</a>
+            <div id="menuIcon">
+                <h1>
+                    <a href="#" class="scroll menu"></a></h1></div></span>
+        <span class="scroll menu"><img src="images/logosquare_small.gif" alt=""/></span>
     </div>
+    <div id="slideMenu" class="slide-menu">
+     <ul>
+         <li><a href="#"><img src="images/globe.png" alt="english">English</a></li>
+				<li><a href="index-nyito.html">Üdvözlöm</a></li>
+         <li><a href="#intro">Bemutatkozom</a></li>
+         <!--<li><a class="" href="methodology.html">Módszertanom</a></li>-->
 
+<li><a class="" href="peko-eva-rolam-mondtak.html">Rólam mondták</a></li>
+                 <li><a class="" href="peko-eva-coaching-maganszemelyeknek.html">Magánszemélyeknek</a></li>
+				<li><a class="" href="peko-eva-coaching-szervezeteknek.html">Szervezeteknek</a></li>
+
+                 <li><a class="" href="peko-eva-kepzettseg.html">Képzettségem</a></li>
+
+        </ul>
+</div>
+    <script>
+     $("span.menu").click(function(){
+								$(".top-menu ul").slideToggle("slow" , function(){
+								});
+							});
+	 </script>
+	 <!-- script-for-menu -->
 <!--header-->
 
-<div id="pageTop" class="header home-background">
+<div class="header home-background">
     <a href="#" class="scroll-2-content">
 			 <div class="banner-info banner-info-text">
 
-				 <h2>CÉLOM, HOGY AZ ÜGYFELEIM MEGTAPASZTALJÁK AZ ÖNMAGUKBAN LEVŐ KÉPESSÉGEK ÉS LEHETŐSÉGEK FELSZABADÍTÓ EREJÉT.  <span id="scrollDown" class="scroll-2-content">
-        <i class="fa fa-long-arrow-down"></i>
-</span></h2>
+				 <h2>CÉLOM, HOGY AZ ÜGYFELEIM MEGTAPASZTALJÁK AZ ÖNMAGUKBAN LEVŐ KÉPESSÉGEK ÉS LEHETŐSÉGEK FELSZABADÍTÓ EREJÉT.</h2>
         </div>
 			 <div class="clearfix"></div>
     </a>
-
+    <a href="#" id="scrollDown" class="scroll-2-content">
+</a>
 		</div>
 
 <div class="header-container">
@@ -94,30 +118,24 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
     <div id="intro" class="intro page-content">
         <div class="container"><br>
-        <p>Coachként egyéneket és csoportokat támogatok céljaik elérésében, amely során az élet bátor megélésére, az <strong> önmagukért való kiállásra</strong> és felelősségvállalásra bíztatom ügyfeleimet.</p>
+        <p>Coachként egyéneket és csoportokat támogatok céljaik elérésében, amely során az élet bátor megélésére, <strong>az önmagukért való kiállásra</strong> és felelősségvállalásra bíztatom ügyfeleimet.</p>
             <h3 class="bg-grey">Abban támogatom minden coaching partnerem, HOGY felismerje:<br>írója és rendezője <span class="grey uppercase">és NEM ELSZENVEDŐJE,</span> főszereplője  <span class="grey uppercase">és NEM MELLÉKSZEREPLŐJE</span> életének.</h3></div>
-<div class="intro container" style="margin-top: 2em;">
+<div class="intro container">
 
 
-    <div class="col-xxs-12 col-xs-6 col-md-6 col-lg-6 ">
-                <a href="#" class="title-color" style="padding:0;">
+    <div class="col-xxs-12 col-xs-6 col-md-4 col-lg-4 ">
+                <a href="peko-eva-rolam-mondtak.html" class="title-color" style="padding:0;">
 
         <h4 class="title-color" style="padding-bottom: 10px; padding-top: 10px;">Ügyfeleim mondják rólam:</h4>
-                    <p class="wordart"><!--<img src="images/pointer.png" style="height: 35px;margin: 40%;">--></p></a>
+                    <p class="wordart"><img src="images/pointer.png" style="height: 35px;margin: 40%;"></p></a>
     </div>
-            <div class="col-xxs-12 col-xs-6 col-md-6 col-lg-6 "> <h4 class="title-color" style="padding-bottom: 10px; padding-top: 10px;">Én magamról:</h4>
+            <div class="left-sep col-xxs-12 col-xs-6 col-md-8 col-lg-8 "> <h4 class="title-color" style="padding-bottom: 10px; padding-top: 10px;">Én magamról:</h4>
                 <ul class="left">
-                <li>
-<!--                    <span class="fa fa-check title-color"></span> -->
-                    Szeretem a kihívásokat.</li>
-                <li><!--                    <span class="fa fa-check title-color"></span> -->
-                    A gondolatok rendezésében segítek, az energia befektetés fókuszálásában.</li>
-                <li><!--                    <span class="fa fa-check title-color"></span> -->
-                    Úgy haladunk, ahogy az ügyfél/csoport szeretné. Semmi sem kötelező.</li>
-                <li><!--                    <span class="fa fa-check title-color"></span> -->
-                    A folyamat hatékonysága, eredményessége nagyon fontos nekem, ezért amit tudok megteszek.</li>
-                <li><!--                    <span class="fa fa-check title-color"></span> -->
-                    Magamat is folyamatosan továbbképzem, hogy együtt nőhessek ügyfeleimmel.</li>
+                <li><span class="fa fa-check title-color"></span> Szeretem a kihívásokat.</li>
+                <li><span class="fa fa-check title-color"></span> A gondolatok rendezésében segítek, az energia befektetés fókuszálásában.</li>
+                <li><span class="fa fa-check title-color"></span> Úgy haladunk, ahogy az ügyfél/csoport szeretné. Semmi sem kötelező.</li>
+                <li><span class="fa fa-check title-color"></span>A folyamat hatékonysága, eredményessége nagyon fontos nekem, ezért amit tudok megteszek.</li>
+                <li><span class="fa fa-check title-color"></span> Magamat is folyamatosan továbbképzem, hogy együtt nőhessek ügyfeleimmel.</li>
             </ul></div>
 
 
@@ -128,60 +146,31 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </p>
 -->
 <!--</div>-->
-    <h4 class="title-color" style="margin-top: 2em;">Az alábbi szervezetek kiváló munkatársaival dolgozhattam:</h4>
-        <div class="company-logos">
-            <img src="images/logo1.png" alt="Ateknea Solutions">
-            <img src="images/logo2.png" alt="Trigranit">
-            <img src="images/logo3.png" alt="Budapest Bank">
-            <img src="images/logo4.png" alt="Arena Centar">
-            <img src="images/logo5.png" alt="Mortoff">
-            <img src="images/logo6.png" alt="Clear Channel Hungary">
-            <img src="images/logo7.png" alt="X APT New Frontier Group">
-            <img src="images/logo8.png" alt="MOVA">
-    </div>
-
 </div>
   <div id="contact" class="contact">
-         <div class="header-title title-color grey-line"><h1>Kapcsolatfelvétel</h1></div>
+	 <div class="container">
 		 <div class="touch-top">
-			 <div class="touch-left">
-				 <form id="contactform"  name="contactform" method="post">
-                     <div class="form-item">
-					<label>Keresztnév:</label>
-                     <input type="text"  id="first_name" name="first_name"/>
-                     </div>
-                     <div class="form-item">
-                     <label for="last_name" id="last_name">Vezetéknév:<span class="required title-color">*</span></label>
-                     <input type="text"  id="last_name" name="last_name" value="" required />
-                         </div>
-                    <div class="form-item"> <label for="email" id="email">Email cím:<span class="required title-color">*</span></label>
-					<input type="text"  id="email" name="email" value="" required />
-                     </div>
-                     <div class="form-item">
-                     <label for="org_name" id="org_name">Szervezet neve:</label>
-                     <input type="text"  name="org_name" value="" />
-                     </div>
-
-                     <label for="message" id="message" style="text-align:left;">Üzenet:<span class="required title-color">*</span></label>
-					<textarea id="message" name="message" value="" required></textarea>
-                      <div id="error">
-                     <span>
-                         <div class="error-msg"></div>
-                     </span>
-                 </div>
-					<input type="submit" value="ELKÜLD" name="submit" class=""/>
-
+			 <div class="col-md-8 touch-left">
+                   <div class="header-title title-color grey-line"><h1>Kapcsolatfelvétel</h1></div>
+				 <form name="contactform" method="post" action="send_email.php">
+					<input type="text" placeholder="keresztnév" name="first_name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'keresztnév';}" />
+                     <input type="text" placeholder="vezetéknév" name="last_name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'vezetéknév';}" />
+					<input type="text" placeholder="email cím" name="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'email cím';}" />
+                     <input type="text" placeholder="szervezet neve" name="org_name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'szervezet neve';}" />
+					<textarea placeholder="Kérem írja ide üzenetét..." name="message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Kérem írja ide üzenetét...';}"></textarea>
+					<input type="submit" value="ELKÜLD" name="submit">
 				 </form>
 
-                 <div id="success">
+                 <div id="validMessage" style="color: magenta;"><h4>
+<?php include "send_email.php" ?>
+                     </h4>
                  </div>
-
 			 </div>
-             <div class="touch-right"><ul>
+             <div class="col-md-4 touch-right"><ul>
 <li>
 					<div class="touch-right-top">
 							<span class="mail"> </span>
-							<p><a href="#contact">coach@pekoeva.hu</a></p>
+							<p><a href="mailto:coach@pekoeva.hu">coach@pekoeva.hu</a></p>
 					</div></li>
 					<!--<div class="touch-right-top">
 							<span class="num"> </span>
@@ -189,22 +178,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>-->
                  <li>
                  <div class="touch-right-top" style="margin-top:0;">
-                   <script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
-                     <div class="skype-small-screen">
-<div id="SkypeButton_Call_evapeko_1">
+                     <script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
+<div id="SkypeButton_Call_evapeko_1" style="height: 68px;">
  <script type="text/javascript">
  Skype.ui({
  "name": "call",
  "element": "SkypeButton_Call_evapeko_1",
  "participants": ["evapeko"],
- "imageSize": 32
-//"imageColor": "white"
+ "imageSize": 32,
+"imageColor": "white"
  });
  </script>
 </div>
-                     </div>
-
-							<p style="color:#999">evapeko</p>
+                     					<!--<i class="skype fa fa-skype"></i>-->
+							<p>evapeko</p>
 					</div>
                      </li>
                  <li>
@@ -217,10 +204,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			 </div>
 			<div class="clearfix"></div>
 		  </div>
+	 </div>
 </div>
 <div class="footer">
 	 <div class="container">
+         <div class="menu-footer-nav grey"><ul>
+            <li><a href="index-nyito.html">Nyitó</a></li><span class="menu-footer-line"> &nbsp; | &nbsp;</span>
+         <li><a href="index-uj.html">Bemutatkozás</a></li>
+<span class="menu-footer-line"> &nbsp; | &nbsp;</span>
+                 <li><a class="" href="peko-eva-rolam-mondtak.html">Rólam mondták</a></li><span class="menu-footer-line"> &nbsp; | &nbsp;</span>
+				<li><a class="" href="peko-eva-coaching-szervezeteknek.html">Szervezeteknek</a></li><span class="menu-footer-line"> &nbsp; | &nbsp;</span>
 
+                 <li><a class="" href="peko-eva-coaching-maganszemelyeknek.html">Magánszemélyeknek</a></li><span class="menu-footer-line"> &nbsp; | &nbsp;</span>
+                 <li><a class="" href="peko-eva-kepzettseg.html">Képzettségem</a></li><!--<span class="menu-footer-line"> &nbsp; | &nbsp;</span>
+         <li><a class="" href="methodology.html">Módszertanom</a></li>
+-->
+        </ul>
+             </div>
 		 <div class="social">
 				<a href="#"><i class="facebook"></i></a>
 				<a href="#"><i class="twitter"></i></a>
@@ -255,13 +255,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
   ga('create', 'UA-67215332-2', 'auto');
   ga('send', 'pageview');
-    </script>
-<script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script  src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
-<script  src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
-<script  src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.12.0/additional-methods.js"></script>
 
+</script>
 
+</script>
 </body>
 </html>
 

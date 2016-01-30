@@ -65,7 +65,7 @@ gulp.task('cssmin', function() {
 // Optimize jpg
 gulp.task('imgmin', function () {
     return gulp.src(paths.images)
-//        .pipe(imgmin({loops: 3})())
+        .pipe(imgmin({loops: 3})())
         .pipe(gulp.dest('public/images/'));
 });
 
