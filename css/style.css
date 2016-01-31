@@ -443,6 +443,7 @@ span.menu {
 */
 {
     color: #d06079;
+    outline: none;
 }
 
 .top-menu ul {
@@ -1261,7 +1262,7 @@ hr{
 	-webkit-column-fill: auto;
 	-moz-column-count: auto;
 	-moz-column-gap: 10px;
-	-moz-column-fill: auto;
+	-moz-column-fill: balance;
 	column-count: auto;
 	column-gap: 15px;
 	column-fill: auto;
