@@ -236,6 +236,9 @@ span.menu {
     font-size: larger;
     vertical-align: bottom;
     font-weight: 300;
+    font-family: Titillium Web, sans-serif;
+    color: #848484;
+
 }
 /*.left-top-header h4{
     margin-top: 3px;
@@ -1226,6 +1229,9 @@ hr{
     display: none;
 }
 
+.corpservice-info-text{
+    max-height: 17em;
+}
 /*.cd-testimonials-all {
   position: fixed;
   top: 0;
@@ -1511,7 +1517,13 @@ li.cd-testimonials-item{
 }
 .corpservice img{
     height:150px;
+    cursor: pointer;
 /*    margin-left: 10%;*/
+}
+.futr-grid.futr1 a{
+  text-align: left;
+  float: left;
+  padding-top: 10px;
 }
 
 .methodology-right{
@@ -2437,6 +2449,10 @@ padding:2em 0 0.5em 0;
 /*  width: 50%;*/
   float: left;
 }
+
+.corpservice a{
+  margin-bottom: 1.5em;
+}
 .icon-info p.title-color{
   text-align: center;
 }
@@ -2831,6 +2847,10 @@ span.menu{
   width: 100%;
   padding: 0;
   margin-bottom: 2em;
+}
+
+..corpservice-info-text{
+  max-height: 21.5em;
 }
 
 .icon-pic {
