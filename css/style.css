@@ -236,6 +236,9 @@ span.menu {
     font-size: larger;
     vertical-align: bottom;
     font-weight: 300;
+    font-family: Titillium Web, sans-serif;
+    color: #848484;
+
 }
 /*.left-top-header h4{
     margin-top: 3px;
@@ -1226,6 +1229,9 @@ hr{
     display: none;
 }
 
+.corpservice-info-text{
+    max-height: 17em;
+}
 /*.cd-testimonials-all {
   position: fixed;
   top: 0;
@@ -1511,7 +1517,13 @@ li.cd-testimonials-item{
 }
 .corpservice img{
     height:150px;
+    cursor: pointer;
 /*    margin-left: 10%;*/
+}
+.futr-grid.futr1 a{
+  text-align: left;
+  float: left;
+  padding-top: 10px;
 }
 
 .methodology-right{
@@ -1992,8 +2004,8 @@ form .form-item:nth-child(odd){
 }
 .touch-left form input[type=submit] {
   color: #ffffff;
-  padding: 9px 30px;
-  font-size: 14px;
+  padding: 9px 15px;
+  font-size: 16px;
   cursor: pointer;
   font-weight: 500;
   margin: 27px 0 0 0px;
@@ -2437,6 +2449,10 @@ padding:2em 0 0.5em 0;
 /*  width: 50%;*/
   float: left;
 }
+
+.corpservice a{
+  margin-bottom: 1.5em;
+}
 .icon-info p.title-color{
   text-align: center;
 }
@@ -2594,9 +2610,9 @@ padding:2em 0 0.5em 0;
 .middleblog-grid{
 	text-align:left;
 }
-.touch-left form input[type=submit] {
+/*.touch-left form input[type=submit] {
   font-size: 13px;
-}
+}*/
 .arrow {
   padding: 1em 0 0.5em 0;
 }
@@ -2611,6 +2627,9 @@ padding:2em 0 0.5em 0;
 
 .long-txt{
     display: none;
+}
+.corpservice-info-text {
+    max-height: 17.5em;
 }
 }
 @media(max-width:667px){
@@ -2833,6 +2852,10 @@ span.menu{
   margin-bottom: 2em;
 }
 
+..corpservice-info-text{
+  max-height: 21.5em;
+}
+
 .icon-pic {
   width: 13%;
 }
@@ -3030,10 +3053,12 @@ a.blogs {
 form .form-item{
     width: 100%;
 }
+/*
 .touch-left form input[type=submit] {
   font-size: 12px;
   padding: 9px 27px;
 }
+*/
 .touch-left form input[type="text"],.touch-left form textarea {
 
   font-size: 0.9em;

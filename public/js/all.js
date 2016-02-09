@@ -185,7 +185,7 @@ $(function() {
             },
             message: {
                 required: "<span class= 'hun-txt'>Kérem, írjon üzenetet.</span><span class= 'en-txt'>You have to write something to send this form.</span>",
-                minlength: "<span class= 'hun-txt'>Ez nagyon rövid üzenet. Kérem, javítsa.</span><span class= 'en-txt'> You have to write more than 2 characters.</span>"
+                minlength: "<span class= 'hun-txt'>Ez nagyon rövid üzenet. Kérem, javítsa.</span><span class= 'en-txt'> Your message is too short. Please write more.</span>"
             }
 
         },
