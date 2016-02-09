@@ -2004,8 +2004,8 @@ form .form-item:nth-child(odd){
 }
 .touch-left form input[type=submit] {
   color: #ffffff;
-  padding: 9px 30px;
-  font-size: 14px;
+  padding: 9px 15px;
+  font-size: 16px;
   cursor: pointer;
   font-weight: 500;
   margin: 27px 0 0 0px;
@@ -2610,9 +2610,9 @@ padding:2em 0 0.5em 0;
 .middleblog-grid{
 	text-align:left;
 }
-.touch-left form input[type=submit] {
+/*.touch-left form input[type=submit] {
   font-size: 13px;
-}
+}*/
 .arrow {
   padding: 1em 0 0.5em 0;
 }
@@ -3053,10 +3053,12 @@ a.blogs {
 form .form-item{
     width: 100%;
 }
+/*
 .touch-left form input[type=submit] {
   font-size: 12px;
   padding: 9px 27px;
 }
+*/
 .touch-left form input[type="text"],.touch-left form textarea {
 
   font-size: 0.9em;
