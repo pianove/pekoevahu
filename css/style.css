@@ -530,6 +530,14 @@ span.menu {
 /*    min-height: 196px;*/
     margin-top: 10px;
 }
+
+.wordart.en{
+    background: url(../images/wordartbggrey_en.png) 100% 60% no-repeat;
+    background-size: cover;
+    height: 286px;
+/*    min-height: 196px;*/
+    margin-top: 10px;
+}
 .header-message{
     width: 100% !important;
     position: relative;
@@ -2322,6 +2330,10 @@ padding:2em 0 0.5em 0;
 .methodology-background,
 .corpservice-background{
 /*    height: 420px;*/
+}
+.wordart.en{
+    background: url(../images/wordartbggrey_en.png) center no-repeat;
+    background-size: cover;
 }
 
 }
