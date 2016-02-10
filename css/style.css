@@ -2279,11 +2279,11 @@ padding:2em 0 0.5em 0;
 
 }
 
-/*@media (min-width:992px){
-.wordart{
-        height: 246px;
+@media (min-width: 1200px){
+    .corpservice-info-text{
+      max-height: 16.2em;
     }
-}*/
+}
 
 @media (max-width: 1280px){
 .about-left {
@@ -2852,8 +2852,8 @@ span.menu{
   margin-bottom: 2em;
 }
 
-..corpservice-info-text{
-  max-height: 21.5em;
+.corpservice-info-text{
+  max-height: 21.6em;
 }
 
 .icon-pic {
