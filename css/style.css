@@ -2299,6 +2299,9 @@ padding:2em 0 0.5em 0;
 /*  min-height: 332px;*/
   background-size: cover;
 }
+.about span {
+    margin-left: 1em;
+}
 }
 @media (max-width: 1080px){
 .top-menu ul li:nth-child(3) {
@@ -2437,7 +2440,9 @@ padding:2em 0 0.5em 0;
 .wordart{
         height: 286px;
 }
-
+.about span {
+    margin-left: 0;
+}
 
 .cd-author img {
     width: 32px;
@@ -2575,9 +2580,7 @@ padding:2em 0 0.5em 0;
     padding: 0;
 }
 
-.about span {
-    margin-left: 0;
-}
+
 /*
 .cd-testimonials-all .cd-testimonials-item {
     width: 50%;
