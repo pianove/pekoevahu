@@ -195,7 +195,7 @@
         nextElement = current.next();
         // UPDATE to Unify/Sitecake compatiblity when user updates directly in a rendered html
         // Check if the DOM has already a readmore link
-        if (nextElement.html() !== useLink) {
+        if (!nextElement.hasClass('has-more-link')) {
           // if not, add a link
           current.after($(useLink));
         }
