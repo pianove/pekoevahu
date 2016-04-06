@@ -924,6 +924,10 @@ h2{
     width: 250px;
 }
 
+.membership img{
+    margin: 12px 23px 16px 16px;
+}
+
 .education-background{
     background: url(../images/oklevelek.jpg) 50% no-repeat;
     background-size: cover;
@@ -1762,7 +1766,8 @@ li.cd-testimonials-item{
     line-height: 1.2;
 }
 
-.about-right li .col-md-6{
+.about-right li .col-md-6,
+li.loose {
     margin-bottom: 14px;
 /*    border-bottom: 1px solid #f4f4f6;*/
 }
@@ -2382,7 +2387,10 @@ padding:2em 0 0.5em 0;
 .about-right {
 /*  width: 47.8%;*/
   width: 100%;
-  padding: 2em 2em;
+}
+.about-right,
+.about-loose {
+  padding: 2em 15px;
 }
 
 .cd-testimonials-all .cd-testimonials-item {
@@ -3329,4 +3337,8 @@ h3{
 .touch-left form textarea {
   height: 120px;
 }
+}
+
+.membership {
+
 }
