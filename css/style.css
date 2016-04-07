@@ -229,6 +229,7 @@ span.menu {
     font-size: 32px;
     position: absolute;
     margin-top: 6px;
+    font-family: Titillium Web, sans-serif;
 }
 
 .left-top-header h4{
@@ -525,6 +526,14 @@ span.menu {
 }
 .wordart{
     background: url(../images/wordartbggrey.png) center no-repeat;
+    background-size: cover;
+    height: 286px;
+/*    min-height: 196px;*/
+    margin-top: 10px;
+}
+
+.wordart.en{
+    background: url(../images/wordartbggrey_en.png) 100% 60% no-repeat;
     background-size: cover;
     height: 286px;
 /*    min-height: 196px;*/
@@ -913,6 +922,10 @@ h2{
 
 .company-logos img{
     width: 250px;
+}
+
+.membership img{
+    margin: 12px 23px 16px 16px;
 }
 
 .education-background{
@@ -1753,7 +1766,8 @@ li.cd-testimonials-item{
     line-height: 1.2;
 }
 
-.about-right li .col-md-6{
+.about-right li .col-md-6,
+li.loose {
     margin-bottom: 14px;
 /*    border-bottom: 1px solid #f4f4f6;*/
 }
@@ -2279,17 +2293,20 @@ padding:2em 0 0.5em 0;
 
 }
 
-/*@media (min-width:992px){
-.wordart{
-        height: 246px;
+@media (min-width: 1200px){
+    .corpservice-info-text{
+      max-height: 16.2em;
     }
-}*/
+}
 
 @media (max-width: 1280px){
 .about-left {
   background: url(../images/_MG_5526_ok_kepzettseg.jpg) no-repeat 0px -77px;
 /*  min-height: 332px;*/
   background-size: cover;
+}
+.about span {
+    margin-left: 1em;
 }
 }
 @media (max-width: 1080px){
@@ -2322,6 +2339,10 @@ padding:2em 0 0.5em 0;
 .methodology-background,
 .corpservice-background{
 /*    height: 420px;*/
+}
+.wordart.en{
+    background: url(../images/wordartbggrey_en.png) center no-repeat;
+    background-size: cover;
 }
 
 }
@@ -2366,7 +2387,10 @@ padding:2em 0 0.5em 0;
 .about-right {
 /*  width: 47.8%;*/
   width: 100%;
-  padding: 2em 2em;
+}
+.about-right,
+.about-loose {
+  padding: 2em 15px;
 }
 
 .cd-testimonials-all .cd-testimonials-item {
@@ -2425,7 +2449,9 @@ padding:2em 0 0.5em 0;
 .wordart{
         height: 286px;
 }
-
+.about span {
+    margin-left: 0;
+}
 
 .cd-author img {
     width: 32px;
@@ -2563,9 +2589,7 @@ padding:2em 0 0.5em 0;
     padding: 0;
 }
 
-.about span {
-    margin-left: 0;
-}
+
 /*
 .cd-testimonials-all .cd-testimonials-item {
     width: 50%;
@@ -2852,8 +2876,8 @@ span.menu{
   margin-bottom: 2em;
 }
 
-..corpservice-info-text{
-  max-height: 21.5em;
+.corpservice-info-text{
+  max-height: 21.6em;
 }
 
 .icon-pic {
@@ -3313,4 +3337,8 @@ h3{
 .touch-left form textarea {
   height: 120px;
 }
+}
+
+.membership {
+
 }
