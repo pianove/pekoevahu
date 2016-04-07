@@ -129,6 +129,7 @@ strong{
   width: 160px;
 }
 
+.spin,
 .logo h1 a:hover,
 .logo h1 a:focus,
 .logo h1 a:active,
@@ -185,8 +186,7 @@ span.menu {
   zoom: 1;
   z-index: 9999;
   padding: 10px 0 2px 10px;
-/*  border-bottom: 1px solid #f4f4f6;*/
-
+  border-bottom: 1px solid #f4f4f6;
 }
 
 #logo-left{
@@ -206,6 +206,11 @@ span.menu {
     background-size: 65px 64px;
     display: inline-block;
     margin-right: 16px;
+    -webkit-transition: All 0.3s ease;
+	-moz-transition: All 0.3s ease;
+	-o-transition: All 0.3s ease;
+	-ms-transition: All 0.3s ease;
+
 }
 
 .top-header.container {
@@ -1962,8 +1967,8 @@ a.blogs:hover{
 #goToContactForm{
   display: block;
   content: " ";
-  margin-top: 50px;
-  height: 50px;
+  margin-top: 10px;
+  height: 80px;
   border-top: 1px solid #f4f4f6;
 }
 
@@ -2167,16 +2172,39 @@ padding:2em 0 10px 0;
 font-size: 14px;
 }
 
-.menu-footer-nav{
+.menu-top-header-nav {
+   display: none;
+   text-align: right;
+}
+.menu-footer-nav {
     text-align: center;
     margin: 3em 0;
 }
-.menu-footer-nav ul li{
+
+.menu-top-header-nav ul {
+    margin-top: 44px;
+    margin-right: 20px;
+}
+.menu-footer-nav ul li,
+.menu-top-header-nav ul li{
 /*    text-align: justify;*/
     display: inline-block;
     margin:auto;
 /*    font-size: 18px;*/
 }
+.active,
+.menu-top-header-nav ul li a:hover {
+    color: #d06079;
+    text-decoration: none;
+    border-bottom: 2px solid #d06079;
+}
+
+.menu-top-header-nav ul li a {
+    color: #848484;
+    font-size: 18px;
+    padding: .54em 4px;
+}
+
 
 .menu-footer-nav ul li a{
     color: #d06079;
@@ -2291,6 +2319,14 @@ padding:2em 0 0.5em 0;
         margin: auto;
     }
 
+}
+@media(min-width:1024px){
+   .menu-top-header-nav {
+      display: block;
+   }
+  .right-top-header {
+      display: none;
+  }
 }
 
 @media (min-width: 1200px){
