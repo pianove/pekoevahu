@@ -2216,7 +2216,7 @@ font-size: 14px;
 .menu-top-header-nav ul li{
 /*    text-align: justify;*/
     display: inline-block;
-    margin:auto;
+    margin:auto 10px;
 /*    font-size: 18px;*/
 }
 .active,
