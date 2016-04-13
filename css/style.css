@@ -2194,10 +2194,14 @@ font-size: 14px;
 }
 
 .menu-top-header-nav {
-   text-align: justify;
+/*   text-align: justify;*/
 /*   margin-left: 84px;*/
-   margin-left: 115px;
-   width: 1024px;
+/*   margin-left: 115px;*/
+/*   width: 1024px;*/
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   width: 90%;
 }
 .menu-footer-nav {
     text-align: center;
@@ -2220,16 +2224,18 @@ font-size: 14px;
 /*    font-size: 18px;*/
 }
 .active,
-.menu-top-header-nav ul li a:hover {
-/*    color: #d06079;*/
-    color: #848484;
+.menu-top-header-nav ul li a:hover,
+.menu-top-header-nav ul li a:active
+{
+    color: #d06079 !important;
+/*    color: #848484;*/
     text-decoration: none;
     /*border-bottom: 2px solid #d06079;*/
 }
 
 .menu-top-header-nav ul li a {
-/*    color: #848484;*/
-    color: #d06079;
+    color: #848484;
+/*    color: #d06079;*/
     font-size: 18px;
     padding: .54em 4px;
 }
@@ -2370,6 +2376,9 @@ padding:2em 0 0.5em 0;
 @media (min-width: 1200px){
     .corpservice-info-text{
       max-height: 16.2em;
+    }
+    .menu-top-header-nav {
+/*      text-align: center;*/
     }
 }
 
