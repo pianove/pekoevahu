@@ -942,7 +942,8 @@ h2{
 }
 
 .membership img{
-    margin: 12px 23px 16px 16px;
+/*    margin: 12px 23px 16px 16px;*/
+    margin: 1em auto;
 }
 
 .education-background{
@@ -1068,13 +1069,39 @@ h2{
     width: 75%;
 }
 #intro.container{
-    max-width: 970px;
+/*    max-width: 970px;*/
+    max-width: 1050px;
+}
+
+.intro-col {
+    padding-right: 2em;
 }
 
 .intro.container li{
     margin-bottom: 5px;
 }
+.sidebar{
+    border: 1px solid #f4f4f6; */
+    /* background-color: #f6f6f6; */
+    /* -webkit-box-shadow: inset 0 0 20px 0 rgba(0, 0, 0, 0.2); */
+    -moz-box-shadow: inset 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    /* box-shadow: inset 0 0 20px 0 rgba(0, 0, 0, 0.2); */
+    box-shadow: 2px 2px 4px 2px rgba(0,0,0,.2);
+    margin-top: 1.5em;
+    text-align: center;
+}
+.sidebar img{
+  max-height: 150px;
+  cursor: pointer;
+  text-align: center;
+  width: 98%;
+  max-width: 200px;
+  margin: 1.5em auto;
+}
 
+.sidebar p{
+  font-size: 16px;
+}
 .image-title-filter h2{
 	color:#fff;
 	font-size:1.5em;
@@ -1087,6 +1114,10 @@ h2{
     text-align: center;
 }
 
+.sidebar a{
+    color: inherit;
+    font-size: 16px;
+}
 
 .banner-info-text h2,
 .image-title h2{
@@ -1227,7 +1258,7 @@ label{
 	text-align:center;
 }
 
-.quotes-container{
+.memquotes-container{
     margin: auto;
     padding: 2em 0;
     width: 90%;
@@ -1762,7 +1793,7 @@ li.cd-testimonials-item{
 /*--about--*/
 
 
-.about-right h3,.service h3,.gallery h3,.blog h3,.intro h3{
+.about-right h3,.service h3,.gallery h3,.blog h3{
 	color:#d06079;
 /*	font-size:1.5em;*/
 	font-family: 'Source Sans Pro', sans-serif;
@@ -2238,6 +2269,7 @@ font-size: 14px;
 /*    color: #d06079;*/
     font-size: 18px;
     padding: .54em 4px;
+    font-family: Titillium Web,sans-serif;
 }
 
 
@@ -2330,7 +2362,7 @@ padding:2em 0 0.5em 0;
 
 /*--responsive--*/
 
-@media(min-width:480px){
+/*@media(min-width:480px){
     .col-md-9 {
         width: 75%;
     }
@@ -2339,7 +2371,7 @@ padding:2em 0 0.5em 0;
     }
 
 
-}
+}*/
 
 @media(min-width:992px){
     .col-lg-6 {
@@ -2353,7 +2385,16 @@ padding:2em 0 0.5em 0;
         width: 900px;
         margin: auto;
     }
-
+    .intro-about{
+        margin: 1em auto;
+        width: 100%;
+        text-align: center;
+    }
+    .intro-about a p{
+        width: 80%;
+        text-align: center;
+        margin: auto;
+    }
 }
 @media(min-width:1024px) {
    .menu-top-header-nav-container {

@@ -11,13 +11,16 @@
 //  "peko-eva-kepzettseg.html"
 //];
 
-//Add class active to the menu item whi is selected
+//Add class active to the menu item which is selected
 $(function() {
   var el = $(".menu-top-header-nav ul li a");
   var i = 0;
   var href = document.location.href;
   var htmlFileName = href.substr(href.lastIndexOf('/') + 1);
-
+  if (htmlFileName === "") {
+    $(el[0]).addClass("active");
+    return;
+  }
   if (el === null) {
     return;
   }
